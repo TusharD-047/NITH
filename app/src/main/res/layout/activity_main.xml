@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     tools:openDrawer="end"
     android:id="@+id/drawer"
-    android:background="@color/c1"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/toolbar"
-            android:background="@color/c1"/>
+            android:background="#2A85CD"/>
 
 
 
@@ -32,9 +32,9 @@
         android:id="@+id/navigationView"
         app:menu="@menu/menu_item"
         app:headerLayout="@layout/header"
-        android:background="@color/c3"
+        android:background="#ffffff"
         android:layout_gravity="start"
-        app:itemTextColor="#fff"/>
+        app:itemTextColor="#000000"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

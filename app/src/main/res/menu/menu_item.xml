@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/profile"
-        android:title="Profile"/>
+        android:id="@+id/home1"
+        android:title="HOME" />
 
     <item
-        android:id="@+id/contact"
-        android:title="Contact us"/>
+        android:id="@+id/login"
+        android:title="LOGIN/SIGNUP" />
+    <item
+        android:id="@+id/events"
+        android:title="EVENTS" />
 
     <item
-        android:id="@+id/about"
-        android:title="About us"/>
+        android:id="@+id/departments"
+        android:title="DEPARTMENTS" />
+
     <item
-        android:id="@+id/logout"
-        android:title="Logout"/>
+        android:id="@+id/hostels"
+        android:title="HOSTELS" />
+
+    <item
+        android:id="@+id/courses"
+        android:title="COURSES" />
+
+
+    <item
+        android:id="@+id/registration"
+        android:title="REGISTRATION" />
+
+
 
 </menu>

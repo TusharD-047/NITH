@@ -41,18 +41,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            case R.id.profile:
-                Toast.makeText(MainActivity.this, "Profile Selected", Toast.LENGTH_SHORT).show();
+            case R.id.departments:
+                Toast.makeText(  MainActivity.this, "Departments in NITH",Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.contact:
-                Toast.makeText(MainActivity.this, "Contact us Selected", Toast.LENGTH_SHORT).show();
+            case R.id.hostels:
+                Toast.makeText(  MainActivity.this, "NITH Hostels",Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.about:
-                Toast.makeText(MainActivity.this, "About us Selected", Toast.LENGTH_SHORT).show();
+            case R.id.login:
+                Toast.makeText(  MainActivity.this, "Please enter your Credentials",Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.logout:
-                Toast.makeText(MainActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
+            case R.id.courses:
+                Toast.makeText(  MainActivity.this, "Courses",Toast.LENGTH_SHORT).show();
                 break;
+            case R.id.events:
+                Toast.makeText(  MainActivity.this, "Events of NITH",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.registration:
+                Toast.makeText(  MainActivity.this, "Registration Page",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.home1:
+                Toast.makeText(  MainActivity.this, "Welcome to HomePage",Toast.LENGTH_SHORT).show();
+                break;
+
             default:
                 break;
         }
