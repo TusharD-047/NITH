@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".udaygiri"
+    android:background="@drawable/bg">
+    >
+    <TextView
+        android:id="@+id/hb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="             UDAYGIRI BOYS HOSTEL"
+        android:textColor="#0F0F10"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img14"
+        app:layout_constraintEnd_toStartOf="@+id/img14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img14"
+        android:layout_width="969dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="265dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216"
+        app:srcCompat="@drawable/udyagiri" />
+
+    <TextView
+        android:id="@+id/t14"
+        android:layout_width="370dp"
+        android:layout_height="397dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="338dp"
+        android:text="The Udaygiri Boys Hostel is a newly constructed hostel and first time allotted to the boarders from this academic session 2019-20. The hostel has 163 three seated rooms to accommodate approximately 489 students. The hostel has 07 floors along with lift facility available in the hostel. This hostel has furnished dining hall facility and is well equipped with basic facilities like LED T.V., Geysers in every bathroom, Water Cooler and Deep Freezer, etc. Besides this, the internet facility is also available in each room 4 of the hostel. The hostel has a big recreation hall which caters to the needs of indoor games like, Badminton, Table Tennis, etc. The Volleyball and Basketball Courts are also available in the hostel for student’s outdoor activity.
+
+
+
+
+
+"
+        android:textColor="#030823"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img14"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

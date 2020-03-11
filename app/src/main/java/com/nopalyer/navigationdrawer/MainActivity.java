@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -42,11 +43,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.departments:
-                Toast.makeText(  MainActivity.this, "Departments in NITH",Toast.LENGTH_SHORT).show();
-                break;
+                Intent myintent = new Intent(MainActivity.this,
+                        departments.class);
+                startActivity(myintent);
+                return false;
             case R.id.hostels:
-                Toast.makeText(  MainActivity.this, "NITH Hostels",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        hostels.class);
+                startActivity(myintent);
+                return false;
             case R.id.login:
                 Toast.makeText(  MainActivity.this, "Please enter your Credentials",Toast.LENGTH_SHORT).show();
                 break;
@@ -66,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             default:
                 break;
         }
+
+
         return false;
     }
 }

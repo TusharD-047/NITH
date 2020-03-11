@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mani"
+    android:background="@drawable/bg">
+    >
+    <TextView
+        android:id="@+id/hb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="          MANIMAHESH BOYS HOSTEL"
+        android:textColor="#0F0F10"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img14"
+        app:layout_constraintEnd_toStartOf="@+id/img14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img14"
+        android:layout_width="409dp"
+        android:layout_height="277dp"
+        android:layout_marginBottom="265dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/aravali" />
+    <TextView
+        android:id="@+id/t14"
+        android:layout_width="380dp"
+        android:layout_height="321dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="338dp"
+        android:text="The Mani-Mahesh Girls Hostel started functioning in 2003. The hostel has 167 single seated rooms to accommodate 167 students. The facility of indoor games like Table Tennis and Badminton is available in the hostel. The hostel has a furnished dining hall facility and well equipped with basic facilities like LED T.V. in common room, Geysers in every bathroom, Music System in dining hall, Water Cooler and Deep Freezer. The Internet facility is also available in each room of the hostel.
+
+
+
+
+
+"
+        android:textColor="#030823"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img14"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

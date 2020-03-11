@@ -9,7 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home"></activity>
+        <activity android:name=".vind"></activity>
+        <activity android:name=".udaygiri" />
+        <activity android:name=".shivalik" />
+        <activity android:name=".satp" />
+        <activity android:name=".pgh" />
+        <activity android:name=".neel" />
+        <activity android:name=".mani" />
+        <activity android:name=".kbh" />
+        <activity android:name=".info" />
+        <activity android:name=".himgiri" />
+        <activity android:name=".himadri" />
+        <activity android:name=".daul" />
+        <activity android:name=".aravali" />
+        <activity android:name=".ambika" />
+        <activity android:name=".hostels" />
+        <activity android:name=".departments" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

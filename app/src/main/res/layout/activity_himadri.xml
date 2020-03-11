@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".himadri"
+    android:background="@drawable/bg">
+
+    >
+    <TextView
+        android:id="@+id/hb"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="             HIMADRI BOYS HOSTEL"
+        android:textColor="#0F0F10"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img14"
+        app:layout_constraintEnd_toStartOf="@+id/img14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img14"
+        android:layout_width="409dp"
+        android:layout_height="277dp"
+        android:layout_marginBottom="265dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/himadri" />
+
+    <TextView
+        android:id="@+id/t14"
+        android:layout_width="374dp"
+        android:layout_height="356dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="338dp"
+        android:text="The HIMADRI BOYS HOSTEL is newly constructed hostel and started functioning in 2013. The hostel has 198 (triplet) rooms to accommodate approximately 594 students. The hostel has 07 floors and lift facility is also available in the hostel. This hostel has furnished dining hall facility. The hostel is well equipped with basic facilities like geysers in every bathroom, water cooler and deep freezer. Besides this, the internet and LED facility is also available in of the hostel. The hostel has a big recreation hall which caters to the needs of indoor games like, badminton, Table Tennis, etc. The Volleyball and Basketball Courts are also available in the hostel.
+
+
+
+
+
+"
+        android:textColor="#030823"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img14"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
