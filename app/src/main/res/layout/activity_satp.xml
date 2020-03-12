@@ -42,8 +42,8 @@
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="380dp"
-        android:layout_height="321dp"
+        android:layout_width="271dp"
+        android:layout_height="284dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
@@ -57,8 +57,8 @@
 
 
 "
-        android:textColor="#030823"
-        android:textSize="18sp"
+        android:textColor="#FBFBFB"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

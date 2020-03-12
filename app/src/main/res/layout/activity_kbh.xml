@@ -42,8 +42,8 @@
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="366dp"
-        android:layout_height="363dp"
+        android:layout_width="322dp"
+        android:layout_height="391dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
@@ -53,17 +53,15 @@
         android:text="The Kailash Boys Hostel is one of the oldest hostels and started functioning in 1989.The hostel has 204 three seated rooms to accommodate approximately 612 students. The hostel has a big recreation hall which caters to the needs of indoor games like, Badminton, Table Tennis, etc. The hostel also has furnished Dining Hall, Reading Room, Gymnasium, Sick Room and Guest Room facility. The hostel is well equipped with basic facilities like LED T.V., Music System, Geysers in every bathroom, Water Cooler at each floor, Deep Freezer, etc. A Volleyball Court in lawn of the courtyard has been developed for student’s outdoor activity. Besides this, the internet facility is available in all rooms of the hostel. The hostel also runs a cooperative canteen (4-H food court) for the benefit of all the students.
 
 "
-        android:textColor="#030823"
-        android:textSize="16sp"
+        android:textColor="#F6F7FB"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img14"
         app:layout_constraintVertical_bias="0.0" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

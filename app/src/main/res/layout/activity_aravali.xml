@@ -39,9 +39,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.255"
         app:srcCompat="@drawable/aravali" />
+
     <TextView
         android:id="@+id/t14"
-        android:layout_width="380dp"
+        android:layout_width="324dp"
         android:layout_height="321dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
@@ -54,7 +55,7 @@
 
 
 "
-        android:textColor="#030823"
+        android:textColor="#F7F7FB"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

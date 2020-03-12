@@ -44,8 +44,8 @@
 
     <TextView
         android:id="@+id/t1"
-        android:layout_width="380dp"
-        android:layout_height="321dp"
+        android:layout_width="335dp"
+        android:layout_height="289dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
@@ -55,7 +55,7 @@
         android:text="The Ambika Girls Hostel started functioning in 2012. The hostel has 66 double seated, 26 triple seated, 04 four seated and 25 five seated rooms to accommodate approximately 351 students. The hostel has a well-furnished common room cum recreation hall and a dining hall. The hostel is well equipped with all the basic facilities like Plasma T.V., Washing Machine, Geysers, Deep Freezer, Water Coolers, etc. The hostel has furnished dining hall facility with Music System. .
 
 "
-        android:textColor="#030823"
+        android:textColor="#F3F4FB"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

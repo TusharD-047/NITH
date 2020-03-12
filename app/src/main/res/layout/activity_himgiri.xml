@@ -42,8 +42,8 @@
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="393dp"
-        android:layout_height="441dp"
+        android:layout_width="349dp"
+        android:layout_height="447dp"
         android:layout_marginStart="172dp"
         android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
@@ -57,16 +57,15 @@
 
 
 "
-        android:textColor="#030823"
-        android:textSize="18sp"
+        android:textColor="#F5F5FA"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintVertical_bias="0.029" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

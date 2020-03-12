@@ -50,25 +50,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(myintent);
                 return false;
             case R.id.hostels:
-                myintent = new Intent(MainActivity.this,
+                myintent= new Intent(MainActivity.this,
                         hostels.class);
                 startActivity(myintent);
                 return false;
             case R.id.login:
-                Toast.makeText(  MainActivity.this, "Please enter your Credentials",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        login.class);
+                startActivity(myintent);
+                return false;
             case R.id.courses:
-                Toast.makeText(  MainActivity.this, "Courses",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        courses.class);
+                startActivity(myintent);
+                return false;
             case R.id.events:
-                Toast.makeText(  MainActivity.this, "Events of NITH",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        events.class);
+                startActivity(myintent);
+                return false;
             case R.id.registration:
-                Toast.makeText(  MainActivity.this, "Registration Page",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        registration.class);
+                startActivity(myintent);
+                return false;
             case R.id.home1:
-                Toast.makeText(  MainActivity.this, "Welcome to HomePage",Toast.LENGTH_SHORT).show();
-                break;
+                myintent = new Intent(MainActivity.this,
+                        home1.class);
+                startActivity(myintent);
+                return false;
 
             default:
                 break;
