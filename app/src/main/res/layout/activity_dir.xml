@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".dir">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="621dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/newlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="166dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="226dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dir1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="335dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginBottom="346dp"
+        android:text="Message
+
+Greetings and a Warm Welcome to one and all for joining us at National Institute of Technology, Hamirpur, India. National Institute of Technology, Hamirpur, is one of the premier autonomous Institution of National Importance in Northern India under the act of Parliament-2007. It is a state of art Institution and a dream destination for those who wish to be leaders in Science and Technology. Besides being recognized nationally and internationally for excellent education at undergraduate level, we are also making wide strides in innovative research and other development activities.
+
+Being a National Level Institute we have a unique group of outstanding young minds from almost all the states and UT’s of the country. Students from diverse backgrounds get to network with each other and get to identify and comprehend the wide spectrum of varied cultural and regional practices in our country. Students are not only given exposure to the latest technological advances in their chosen field but also trained to be responsible citizens of our country. The rich and unique learning environment at NIT develops the student physically, intellectually and emotionally. A series of activities such as a cultural festival, a technical festival, industry-focused seminars and extracurricular activities, open them to challenges of leadership. We not only enable our students to fulfil their dreams but also mentor them to think BIG. During their tenure at the institute, the students are given enriching and life-defining experience that enables them to reach new heights in their professional and personal lives.
+
+The Institution has a team of highly qualified, learned and dedicated faculty with expertise in all major disciplines of engineering and technology, science and management, and is a constant source of inspiration for the students. They are actively involved in raising the standards of not only our institute but also other institutions by collaborating with them and by sharing knowledge through faculty/student interaction programmes from time to time.
+
+Once again, I wish all the students an outstanding, momentous and valuable stay at NIT, Hamirpur and hope that you achieve your destinations/goals and emerge as top-notch engineers, technocrats, educationists or scientists.
+
+With warm wishes,
+Professor Vinod Yadava
+Director,
+National Institute of Technology
+Hamirpur [H.P.] – 177 005
+Email: director@nith.ac.in, directornith@gmail.com
+Phone: +91 – 1972 – 222308"
+        android:textColor="#100000"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="171dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="45dp"
+        android:text="Prof. Vinod Yadava(Director's)
+  My prime priority will be to build National Inatitute of Technology Hamirpura a world class imparting quality and interesting teaching with emphasis to perform useful tasks and carrying out excellent reseach having impact on society and industry"
+        android:textColor="#520360"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

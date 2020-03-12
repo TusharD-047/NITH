@@ -11,9 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/bg">
-
+        android:background="@drawable/bg"
+        android:orientation="vertical">
 
 
         <RelativeLayout
@@ -27,7 +26,7 @@
                 android:layout_marginLeft="10dp"
                 android:gravity="center"
                 android:text="HOSTELS"
-                android:textColor="#0A2522"
+                android:textColor="#ffffff"
                 android:textColorHighlight="#F4EBEB"
                 android:textColorHint="#F8F2F2"
                 android:textSize="35sp"
@@ -45,21 +44,21 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:rowCount="7"
-            android:columnCount="2"
             android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false">
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="7">
 
 
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/agh_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -88,27 +87,29 @@
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/pgh_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/pgh"/>
+                        android:src="@drawable/pgh" />
 
                     <TextView
                         android:layout_width="116dp"
@@ -121,31 +122,32 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/kbh_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/kbh"/>
+                        android:src="@drawable/kbh" />
 
                     <TextView
                         android:layout_width="105dp"
@@ -158,31 +160,32 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/him_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/himgiri"/>
+                        android:src="@drawable/himgiri" />
 
                     <TextView
                         android:layout_width="105dp"
@@ -195,34 +198,33 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
-
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/hi_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/himadri"/>
+                        android:src="@drawable/himadri" />
+
                     <TextView
                         android:layout_width="116dp"
                         android:layout_height="48dp"
@@ -231,34 +233,35 @@
                         android:text="Himadri Boys Hostel"
                         android:textColor="#000000"
                         android:textSize="18dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/ud_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/udyagiri"/>
+                        android:src="@drawable/udyagiri" />
 
                     <TextView
                         android:layout_width="116dp"
@@ -271,31 +274,32 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/ar_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/aravali"/>
+                        android:src="@drawable/aravali" />
 
                     <TextView
                         android:layout_width="107dp"
@@ -308,31 +312,32 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/sat_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/satpura"/>
+                        android:src="@drawable/satpura" />
 
                     <TextView
                         android:layout_width="116dp"
@@ -342,31 +347,33 @@
                         android:text="Satpura Boys Hostel"
                         android:textColor="#000000"
                         android:textSize="18dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/dau_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/dhauladhar"/>
+                        android:src="@drawable/dhauladhar" />
 
                     <TextView
                         android:layout_width="115dp"
@@ -379,166 +386,177 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
 
 
-
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/shiv_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/shivalik"/>
+                        android:src="@drawable/shivalik" />
 
                     <TextView
                         android:layout_width="116dp"
                         android:layout_height="48dp"
                         android:layout_marginTop="12dp"
                         android:gravity="center"
-                        android:textColor="#000000"
                         android:text="Shivalik Boys Hostel"
+                        android:textColor="#000000"
                         android:textSize="18dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/neel_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/neelkanth"/>
+                        android:src="@drawable/neelkanth" />
+
                     <TextView
                         android:layout_width="116dp"
                         android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
                         android:text="Neelkanth Boys Hostel"
                         android:textColor="#000000"
                         android:textSize="18dp"
-                        android:layout_marginTop="12dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/mani_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/manimahesh"/>
+                        android:src="@drawable/manimahesh" />
+
                     <TextView
                         android:layout_width="116dp"
                         android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
                         android:text="Manimahesh Girls Hostel"
                         android:textColor="#000000"
                         android:textSize="18dp"
-                        android:layout_marginTop="12dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/vin_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/vindyanchal"/>
+                        android:src="@drawable/vindyanchal" />
+
                     <TextView
                         android:layout_width="116dp"
                         android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
                         android:text="Vindyanchal Boys Hostel"
                         android:textColor="#000000"
                         android:textSize="18dp"
-                        android:layout_marginTop="12dp"
-                        android:textStyle="bold|italic"/>
-
+                        android:textStyle="bold|italic" />
 
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
                 android:id="@+id/info_card"
-                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/info"/>
+                        android:src="@drawable/info" />
 
                     <TextView
                         android:layout_width="92dp"
@@ -551,11 +569,7 @@
                         android:textStyle="bold|italic" />
 
 
-
                 </LinearLayout>
-
-
-
 
 
             </androidx.cardview.widget.CardView>
