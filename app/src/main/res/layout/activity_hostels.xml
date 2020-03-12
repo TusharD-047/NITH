@@ -33,12 +33,6 @@
                 android:textSize="35sp"
                 android:textStyle="bold|italic" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/images12" />
-
         </RelativeLayout>
 
         <ImageView

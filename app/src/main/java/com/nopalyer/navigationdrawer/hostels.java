@@ -6,15 +6,35 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class hostels extends AppCompatActivity {
+    Button btn_hostelbooklet,btn_functionaries;
     private CardView agh_card,pgh_card,kbh_card,him_card,hi_card,ud_card,ar_card,sat_card,dau_card,shiv_card,neel_card,mani_card,vin_card,info_card;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hostels);
+
+        btn_hostelbooklet=(Button)  findViewById(R.id.pdfhostelbooklet);
+        btn_functionaries=(Button)  findViewById(R.id.pdffunctionaries);
+
+        btn_hostelbooklet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(hostels.this,hostelbooklet.class);
+                startActivity(i);
+            }
+        });
+        btn_functionaries.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(hostels.this,functionaries.class);
+                startActivity(i);
+            }
+        });
 
         agh_card=(CardView) findViewById(R.id.agh_card);
         pgh_card=(CardView) findViewById(R.id.pgh_card);
