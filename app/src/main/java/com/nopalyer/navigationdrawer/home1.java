@@ -24,27 +24,27 @@ public class home1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(home1.this,"Na Ho Paega",Toast.LENGTH_SHORT);
-                startActivity(new Intent(home1.this,ambika.class));
+                startActivity(new Intent(home1.this,dir.class));
             }
         });
         pl_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(home1.this,pgh.class));
+                startActivity(new Intent(home1.this,pl.class));
 
             }
         });
         map_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(home1.this,kbh.class));
+                startActivity(new Intent(home1.this,map.class));
 
             }
         });
         mag_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(home1.this,himadri.class));
+                startActivity(new Intent(home1.this,mag.class));
 
             }
         });

@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".mag"
     android:background="@drawable/bg">
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginBottom="621dp"
+        android:background="@drawable/bg1"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,25 +20,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="256dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="243dp"
-        android:layout_marginRight="243dp"
-        android:layout_marginBottom="574dp"
-        android:text="COURSES OFFERED"
-        android:textColor="#814F04"
+    <Button
+        android:id="@+id/pdffeesstructure"
+        android:layout_width="214dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="400dp"
+        android:background="@android:color/white"
+        android:fadingEdge="horizontal"
+        android:gravity="center"
+        android:text="FEES STRUCTURE
+2019-2020"
+        android:textColor="#054F8A"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

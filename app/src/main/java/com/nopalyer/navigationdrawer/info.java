@@ -13,7 +13,7 @@ public class info extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        btn_hostelbooklet=(Button)  findViewById(R.id.pdfhostelbooklet);
+        btn_hostelbooklet=(Button)  findViewById(R.id.pdffeesstructure);
         btn_functionaries=(Button)  findViewById(R.id.pdffunctionaries);
 
         btn_hostelbooklet.setOnClickListener(new View.OnClickListener() {

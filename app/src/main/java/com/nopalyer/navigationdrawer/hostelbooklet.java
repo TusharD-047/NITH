@@ -13,7 +13,7 @@ public class hostelbooklet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hostelbooklet);
 
-        hostelbooklet=(PDFView) findViewById(R.id.pdfhostelbooklet);
+        hostelbooklet=(PDFView) findViewById(R.id.pdffeesstructure);
         hostelbooklet.fromAsset("hostelbooklet.pdf").load();
     }
 }

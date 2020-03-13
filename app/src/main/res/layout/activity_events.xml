@@ -1,9 +1,441 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".events">
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@drawable/bg1"
+            android:scaleType="fitXY"
+            android:src="@drawable/newlogo" />
+
+
+        <TextView
+            android:layout_width="411dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|center_horizontal"
+            android:text="EVENTS AT NIT-H"
+            android:textColor="#000000"
+            android:textColorHighlight="#F4EBEB"
+            android:textColorHint="#F8F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:background="@drawable/bg1"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="7">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hf_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="vertical"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/hf" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="HILL FAIR"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nim_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/nim" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="NIMBUS"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/prayas_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/prayas" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="53dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="PRAYAS"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/convo_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/convo" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="43dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="CONVOCATION"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ncc_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/ncc" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="NCC"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sp_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/sport" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="LALKAR"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nss_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/nss" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="NSS"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sm_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/sm" />
+
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="SPIC MACAY"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fresh_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/fresher" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="FRESHER'S DAY"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alu_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="200dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="119dp"
+                        android:layout_height="89dp"
+                        android:src="@drawable/alumni" />
+
+                    <TextView
+                        android:layout_width="116dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="ALUMNI MEET"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold|italic" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
