@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".daul"
+    android:background="@drawable/bg"
+
+    >
+
+    <TextView
+        android:id="@+id/hb"
+        android:layout_width="394dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="7dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="       DHAULADHAR BOYS HOSTEL"
+        android:textColor="#0F0F10"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/img14"
+        app:layout_constraintEnd_toStartOf="@+id/img14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img14"
+        android:layout_width="409dp"
+        android:layout_height="267dp"
+        android:layout_marginBottom="265dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        app:srcCompat="@drawable/dhauladhar" />
+
+    <TextView
+        android:id="@+id/t14"
+        android:layout_width="349dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginRight="181dp"
+        android:layout_marginBottom="338dp"
+        android:text="The Dhauladhar Boys Hostel started functioning in 1998. The hostel has 24 triple seated, 91 single seated and 02 guest rooms to accommodate approximately 165 students. Besides this the hostel has a well-furnished Dining Hall, Common Room, Gymnasium, Reading Room and Sick room. The hostel is well equipped with basic facilities like, Geysers, Water Coolers, Deep Freezer, Music System, Plasma T.V., and D.T.H connection etc. The hostel also has Table Tennis table for indoor activity of students. The internet facility is also available in each room of the hostel. A Nescafe booth in front of the hostel premises also provides services in the evening hours to the inmates.
+
+
+
+
+
+"
+        android:textColor="#F5FAF9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img14"
+        app:layout_constraintVertical_bias="0.052" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

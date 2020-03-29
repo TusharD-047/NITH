@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.nopalyer.navigationdrawer">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -13,7 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".nss"></activity>
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FullView" />
+        <activity android:name=".vision" />
+        <activity android:name=".srijan" />
+        <activity android:name=".about_college" />
+        <activity android:name=".about_city" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".nss" />
         <activity android:name=".ncc" />
         <activity android:name=".convo" />
         <activity android:name=".sm" />
@@ -51,11 +69,7 @@
         <activity android:name=".hostels" />
         <activity android:name=".departments" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

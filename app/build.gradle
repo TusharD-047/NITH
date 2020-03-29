@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.nopalyer.navigationdrawer"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -30,5 +30,6 @@ dependencies {
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
 
 }

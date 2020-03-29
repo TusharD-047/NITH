@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_city"
+    tools:context=".about_city">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="307dp"
+        android:layout_height="553dp"
+        android:text="Hamirpur, one of the twelve districts of beautiful state Himachal Pradesh, lies in the middle of the state. The most literate district and well connected by roads from all sides, shares its geographical boundaries with Bilaspur, Mandi, Kangra and Una districts. District is situated between 76-17-50 to 76-43-42 east longitudes and 31-24-48 to 31-53-35 north latitudes. Tract is hilly covered by Shivalik Range. The elevation varies from 400 meters to 1100 meters. Majority of the people serve in the defence services thus popularly known as Veer Bhoomi and also widely famous for Child-Saint Shrine Baba Balak Nath.Hamirpur district is bounded in the north by river Beas which separates it from Kangra district. In the east Bakar and Seer Khads separate it from Mandi district. In the south, It is bounded by Bilaspur district and in the west by Una district."
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="373dp"
+        android:layout_height="57dp"
+        android:text="   Hamirpur:City Of Love And Joy"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
