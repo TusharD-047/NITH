@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".civil.civilprogrammes"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/courses"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/white"
+            android:text="Programmes Offered:"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Undergraduate Programmes"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:text="1. B. Tech. in Civil Engineering"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Postgraduate Programmes"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:text="1. M.Tech in Structural Engineering\n2. M.Tech in Transportation Engineering\n3. M.Tech in Geotechnical Engineering\n4. M.Tech in Water Resources Engineering"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Research Programmes"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:text="1. Ph.D. in Structural Engineering\n2. Ph.D. in Transportation Engineering\n3. Ph.D. in Geotechnical Engineering\n4. Ph.D. in Environmental Engineering\n5. Ph.D. in Water Resources Engineering\n6. Ph.D. in Geology"/>
+    </LinearLayout>
+
+</ScrollView>

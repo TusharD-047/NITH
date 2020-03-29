@@ -1,0 +1,37 @@
+<resources>
+    <string name="ee">Electrical Engineering Department, established in the year 1986, is one of the oldest departments of National Institute of Technology Hamirpur. The Department has been imparting quality education at undergraduate and post-graduate level. The faculty members have been active in teaching and research activities. The course curriculum is being revised from time to time so as to keep students abreast with latest developments and emerging technologies. Various departmental laboratories have been strengthened and modernized by procuring state of art equipments. The department is also equipped with latest experimental and computational facilities for taking up R and D and consultancy activities in different areas of Electrical Engineering. Alumni of the department are well placed in various reputed government / non-government administrative, academic, research, engineering organizations in the country</string>
+
+<string name="eevision">The vision of the Department of Electrical Engineering is to provide excellent technical education in the field of Electrical Engineering and to produce proficient engineers, professionals and researchers with ethical values and attitude towards continuous learning.</string>
+
+    <string name="eemission">The mission of the Department of Electrical Engineering is envisaged in the following statements:\n
+
+1)To provide students with a supportive environment that facilitates in imparting quality and value based education in the area of Electrical Engineering and to apply engineering principles to solve real world problems.\n
+2)To prepare students to contribute in professional career and social services with high ethical values and with life-long learning approach and be successful as they move into occupation, research and advanced studies.\n</string>
+
+    <string name="eeprogrammes">In support of the objectives of the institutes, the education objectives of Electrical Engineering programme are designed to prepare our students to be proficient at putting theory into practice, capable of life-long learning, and to be aware of social, ethical and environmental issues associated with their professional activities\nAt present,the Department offers following programmes:\n 1)Undergraduate\n
+*B.Tech in Electrical Engineering\n
+2)Postgraduate\n
+*M.Tech in Power System\n
+*M.Tech in Signal Processing and Control\n
+*M.Tech in Condition Monitoring of Electrical Apparatus\n 3)Ph.D.\n *Major Areas of Research:\n
+Power System deregulation, Voltage Stability, Power Quality, Power Transformer diagnostics, Hydrothermal Scheduling, Control Systems, Communication and Signal Processing etc.</string>
+
+    <string name="eelab">The Electrical Engineering Department is well equipped with various laboratories for training of UG/PG students. At present,we have following labs for UG/PG students :\n
+    1)Basic Electrical Engineering Lab\n
+2)Circuit Theory Lab\n
+3)Electrical Machines Lab\n
+4)Electrical Measurement and Instrumentation Lab\n
+5)Power System Lab\n
+6)Control Engineering Lab\n
+7)Advanced Control Engineering Lab\n
+8)Power Electronics Lab\n
+9)High Voltage Engineering Lab\n
+10)Signal Processing and Biomedical Instrumentation Lab\n
+11)Microprocessor/Microcontroller Architecture and Interfacing Lab\n
+12)Transformer Diagnostics Lab\n
+13)Simulation Lab\n
+14)Transducer and Signal Conditioning Lab\n
+15)Electrical Workshop Lab</string>
+
+
+</resources>

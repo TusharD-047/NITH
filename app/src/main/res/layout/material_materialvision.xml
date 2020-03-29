@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".material.materialvision"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/visionmission2"
+            android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Objectives"
+                android:textColor="@android:color/white"
+                android:textSize="24dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="10dp"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.  To provide quality education and exposure in the field of Materials Science and engineering.\n2.  To generate trained human resources for research and teaching\n3.  To conduct research relevant to the needs of community and industry\n4.  To contribute to sustainable development of the nation\n5.  To provide state of art materials science and engineering related research facilities to other departments of NIT,Hamirpur and other educational institutions.
+"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Goals"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="1.  To recruit adequate, qualified faculty and supporting staff.\n2.  To provide state-of-art training to the faculty in the area of Materials Science.\n3.  To establish new facilities/laboratories (Computational Materials Science laboratory, Mechanical Characterization of materials laboratory, Transmission Electron Microscopy(TEM), Heat treatment and metallography laboratory etc.) and upgrade the existing facilities.\n4.  To reorient and strengthening of the existing B.Tech,M.Tech and Ph. D programs and start new programs in emerging areas as per requirement.\n5.  To accelerate research and development activities "/>
+    </LinearLayout>
+
+</ScrollView>

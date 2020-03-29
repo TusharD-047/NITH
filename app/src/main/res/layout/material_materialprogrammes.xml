@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".material.materialprogrammes"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/courses"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Programmes Offered:" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="10dp"
+                android:layout_marginTop="10dp"
+                android:text="1.  Bachelors of Technology (B.Tech) in Material Science and Engineering\n2.  Masters of Technology (M.Tech)\n3.  Doctors of Philosophy (Ph.D.)for enthusiastic students,who are willing to take up challenging research problems in various areas of materials science.\n4.  CMSE offers various open elective courses in each semester to B.Tech. and M.Tech. students of other departments of NIT Hamirpur. "/>
+
+    </LinearLayout>
+
+</ScrollView>

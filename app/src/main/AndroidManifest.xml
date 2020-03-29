@@ -5,7 +5,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
+
 
     <application
         android:allowBackup="true"
@@ -69,8 +69,94 @@
         <activity android:name=".hostels" />
         <activity android:name=".departments" />
         <activity android:name=".MainActivity">
-
         </activity>
-    </application>
+
+    <activity android:name="com.nopalyer.navigationdrawer.mechanical.melabs"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.mechanical.meprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.mechanical.mevision" />
+    <activity android:name="com.nopalyer.navigationdrawer.mechanical.meaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.mechanical.me" />
+    <activity android:name="com.nopalyer.navigationdrawer.electrical.eelabs" />
+    <activity android:name="com.nopalyer.navigationdrawer.electrical.eeprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.electrical.eevision" />
+    <activity android:name="com.nopalyer.navigationdrawer.electrical.eeaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.electrical.ee" />
+    <activity android:name="com.nopalyer.navigationdrawer.cse.cselabs" />
+    <activity android:name="com.nopalyer.navigationdrawer.cse.cseprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.cse.csevision" />
+    <activity android:name="com.nopalyer.navigationdrawer.civil.civillabs"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.civil.civilprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.civil.civilvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.civil.civilaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.civil.Civil" />
+    <activity android:name="com.nopalyer.navigationdrawer.material.matlabs" />
+    <activity android:name="com.nopalyer.navigationdrawer.ece.ecelabs" />
+    <activity android:name="com.nopalyer.navigationdrawer.chemical.chemlabs" />
+    <activity android:name="com.nopalyer.navigationdrawer.material.materialprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.chemical.chemicalprogrammes" />
+    <activity android:name="com.nopalyer.navigationdrawer.ece.eceprogrammes" />
+
+    <activity android:name="com.nopalyer.navigationdrawer.cse.cseaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.cse.CSE" />
+    <activity android:name="com.nopalyer.navigationdrawer.chemical.chemicalvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.ece.ecevision" />
+    <activity android:name="com.nopalyer.navigationdrawer.material.materialvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.material.materialaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.chemical.chemicalaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.material.material" />
+    <activity android:name="com.nopalyer.navigationdrawer.ece.eceaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.ece.ece" />
+    <activity android:name="com.nopalyer.navigationdrawer.chemical.chemical1" />
+    <activity android:name="com.nopalyer.navigationdrawer.math.mathission"
+        android:label="VISION AND MISSION"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.math.mathsprogrammes"
+        android:label="PROGRAMMES OFFERED"/>
+    <activity android:name="com.nopalyer.navigationdrawer.math.mathslabs"
+        android:label="LABS"/>
+    <activity android:name="com.nopalyer.navigationdrawer.math.mathsaboutus"
+        android:label="ABOUT US"/>
+    <activity android:name="com.nopalyer.navigationdrawer.physics.physicsprogrammes"
+        android:label="PROGRAMMES OFFERED"/>
+    <activity android:name="com.nopalyer.navigationdrawer.physics.physicslabs"
+        android:label="LABS"/>
+    <activity android:name="com.nopalyer.navigationdrawer.physics.physicsmission"
+        android:label="VISION AND MISSION"/>
+    <activity android:name="com.nopalyer.navigationdrawer.physics.physicsaboutus"
+        android:label="ABOUT US"/>
+    <activity android:name="com.nopalyer.navigationdrawer.math.maths"
+        android:label="MATHS DEPARTMENT"/>
+    <activity android:name="com.nopalyer.navigationdrawer.physics.Physics"
+        android:label="PHYSICS DEPARTMENT"/>
+    <activity android:name="com.nopalyer.navigationdrawer.chemistry.chemission"
+        android:label="VISION AND MISSION"/>
+    <activity android:name="com.nopalyer.navigationdrawer.chemistry.chemprogrammes"
+        android:label="PROGRAMMES OFFERED"/>
+    <activity android:name="com.nopalyer.navigationdrawer.chemistry.chemistrylabs"
+        android:label="LABS"/>
+    <activity android:name="com.nopalyer.navigationdrawer.chemistry.chemistryaboutus"
+        android:label="ABOUT US"/>
+    <activity android:name="com.nopalyer.navigationdrawer.chemistry.chemistry"
+        android:label="CHEMISTRY DEPARTMENT"/>
+    <activity android:name="com.nopalyer.navigationdrawer.architecture.archlabs"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.architecture.archaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.architecture.archcourses" />
+    <activity android:name="com.nopalyer.navigationdrawer.architecture.archvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.architecture.architecture" />
+
+    <activity android:name="com.nopalyer.navigationdrawer.management.management"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.management.managementabout" />
+    <activity android:name="com.nopalyer.navigationdrawer.management.managementvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.management.managementcourses" />
+    <activity android:name="com.nopalyer.navigationdrawer.management.managementlab" />
+
+    <activity android:name="com.nopalyer.navigationdrawer.humanities.humanities"></activity>
+    <activity android:name="com.nopalyer.navigationdrawer.humanities.humanitiesaboutus" />
+    <activity android:name="com.nopalyer.navigationdrawer.humanities.humanitiesvision" />
+    <activity android:name="com.nopalyer.navigationdrawer.humanities.humanitiescourses" />
+    <activity android:name="com.nopalyer.navigationdrawer.humanities.humanitieslabs" />
+
+
+
+</application>
 
 </manifest>

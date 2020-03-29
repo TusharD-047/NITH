@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".humanitiesaboutus"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mh"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT HUMANITIES AND SOCIAL SCIENCES :-"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The department of Humanities and Social Sciences has an interdisciplinary orientation and expertise in diversified fields of Communication Skills, Engineering Economics, Dynamics of Behavioral Science and Management in order to cater the needs of B.Tech./B.Arc. students of the institute of national importance. The diversity of the curricula offered through the department provides the students with a foundational base of skills that can be used not only in the classroom, but to master challenges in globalized dynamic and competitive markets. This is done through a plethora of channels including lectures, talks, case studies, research projects, group discussion, FGD, workshops, seminars etc. Faculty members possess a blend of academic and professional experience which facilitates disseminating of knowledge to the students through both classroom sessions and independent student activities."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

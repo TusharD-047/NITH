@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chemical2"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT CMSE DEPARTMENT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Centre for Materials Science and Engineering (CMSE) is established in 2008. The main focus of the teaching and research in the department is centered on interdisciplinary area to achieve worldwide attention and appreciation. Important mission of the department is to generate human resource of excellent quality, including Chemists, Physicist, and Engineers with high professional competence in interdisciplinary research area encompassing of biology, chemistry physics, nanomaterials and material science at international competence level for the need of nation. This centre started its first batch PhD degrees from Jan 2010 and M.Tech from June 2010. At present, CMSE have several advanced research facilities including synthesis and characterization techniques. CMSE features six faculty members with expertise in frontier areas of research.  \nActive research areas:\n*  Functional Oxide materials, High temperature superconductors, Colossal Magneto-resistance materials Spintronics, Ferrites, Ferroelectrics and multiferroelectric materials.\n*  Metal/ceramic particulate polymer composite materials,dielectric/electrical properties of materials, composite materials, ceramic processing and characterization, powder metallurgy, physical metallurgy\n*  Nanodrug delivery systems, microencapsulation,biomineralisation, biomimetics, self assembly processes\n*  Nanophosphors, Ion beam induced modifications in materials, Optical Materials, X-ray absorption spectroscopy\n*  Semiconductor Defect Engineering, Plasma Nanoscience,Metal-Organic Frameworks\n*  Magnetism at Nanoscale, Electrodeposition"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

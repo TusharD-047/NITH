@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".math.mathslabs"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/mathslab"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="24dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="MATHEMATICS AND COMPUTING LABS:-"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="18dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:text="Mathematical   computational  laboratory  is   equipped   with   the   following   software’s  and equipments:"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:text="* Computers-Pentium-IV\n* Software (Mathematica, Mathcad, SYSTAT)\n* Printers, Scanners, LCD Projectors\n* and  more  modernized  equipments  as  well  as  software  s.t.  Matlab,  etc  are  being added in the near future.\n"/>
+    </LinearLayout>
+
+</ScrollView>

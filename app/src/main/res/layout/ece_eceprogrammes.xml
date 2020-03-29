@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ece.eceprogrammes"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/courses"
+                android:scaleType="fitXY"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@android:color/white"
+                android:text="Programmes Offered:"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:lineSpacingExtra="10dp"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:text="Degrees from ECE Department, NIT Hamirpur HP are very prestigious all over the country and abroad. The various degree programmes offered by ECE department are: "
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@android:color/white"
+                android:text="1.  Bachelor of Technology (B. Tech.) in Electronics and Communication Engineering.\n2.  Dual Degree [B.Tech. + M.Tech.] (Five Years) in Electronics and Communication Engineering.\n3.  Master of Technology (M. Tech.) in VLSI Design Automation and Techniques.\n4.  Master of Technology (M. Tech.) in Communication Systems and Networks.\n5.  Doctor of Philosophy (Ph.D.) in VLSI Design, Optical Fiber Communication and Electronics and Communication Engineering."/>
+    </LinearLayout>
+    </ScrollView>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ece.ecevision"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/visionmission2"
+                >
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="VISION"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@android:color/white"
+                android:textSize="24dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+               android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="10dp"
+                android:text="To deliver quality technical education based on societal benefits and requirements and industry standards for promoting research and innovation in latest emerging areas of Electronics and Communication Engineering."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@android:color/white"
+                android:text="MISSION"
+                android:textSize="24dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:lineSpacingExtra="10dp"
+                android:text="1.  To impart value added quality Technical Education in Electronics and Communication Engineering with emphasis on social needs and research.\n2.  To produce professionally competent engineers and designers with inclination toward continuous lifelong learning.
+"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

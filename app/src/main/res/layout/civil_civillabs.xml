@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".civil.civillabs"
+    android:background="@drawable/gradient">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/practicaltraining"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="CIVIL LABS:-"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="The Department of civil engineering has well equipped laboratories in the specialized areas. The laboratories are well equipped with all modern equipments to cater the needs of UG and PG students as well as R and D and consultancy works. Testing facilities related to Civil Engineering is provided in our laboratories to fulfill the need of industries.Laboratories process comprehensive."
+        android:textSize="18dp"
+        android:lineSpacingExtra="10dp"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:lineSpacingExtra="10dp"
+        android:text="* Material Testing Laboratory\n* Structural Analysis Laboratory\n* Geotechnical Laboratory\n* Transportation Laboratory\n* Hydraulic and Irrigation Laboratory\n* Environmental Laboratory\n* Surveying Laboratory\n* Geology Laboratory\n* Computational Laboratory\n* Remote Sensing and GIS Laboratory\n"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        />
+</LinearLayout>
+
+</ScrollView>

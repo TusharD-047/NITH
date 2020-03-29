@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemistry.chemistryaboutus"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/chemistry1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT CHEMISTRY DEPARTMENT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="The Department of Chemistry came into existence as an independent department in August 2009. In addition to teaching UG and PG courses floated by various engineering departments, the department also offers Ph.D. degree in diverse areas of chemistry. The department is currently offering M. Tech. program in Chemical Technology in association with Chemical Engineering department from the academic session 2016-17 with an intake of 15 students from both science and engineering backgrounds. The department has also started M.Sc. Program in Chemistry from the session 2017-18 with an initial intake of 20 students. In the coming years, we plan for the extension and up gradation of the PG programs in terms of intake capacity as well as its curriculum based on current industrial requirements and needs. Further, the department also looks forward for active industrial participation in course structuring and training.\n "
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+</ScrollView>

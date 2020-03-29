@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemical.chemlabs"
+    android:background="@drawable/gradient">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+
+
+            <ViewFlipper
+                android:id="@+id/slide"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+            </ViewFlipper>
+        </androidx.cardview.widget.CardView>
+
+
+        <TableLayout
+            android:background="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="LAB"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Specification"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Computer Lab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:textColor="@android:color/white"
+                    android:text="@string/chemlab1"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/chemlab124"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="@string/chemlab2"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Fluid Mechanics\nLab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="@string/chemlab3"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Industrial Pollution\nAbatement\nLaboratory"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="@string/chemlab4"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Mechanical \nOperation \nLaboratory"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="The Mechanical Operation Laboratory possess experimental setups used in screening, filtration, sedimentation, transportation of solids and agitation. "
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow>
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Mass Transfer\nLaboratory"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="Lab experiments on various types of equipments/instruments related to Mass Transfer Operations. The main objective of this lab is to give the hand-in-hand experience of lab-scale experiments on various types of equipment based on the theoretical understanding and its application learned in theory course and to make students ready to work in an industrial environment providing the lab training. "
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow><TableRow
+            android:background="@android:color/darker_gray">
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Process Dynamics\nand Control \nLaboratory"
+                android:textColor="@android:color/white">
+
+            </TextView>
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gradient"
+                android:textColor="@android:color/white"
+                android:text="The Process Dynamics control Laboratory possess experimental setups used in level, flow and temperature control using different controller, PI-IP convertor and control valve characteristics"
+                android:layout_weight="1">
+
+            </TextView>
+
+        </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

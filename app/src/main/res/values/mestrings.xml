@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <string name="meaboutus">The Department of Mechanical Engineering came into its existence right from the inception of the then Regional Engineering College Hamirpur (now National Institute of Technology Hamirpur) in the year 1986 and served as catering department to other disciplines .\nThe discipline of Mechanical Engineering started offering undergraduate programme leading to four year Bachelor of Technology (B.Tech) degree in Mechanical Engineering in the year 1994. The first batch was started with an intake of 30 students which has now been enhanced to 60 students by the Ministry of HRD, Government of India from the session 2006to2007 which has further been enhanced to 90 students. Since its existence, 21 Batches of Undergraduate students with B.Tech Degree in Mechanical Engineering, 14 batches of Postgraduate programme i.e. M.Tech. (Thermal Engineering) and 7 batches of M.Tech. (CAD CAM Engineering) have passed. Apart from this about 20 students have got their PhD in various areas of specialisation i.e. Thermal, Production, Materials and Design.\n The department has a separate building housing the various laboratories viz : Strength of Materials, Theory of Machines, Dynamics of Machinery, Mechanical Measurements and Control, Heat Transfer, Refrigeration and Air Conditioning, Turbo Machines, Production, CAD/CAM, Metrology and Heat Engines, lecture rooms, seminar room, faculty chambers and office.\n The major advanced equipments available in these labs are: Computerized two stroke petrol engine test rig, Gas analyzer, Vibration exciter, Dynamometer, Four ball tester (computerized), Sound level meter, Hardness tester (Rockwell and Brinell), Impact tester, Sophisticated metrology equipment, FFT analyzer machine condition monitoring equipment, Journal bearing test rig, Refrigeration tutor, Air conditioning tutor, Ice plant tutor, Various hydraulic turbines (Kaplan, Francis, Pelton wheel) and pumps, Centrifugal blower and Heat transfer equipments, Universal Testing Machine (Computerized), Plasma cutting machine, Pollution checking equipments, Projection manometer, Flaw detector, Computerized vertical machining centre, Robot etc.</string>
+
+
+    <string name="mevision">To build a vibrant learning environment founded on value based academic principles, where in all involved shall contribute effectively, efficiently and responsibly to the nation and global community.</string>
+
+    <string name="memission">To achieve academic excellence in engineering, technology, architecture and science by imparting quality and value based education. To inspire our students to become responsible citizens and competent professionals with high ethical values. To meet the expectations of technical human resource at national and international level.</string>
+
+     <string name="meprogrammes">1)Bachelors of Technology : \n
+
+The 4 year B. Tech. programme in Mechanical Engineering is offered to 90 students (every year) who are interested in advanced learning and research in any area of Mechanical Engineering. Since its inception, 21 Batches of Undergraduate students with B.Tech Degree in Mechanical Engineering, have passed.</string>
+    <string name="meprogrammes2">2)Masters of Technology : \n
+    The 2 year M. Tech. programme in Mechanical Engineering is offered to students who are interested in advanced learning and research in some areas of Mechanical Engineering. The department started a Postgraduate programme leading to M. Tech. Degree with specialization in: Thermal Engineering (CFD and Heat Transfer) admitting students from the session 2005-2006, another stream with specialization in CAD-CAM was started from the session 2008-09. Since its inception, 7 Batches of Postgraduate students with M.Tech Degree in either of these fields, have passed.
+    </string>
+
+    <string name="meprogrammes3">3)Doctors of Philosophy : \n
+    The doctoral programme in Mechanical Engineering offers students the possibility of doing intensive research in the areas of Design, Thermal, Manufacturing, Production/Industrial Engineering, etc.  All full time students receive MHRD fellowship. The Department makes all possible efforts to support the travel of students to national/international conferences. Each research student is provided a cabin with his/her desktop PC and 24*7 Internet access. Research students have unrestricted access to all laboratories in the Department. Our students regularly publish in leading international conferences and reputed journals.\n
+
+Proposals to start new PG programmes on Automation and Manufacturing and MBA (Environmental Management) have also been submitted which may also be offered in near future.
+    </string>
+
+    <string name="melabs">The Mechanical Engineering department is well equipped with various laboratories for training of UG/PG students. The facilities offered are in the fields of -\n
+
+1)Theory of Machine\n
+2)Ref. and Air Conditioning\n
+3)Production\n
+4)Computer Aided Manufacturing\n
+5)Metallurgy and Metallography\n
+6)I.C. Engine\n
+7)Turbo Machine and Thermal\n
+8)Heat Transfer\n
+9)Mechanics of Solid\n
+10)Measurement and Control\n
+11)Fluid MEchanics\n
+12)Heat Treatment\n
+13)Machining Science\n
+
+</string>
+</resources>

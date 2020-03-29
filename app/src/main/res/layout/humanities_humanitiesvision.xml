@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".humanitiesvision"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/visionmission2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="VISION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="To provide excellent technical education in civil engineering for preparing competent engineering professionals with high ethical values trained for lifelong learning and service to the society."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="MISSION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="To impart quality and value based technical and professional education in civil engineering for providing solution to real life problems with dedication towards societal issues,research and continuous learning."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".archvision"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/visionmission2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="VISION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The Vision of the department is to be a leading department in the region where it provides the highest quality of education and develops responsible, educated, and professional architects who are able to create a better world through unique and effective architectural ideas and solutions."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="MISSION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text=" Architecture is the formal expression of the social, political, cultural, economic and environmental forces that shape a society. In addition to the production of buildings, architecture includes the development of ideas about the built environment. Thus, not only its a profession but also a discipline that requires both technical and intellectual competence and rigor. In light of this understanding, the educational mission of the Department of Architecture is as follows:\n 1)To educate individuals in the art and science of architecture so they can assume leading and creative roles as architects and building professionals that respond to the specific needs of the society.\n 2)To instil a commitment with the students as to the health, safety and welfare of building users and to enrich the quality of life.\n 3)To foster a critical understanding, and exploration of the artistic, cultural, technological, and ideological forces that impact the built environment\n 4)To supply students with the knowledge and the means to become active participants in the intellectual discourse of the discipline of architecture.\n"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="GOALS"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The architecture curriculum has been designed to achieve the following goals:  Establish an academic center that provides for architectural consultations directed toward professional practice on private and government levels. Establish an academic center that would provide architectural communication channels locally, regionally, and internationally."
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

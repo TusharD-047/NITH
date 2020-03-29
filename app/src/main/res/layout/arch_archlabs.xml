@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".archlabs"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="LABS"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1)Building Material lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab aims to familiarize students with latest building materials used for construction; finishes for walls, roofing, flooring and joinery; various fixtures used in buildings and other materials. The students also get an idea of the construction details involved."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/materiallab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2)Research and Documentation lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab is meant for conducting research activities and is equipped with all the necessary equipment and necessary infrastructure for ongoing research projects. The documentation of vernacular and heritage buildings is undertaken under this lab. So far the department has conducted documentation of 20 buildings."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/researchdocumentationlab"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3)Computer lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab aims to provide infrastructure for students to learn various software’s used in architecture and use these skills in the subject of Architectural Design, Building construction and others."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/computerlab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4)Survey Lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The students learn the documentation and site survey process using equipment in the lab. Measure drawing of existing sites is part of course curriculum of third year."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/surveylab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5)Audio-Visual lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab is equipped with latest equipment required for holding seminars, conferences, presentations and interactive talks."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/audiovisuallab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6)Visual Art Workshop"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab displays the artistic works of students under various subjects."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/visualartworkshop"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7)Carpentry Lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is equipped with latest wood cutting, carving and plaining equipment used to make students understand the wood joints. They can have hands-on experience and use the skill in future projects."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/carpentrylab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8)Built Environment Model Making Lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The models prepared by final year students are displayed in this lab for the reference and understanding of different site and building design concepts. The lab also has space to prepare models with special reference to cutting of contours."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/builtenvironmentlab"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9)BReUCom Research Lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The lab will operate for improving the resilience at city and town level. The thrust of the research will be to develop community based resilience in hill towns of H.P. Another aspect of sustainable urban development on hills will also be researched and propagated through this lab."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/breucom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10)Climatology and Energy Lab"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The climatology lab aims to make students aware of concepts involved in climate analysis, data collection for energy analysis and use the same in design process."
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

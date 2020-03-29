@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".managementvision"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/visionmission2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="VISION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The vision of the department is to prepare ethical leaders, to polish the skill of students and make the best of their potential, so that they are not only committed to their business, but make their contribution in the nation building through flexible, value based education driven by high impact factor research"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="MISSION"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="*To create quality Human Capital for the industries, who can lead ethically and contribute for sustainable development of the society.\n
+*To achieve excellence in management education, research and training through innovation and strong conviction\n
+*To develop inquisitive and cognitive mindset of students to have better outlook towards both professional and personal life.\n"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

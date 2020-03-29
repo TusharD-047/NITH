@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ece.ecelabs"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="24dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="ECE LABS:-"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="The department is equipped with modern technology and sophisticated equipments to make the learning
+process comprehensive."
+            android:textSize="18dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="* Basic Electronics lab\n* Digital Electronics and Analog Electronics labs\n* Industrial Electronics lab\n* Computer and Embedded System lab\n* Microwave lab\n* TV and DSP labs\n* Communication lab\n* Advanced Electronics and Simulation lab\n* Very Large Scale Integration (VLSI ) Design Lab\n* Linear Integrated Circuit (LIC) Lab\n"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+</ScrollView>

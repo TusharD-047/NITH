@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".humanitiescourses"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="10dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/courses"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="PROGRAMMES OFFERED"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1) UG PROGRAMMES :-"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10dp"
+            android:text="BRANCH:- BTECH/B ARCH"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="COURSE :-"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Communication Skills"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="SEMESTER"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="DEPARTMENT/CENTRE"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1st"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Civil Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1st"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Mechanical Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1st"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Electrical Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="2nd"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Electronics and Communication Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="2nd"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Computer Science And Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1st"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Chemical Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="2nd"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Material Science And Engineering"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1st"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Architecture"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="COURSE :-"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Engineering Economics And Management"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:background="#aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="SEMESTER"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="DEPARTMENT/CENTRE"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="6th"
+                android:textColor="#ffffff"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="Civil Engineering"
+                android:textColor="#ffffff"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </TableRow>
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="2nd"
+                android:textColor="#ffffff"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="Electrical Engineering"
+                android:textColor="#ffffff"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="7th"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:text="Electronics and Communication Engineering"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="1st"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Computer Science And Engineering"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="6th"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Chemical Engineering"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="1st"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="Material Science and Engineering"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="COURSE :-"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Managerial Economics"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:background="#aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#ffffff"
+                android:text="SEMESTER"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="DEPARTMENT/CENTRE"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="6th"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#ffffff"
+                android:text="Mechanical Engineering"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="COURSE :-"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Professional Ethics and Human Values"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:background="#aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="5dp"
+                    android:textColor="#ffffff"
+                    android:paddingRight="5dp"
+                    android:text="SEMESTER"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="DEPARTMENT/CENTRE"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="1st"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gradient"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Material Science and Engineering"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Open Electives offered by Department of Management and Humanities"
+            android:textColor="#ffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:background="#aaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gradient"
+                android:gravity="center_horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="SEMESTER"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="COURSES"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="5th(All Branches)"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HUO 316 (A) Indian Business Environment"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="5th(All Branches)"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="HUO 316 (D) Dynamics of Behavioural Science in Industry"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        <TableRow>
+
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/gradient"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:text="6th(All Branches)"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gradient"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:text="HUO 325 Dynamics of Behavioural Science in Industry"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            </TextView>
+
+        </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="2) PG PROGRAMMES :-"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="10dp"
+            android:text="PH.D."
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here for Ph.D. syllabus "
+            />
+
+    </LinearLayout>
+</ScrollView>

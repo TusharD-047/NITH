@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemistry.chemission"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/vision1"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="VISION OF THE DEPARTMENT"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The department of chemistry envisages to be recognized as a department of par excellence in higher learning, mentorship of students, research in chemistry and service to the society. "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-black"
+            android:text="MISSION OF THE DEPARTMENT"
+            android:textSize="24dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="1. Provide distinctive and relevant education in chemical sciences at the undergraduate, postgraduate and research levels.\n2. Produce skillful, inventive and confident scholars for careers in academia, government and industry."/>
+    </LinearLayout>
+
+</ScrollView>

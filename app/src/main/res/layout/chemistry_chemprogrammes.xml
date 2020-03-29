@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chemistry.chemprogrammes"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="#ffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Programmes Offered:" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:text="1. M.Sc. in Chemistry"/>
+
+    </LinearLayout>
+
+</ScrollView>

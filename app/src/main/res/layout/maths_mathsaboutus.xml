@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".math.mathsaboutus"
+    android:background="@drawable/gradient">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/math"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT MATHS DEPARTMENT"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="@string/maths"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="CAREER IN MATHEMATICS AND SCIENTIFIC COMPUTING"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="In a current economic scenario, employment opportunities for graduate, post graduate and Ph.D.’s in Mathematics and Scientific Computing are excellent both in academics as well as in industry. This is a new era (as far as job opportunities are concerned) for UG/PG and PhD degree holders in Mathematics and Scientific Computing, especially in the fields of banking, insurance, IT industries apart from teaching jobs. For those inclined towards a research career, many positions are available in research institutions and universities. For those who wish to pursue a teaching career, well-paying teaching positions are available in plenty in private/public science and engineering institutions. And for those who are willing to apply mathematics and scientific computing to practical problems, there has been a dramatic change in the job opportunities over the past few years in India. Many financial services companies, research labs of multinational companies and others reputed organisations are recruiting people with mathematics and computing background. Based on the strength of the department in both pure and applied mathematics as well as scientific computing, our students get a balanced and rigorous training in various aspects of mathematics and computing.\n"/>
+    </LinearLayout>
+
+</ScrollView>

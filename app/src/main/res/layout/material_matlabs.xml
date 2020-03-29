@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".material.matlabs">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/inorganiclab"
+            android:scaleType="fitXY"/>
+        <TableLayout
+            android:background="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:text="LAB"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Specification"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Spectroscopy Lab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="1. UV-Visible-NIR Spectrophotometer\n2. FTIR\n3. Scanning Probe Microscope\n4. Zeta Sizer"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Polymer Composite\nLab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="1. Twin Screw Extruder\n2. Motorized Diamond Cutter\n3. Planatary Ball Mill\n4. High Speed Homogenizer"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="X-ray Diffraction\nLab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="1. Panalytical Xpert Pro XRD Machine\n2. Vaccum Coating Unit"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:background="@android:color/darker_gray">
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Low Temperature\nElectric Properties\nLab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/gradient"
+                    android:text="1. Keithley System for I-V Study with temperature Controller\n2. Fume Hood"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+            </TableRow>
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Raman Spectroscopy\nLab"
+                    android:textColor="@android:color/white">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/gradient"
+                    android:text="1. Renishaw Raman and Photo-Luminescence Microscope"
+                    android:layout_weight="1"
+                    >
+
+                </TextView>
+
+            </TableRow>
+            <TableRow
+                android:background="@android:color/darker_gray">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@android:color/white"
+                    android:text="Nanomaterial\nSynthesis\nLab">
+
+                </TextView>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/gradient"
+                    android:textColor="@android:color/white"
+                    android:text="1. Magnetic Stirrers, Weighing Balance, Spin Coater, Microwave Oven, Hot Air Oven, Purified Water Unit, Heating Mentle."
+                    android:layout_weight="1">
+
+                </TextView>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

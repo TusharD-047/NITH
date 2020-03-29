@@ -5,9 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".departments"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="16dp">
+    android:background="@android:color/white"
+   >
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/tablayout"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="#ff4500"
+        app:tabTextColor="#000000"
+        app:tabSelectedTextColor="@android:color/white" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/tablayout"/>
 
 </RelativeLayout>

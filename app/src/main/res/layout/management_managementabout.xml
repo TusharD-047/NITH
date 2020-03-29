@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".managementabout"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mh"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ABOUT DEPARTMENT OF MANAGEMENT STUDIES :-"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:lineSpacingExtra="10dp"
+            android:text="The Department of Management Studies aims to train and develop managerial thoughts beyond technical competence and making the young minds manage resources optimally so as to meet global market demands. The Department further focuses on developing managers with capability in applying management know-how to conventional and non-conventional problems of management. It implies a commitment to focus management knowledge, skills, and technologies for the betterment of society. The diversity of the curricula offered through the Department provides the students with the foundation skills that can be used not only in the classroom, but to master challenges in globalized dynamic and competitive markets.\n This is done through a plethora of channels including lectures, talks, case studies, research projects, group discussion, workshops, seminars, etc. Faculty members possess a blend of academic and professional experience which facilitates disseminating of knowledge to the students through both classroom sessions and independent student activities. The course structure is designed to impart knowledge of the core management concepts and techniques in the first year which are thereafter upgraded to advance knowledge and practicing skills in the area of specialization opted for by the student in the second year. Besides, the Department also offers doctoral programme and has the state-of-art infrastructure."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
