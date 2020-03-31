@@ -7,7 +7,11 @@
     tools:context=".departments"
     android:background="@android:color/white"
    >
-
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="#2A85CD"/>
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +21,8 @@
         app:tabGravity="fill"
         app:tabIndicatorColor="#ff4500"
         app:tabTextColor="#000000"
-        app:tabSelectedTextColor="@android:color/white" />
+        app:tabSelectedTextColor="@android:color/white"
+        android:layout_below="@+id/toolbar"/>
     <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
