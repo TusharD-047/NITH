@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.electrical;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
@@ -20,6 +21,7 @@ public class eelabs extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Labs");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         slider = findViewById(R.id.slide);
         int[] images = {R.drawable.eelab1, R.drawable.eelab3, R.drawable.eelab4, R.drawable.eelab5, R.drawable.eelab6, R.drawable.eelab7};

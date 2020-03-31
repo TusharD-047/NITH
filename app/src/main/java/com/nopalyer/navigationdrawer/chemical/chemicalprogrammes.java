@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.chemical;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ public class chemicalprogrammes extends AppCompatActivity {
         setContentView(R.layout.chemical_chemicalprogrammes);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
         getSupportActionBar().setTitle("Programmes Offered");
     }
 }

@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.cse;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +22,7 @@ public class cselabs extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Labs");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         slider = findViewById(R.id.slide);
         int[] images = {R.drawable.lab1, R.drawable.cselab2, R.drawable.cserlab, R.drawable.glab};

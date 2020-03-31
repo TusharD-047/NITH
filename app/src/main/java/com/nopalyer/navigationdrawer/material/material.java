@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.material;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -27,6 +28,7 @@ public class material extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("CMSE Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         about3.setOnClickListener(new View.OnClickListener() {
             @Override

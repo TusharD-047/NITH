@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.civil;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -25,6 +26,7 @@ public class Civil extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Civil Engineering Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         about4.setOnClickListener(new View.OnClickListener() {
             @Override

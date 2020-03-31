@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.civil;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +17,6 @@ public class civilprogrammes extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Programmes Offered");
+        toolbar.setTitleTextColor(Color.WHITE);
     }
 }

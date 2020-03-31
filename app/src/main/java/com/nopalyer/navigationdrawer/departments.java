@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
@@ -23,6 +24,7 @@ public class departments extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         viewPager = (ViewPager)findViewById(R.id.viewpager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());

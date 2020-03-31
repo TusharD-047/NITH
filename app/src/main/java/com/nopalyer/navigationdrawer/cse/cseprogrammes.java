@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.cse;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ViewFlipper;
 
@@ -18,6 +19,8 @@ public class cseprogrammes extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Programmes Offered");
+        toolbar.setTitleTextColor(Color.WHITE);
+
 
     }
 

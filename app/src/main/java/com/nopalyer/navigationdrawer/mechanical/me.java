@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.mechanical;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -27,6 +28,7 @@ public class me extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Mechanical Engineering Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override

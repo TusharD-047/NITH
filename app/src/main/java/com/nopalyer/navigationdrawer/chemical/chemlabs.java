@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.chemical;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import androidx.appcompat.widget.Toolbar;
@@ -18,6 +19,7 @@ public class chemlabs extends AppCompatActivity {
         setContentView(R.layout.chemical_chemlabs);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
         getSupportActionBar().setTitle("Labs");
 
 

@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.cse;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,6 +30,7 @@ public class CSE extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("CSE Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override

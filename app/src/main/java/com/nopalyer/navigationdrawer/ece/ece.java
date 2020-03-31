@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.ece;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,6 +26,7 @@ public class ece extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("ECE Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         about2 = findViewById(R.id.about);
         vision2= findViewById(R.id.vision1);

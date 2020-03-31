@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.chemistry;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +27,7 @@ public class chemistry extends AppCompatActivity {
         about5 = findViewById(R.id.about);
         slider = findViewById(R.id.slide);
         labs5 = findViewById(R.id.labs);
+        toolbar.setTitleTextColor(Color.WHITE);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.architecture;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +17,6 @@ public class archvision extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Vision and Mission");
+        toolbar.setTitleTextColor(Color.WHITE);
     }
 }

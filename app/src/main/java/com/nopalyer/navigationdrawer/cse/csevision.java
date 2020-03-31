@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.cse;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class csevision extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Vision and Mission");
+        toolbar.setTitleTextColor(Color.WHITE);
 
     }
 

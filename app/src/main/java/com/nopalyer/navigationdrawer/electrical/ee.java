@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.electrical;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,6 +29,7 @@ public class ee extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Electrical Engineering Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override

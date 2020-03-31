@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.cse;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class cseaboutus extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("About Us");
+        toolbar.setTitleTextColor(Color.WHITE);
 
 
     }

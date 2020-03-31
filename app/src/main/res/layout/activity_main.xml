@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2A85CD" />
+            android:background="#000000" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/city_card"
@@ -34,7 +34,8 @@
             android:layout_marginRight="24dp"
             android:layout_marginBottom="494dp"
             app:cardBackgroundColor="#191917"
-            app:cardCornerRadius="30dp">
+            app:cardCornerRadius="30dp"
+            >
 
             <ImageView
                 android:id="@+id/imageView"
@@ -80,7 +81,7 @@
                 android:layout_width="153dp"
                 android:layout_height="wrap_content"
                 android:text="About College"
-                android:textColor="?android:attr/colorBackgroundCacheHint"
+                android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:textStyle="bold|italic" />
         </androidx.cardview.widget.CardView>
@@ -161,7 +162,8 @@
         app:headerLayout="@layout/header"
         android:background="#ffffff"
         android:layout_gravity="start"
-        app:itemTextColor="#000000"/>
+        app:itemTextColor="#000000"
+        app:itemIconTint="#aaaaaa"/>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

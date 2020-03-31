@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.math;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -30,6 +31,7 @@ public class maths extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Maths Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         int[] images = {R.drawable.chemistry1, R.drawable.chemistry1};
         for(int image:images)

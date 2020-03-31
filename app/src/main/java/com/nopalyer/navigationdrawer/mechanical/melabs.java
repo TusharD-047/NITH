@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.mechanical;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
@@ -20,6 +21,7 @@ public class melabs extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Labs");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         slider = findViewById(R.id.slide);
         int[] images = {R.drawable.machineshop, R.drawable.turningshop1, R.drawable.practicaltraining};

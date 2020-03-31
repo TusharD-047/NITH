@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.physics;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -30,6 +31,7 @@ public class Physics extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Physics Department");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         int[] images = {R.drawable.chemistry1, R.drawable.chemistry1};
         for(int image:images)

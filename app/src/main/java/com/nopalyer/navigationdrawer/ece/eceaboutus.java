@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.ece;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ public class eceaboutus extends AppCompatActivity {
         setContentView(R.layout.ece_eceaboutus);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
         getSupportActionBar().setTitle("About Us");
     }
 }

@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.chemical;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,6 +24,7 @@ public class chemical1 extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Chemical Engineering Department");
+        toolbar.setTitleTextColor(Color.WHITE);
         vision = findViewById(R.id.vision1);
         programmes = findViewById(R.id.programmes);
         about = findViewById(R.id.about);

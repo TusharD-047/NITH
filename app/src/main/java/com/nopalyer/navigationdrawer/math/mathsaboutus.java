@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.math;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,5 +17,6 @@ public class mathsaboutus extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("About Us");
+        toolbar.setTitleTextColor(Color.WHITE);
     }
 }

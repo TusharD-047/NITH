@@ -1,5 +1,6 @@
 package com.nopalyer.navigationdrawer.chemistry;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ public class chemistryaboutus extends AppCompatActivity {
         setContentView(R.layout.chemistry_chemistryaboutus);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.WHITE);
         getSupportActionBar().setTitle("About Us");
     }
 }
