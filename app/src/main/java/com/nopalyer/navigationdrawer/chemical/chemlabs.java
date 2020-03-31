@@ -2,6 +2,7 @@ package com.nopalyer.navigationdrawer.chemical;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.nopalyer.navigationdrawer.R;
 
 public class chemlabs extends AppCompatActivity {
-
+    Toolbar toolbar;
     ViewFlipper slider;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chemical_chemlabs);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Labs");
 
 
         slider = findViewById(R.id.slide);

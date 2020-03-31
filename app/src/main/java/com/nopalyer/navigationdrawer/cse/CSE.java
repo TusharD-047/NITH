@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -25,6 +26,9 @@ public class CSE extends AppCompatActivity {
         cv3 = (CardView) findViewById(R.id.cv3);
         cv4 = (CardView) findViewById(R.id.cv4);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("CSE Department");
 
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override

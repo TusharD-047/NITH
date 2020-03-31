@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -22,6 +23,10 @@ public class material extends AppCompatActivity {
         vision3 = findViewById(R.id.vision1);
         labs3 = findViewById(R.id.labs);
         programmes3 = findViewById(R.id.programmes);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("CMSE Department");
 
         about3.setOnClickListener(new View.OnClickListener() {
             @Override

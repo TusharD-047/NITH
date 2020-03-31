@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -20,6 +21,10 @@ public class Civil extends AppCompatActivity {
         about4 = findViewById(R.id.about);
         vision4= findViewById(R.id.vision1);
         labs4 = findViewById(R.id.labs);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Civil Engineering Department");
 
         about4.setOnClickListener(new View.OnClickListener() {
             @Override

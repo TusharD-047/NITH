@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
 
 public class chemical1 extends AppCompatActivity {
-
+    Toolbar toolbar;
     CardView about,vision,programmes,labs;
 
 
@@ -18,6 +19,10 @@ public class chemical1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chemical_chemical1);
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Chemical Engineering Department");
         vision = findViewById(R.id.vision1);
         programmes = findViewById(R.id.programmes);
         about = findViewById(R.id.about);

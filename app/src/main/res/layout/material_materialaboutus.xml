@@ -11,6 +11,11 @@
         android:orientation="vertical"
         android:background="@drawable/gradient">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="#2A85CD"/>
 
         <ImageView
             android:layout_width="match_parent"

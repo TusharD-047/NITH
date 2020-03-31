@@ -5,6 +5,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.nopalyer.navigationdrawer.R;
 
@@ -15,6 +16,10 @@ public class melabs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.me_melabs);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Labs");
 
         slider = findViewById(R.id.slide);
         int[] images = {R.drawable.machineshop, R.drawable.turningshop1, R.drawable.practicaltraining};

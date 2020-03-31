@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -14,6 +15,7 @@ import com.nopalyer.navigationdrawer.R;
 public class chemistry extends AppCompatActivity {
     ViewFlipper slider;
     CardView about5,programmes5,vision5,labs5;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,11 @@ public class chemistry extends AppCompatActivity {
         about5 = findViewById(R.id.about);
         slider = findViewById(R.id.slide);
         labs5 = findViewById(R.id.labs);
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Chemistry Department");
+
         int[] images = {R.drawable.chemistry1, R.drawable.chemistry1};
         for(int image:images)
         {FlipperImages(image);

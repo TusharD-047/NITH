@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -25,6 +26,11 @@ public class Physics extends AppCompatActivity {
         about7 = findViewById(R.id.about);
         slider = findViewById(R.id.slide);
         labs7 = findViewById(R.id.labs);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Physics Department");
+
         int[] images = {R.drawable.chemistry1, R.drawable.chemistry1};
         for(int image:images)
         {FlipperImages(image);

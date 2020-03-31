@@ -7,6 +7,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -20,6 +21,11 @@ public class ece extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ece_ece);
         programmes2 = findViewById(R.id.programmes);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("ECE Department");
+
         about2 = findViewById(R.id.about);
         vision2= findViewById(R.id.vision1);
         labs2 = findViewById(R.id.labs);
