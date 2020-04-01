@@ -47,7 +47,6 @@
         <activity android:name=".dir" />
         <activity android:name=".home1" />
         <activity android:name=".events" />
-        <activity android:name=".courses" />
         <activity android:name=".registration" />
         <activity android:name=".login" />
         <activity android:name=".functionaries" />

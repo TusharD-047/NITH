@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
+        android:background="#ffffff"
         android:orientation="vertical">
 
 
@@ -26,8 +26,9 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="83dp"
-            android:background="@drawable/bg1"
+            android:layout_height="90dp"
+            android:background="#000000"
+            android:paddingTop="10dp"
             android:scaleType="fitXY"
             android:src="@drawable/newlogo" />
 
@@ -48,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
-            android:background="@drawable/bg1"
+            android:background="@drawable/gradient"
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:rowCount="7">

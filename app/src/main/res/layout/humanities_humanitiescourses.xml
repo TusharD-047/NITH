@@ -58,7 +58,7 @@
             android:lineSpacingExtra="10dp"
             android:text="1) UG PROGRAMMES :-"
             android:textColor="#ffffff"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="bold" />
 
         <TextView

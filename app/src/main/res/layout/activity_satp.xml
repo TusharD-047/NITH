@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".satp"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
     >
     <TextView
         android:id="@+id/hb"
@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="             SATPURA BOYS HOSTEL"
-        android:textColor="#0F0F10"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/img14"
@@ -42,13 +42,11 @@
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="271dp"
-        android:layout_height="284dp"
+        android:layout_width="317dp"
+        android:layout_height="311dp"
         android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
         android:layout_marginBottom="338dp"
         android:text="The Satpura Faculty Hostel has 99 Triplet seated (attached bathrooms) rooms to accommodate 297 students. This hostel has a furnished dining hall and other basic facilities such as geysers in every bathroom and Water Cooler etc. The hostel has well furnished common room cum recreation hall.
 
@@ -59,7 +57,6 @@
 "
         android:textColor="#FBFBFB"
         android:textSize="17sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"

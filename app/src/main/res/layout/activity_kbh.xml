@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".kbh"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
     >
     <TextView
         android:id="@+id/hb"
@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="             KAILASH BOYS HOSTEL"
-        android:textColor="#0F0F10"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/img14"
@@ -54,8 +54,7 @@
 
 "
         android:textColor="#F6F7FB"
-        android:textSize="14sp"
-        android:textStyle="bold"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.464"

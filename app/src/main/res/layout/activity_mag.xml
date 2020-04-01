@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mag"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginBottom="621dp"
-        android:background="@drawable/bg1"
+        android:background="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
         app:layout_constraintBottom_toBottomOf="parent"

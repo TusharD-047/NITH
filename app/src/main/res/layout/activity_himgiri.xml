@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".himgiri"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
     >
     <TextView
         android:id="@+id/hb"
@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="             HIMGIRI BOYS HOSTEL"
-        android:textColor="#0F0F10"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/img14"
@@ -59,7 +59,6 @@
 "
         android:textColor="#F5F5FA"
         android:textSize="16sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"

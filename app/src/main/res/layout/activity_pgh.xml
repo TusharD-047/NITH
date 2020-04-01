@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pgh"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
     >
     <TextView
         android:id="@+id/hb"
@@ -14,10 +14,11 @@
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:layout_marginBottom="7dp"
+        android:paddingTop="10dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="             PARVATI GIRLS HOSTEL"
-        android:textColor="#0F0F10"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/img14"
@@ -42,13 +43,11 @@
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="327dp"
-        android:layout_height="341dp"
+        android:layout_width="353dp"
+        android:layout_height="343dp"
         android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
         android:layout_marginBottom="338dp"
         android:text="Parvati Girls Hostel started functioning in 1998. The hostel has 54 single seated and 36 triple seated rooms to ccommodate approximately 162 students. Besides this, the hostel has well-furnished two guest rooms and a visitor's room. The hostel has a well-furnished common room cum recreation hall and a dining hall furnished with Music System. The hostel is well equipped with all the basic facilities like Plasma T.V., Washing Machine, Geysers, Gymnasium, Sewing Machine, Deep Freezer, Water Coolers, etc. Table Tennis table and Badminton Court is also available in the hostel to cater need of indoor games. .
 
@@ -58,14 +57,13 @@
 
 "
         android:textColor="#F6F7FB"
-        android:textSize="17sp"
-        android:textStyle="bold"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintVertical_bias="0.025" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,19 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vind"
-    android:background="@drawable/bg">
-    >
+    android:background="@drawable/gradient">
+
+
+
     <TextView
         android:id="@+id/hb"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
         android:layout_marginBottom="7dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="         VINDYACHAL BOYS HOSTEL"
-        android:textColor="#0F0F10"
+        android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/img14"
@@ -25,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.695" />
 
     <ImageView
         android:id="@+id/img14"
@@ -37,18 +38,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
+        app:layout_constraintVertical_bias="0.423"
         app:srcCompat="@drawable/vindyanchal" />
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="290dp"
-        android:layout_height="298dp"
+        android:layout_width="320dp"
+        android:layout_height="325dp"
         android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
         android:layout_marginBottom="338dp"
         android:text="The Vindhyachal Boys Hostel started functioning in 2006. The hostel has 166 single seated rooms to accommodate 166 students. The hostel has a furnished dining hall and well equipped with basic facilities such as LED T.V., Geysers in every bathroom, Music System in dining hall, Water Cooler and Deep Freezer etc. The internet facility is also available in each room of the hostel.
 
@@ -59,7 +58,6 @@
 "
         android:textColor="#F7F8FA"
         android:textSize="17sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"

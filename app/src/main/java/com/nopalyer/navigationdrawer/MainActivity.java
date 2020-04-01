@@ -112,11 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         login.class);
                 startActivity(myintent);
                 return false;
-            case R.id.courses:
-                myintent = new Intent(MainActivity.this,
-                        courses.class);
-                startActivity(myintent);
-                return false;
+
             case R.id.events:
                 myintent = new Intent(MainActivity.this,
                         events.class);

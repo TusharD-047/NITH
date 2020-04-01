@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pl"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginBottom="621dp"
-        android:background="@drawable/bg1"
+        android:background="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,13 +25,11 @@
         android:layout_width="122dp"
         android:layout_height="37dp"
         android:layout_marginStart="174dp"
-        android:layout_marginLeft="174dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="179dp"
-        android:layout_marginRight="179dp"
         android:layout_marginBottom="590dp"
         android:text="RANKING"
-        android:textColor="#020725"
+        android:textColor="?android:attr/colorActivatedHighlight"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +50,7 @@
                       By NIRF in 2017-59
                       By Edu Rand in 2015 : 30
                       By The Week in 2015 : 54"
-        android:textColor="#673E03"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -67,7 +65,7 @@
         android:layout_marginEnd="137dp"
         android:layout_marginRight="137dp"
         android:text="PLACEMENTS"
-        android:textColor="#100D0D"
+        android:textColor="?android:attr/colorActivatedHighlight"
         android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,9 +77,7 @@
         android:layout_width="269dp"
         android:layout_height="196dp"
         android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
         android:layout_marginEnd="137dp"
-        android:layout_marginRight="137dp"
         android:layout_marginBottom="208dp"
         android:text="Branch	                                                                       Placed (%)
                       Chemical Engineering	                                                   61.90%
@@ -95,7 +91,7 @@
 
 
 "
-        android:textColor="#02082C"
+        android:textColor="@color/design_default_color_surface"
         android:textSize="10sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,7 +112,7 @@
         android:text="AVERAGE PACKAGE OFFERED
 
 Rs. 6.78 lakhs per Annum"
-        android:textColor="#0C0C0C"
+        android:textColor="?android:attr/colorActivatedHighlight"
         android:textSize="12sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -128,28 +124,26 @@ Rs. 6.78 lakhs per Annum"
 
     <TextView
         android:id="@+id/textView9"
-        android:paddingLeft="20dp"
         android:layout_width="365dp"
         android:layout_height="141dp"
         android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
         android:layout_marginBottom="31dp"
-        android:text="HIGHEST PACKAGE OFFERED (BRANCHWISE)
+        android:paddingLeft="20dp"
+        android:text="HIGHEST PACKAGE OFFERED (BRANCHWISE
 
 Branch	Max CTC)
-Chemical Engineering	                                                     8.91
-Civil Engineering                                                                                 	7.50
-Computer Science and Engineering	                                               14.00
-Electrical Engineering	                                                                        7.95
-Electronics and Communication Engineering                                 10.50
-Mechanical Engineering	                                                                     35.00
+Chemical Engineering                 	                                                     8.91
+Civil Engineering                                                                                	7.50
+Computer Science and Engineering	                                              14.00
+Electrical Engineering	                                                                       7.95
+Electronics and Communication Engineering                                10.50
+Mechanical Engineering	                                                                    35.00
 Computer Science and Engineering – DD                                       	120.00
 Architecture	                                                                                          6.17
 "
-        android:textColor="#02082C"
+        android:textColor="@color/design_default_color_background"
         android:textSize="11sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

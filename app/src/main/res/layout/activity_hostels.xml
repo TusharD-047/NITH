@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
+        android:background="@drawable/gradient"
         android:orientation="vertical">
 
 
@@ -29,16 +29,17 @@
                 android:textColor="#ffffff"
                 android:textColorHighlight="#F4EBEB"
                 android:textColorHint="#F8F2F2"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textStyle="bold|italic" />
 
         </RelativeLayout>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="90dp"
+            android:background="@android:color/black"
             android:scaleType="fitXY"
-            android:src="@drawable/hostel" />
+            android:src="@drawable/newlogo" />
 
 
         <GridLayout
@@ -56,9 +57,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -95,9 +96,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -133,9 +134,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -171,15 +172,16 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical"
+
                     android:padding="16dp">
 
                     <ImageView
@@ -209,14 +211,15 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
+
                     android:orientation="vertical"
                     android:padding="16dp">
 
@@ -247,9 +250,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -285,9 +288,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -323,9 +326,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -359,9 +362,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -397,9 +400,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -434,9 +437,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -470,9 +473,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -506,9 +509,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -542,9 +545,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
+                android:layout_margin="9dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

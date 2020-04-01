@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginBottom="621dp"
-        android:background="@drawable/bg1"
+        android:background="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
         android:paddingTop="20dp"
