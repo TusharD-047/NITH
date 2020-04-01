@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ground"
+    android:background="@drawable/gradient"
     tools:context=".sm">
     <ImageView
         android:id="@+id/imag9"
@@ -24,6 +24,8 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="72dp"
+        android:textColor="#ffffff"
+        android:textSize="13dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"

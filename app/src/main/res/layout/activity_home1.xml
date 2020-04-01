@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="110dp"
             android:background="#000000"
-            android:paddingTop="25dp"
+            android:paddingTop="15dp"
             android:scaleType="fitXY"
             android:src="@drawable/newlogo" />
 
@@ -136,8 +136,9 @@
                     android:padding="2dp">
 
                     <ImageView
-                        android:layout_width="119dp"
-                        android:layout_height="89dp"
+                        android:layout_width="103dp"
+                        android:layout_height="78dp"
+                        android:paddingTop="15dp"
                         android:src="@drawable/map" />
 
                     <TextView
@@ -176,6 +177,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
+                        android:paddingTop="10dp"
+
                         android:src="@drawable/mag" />
 
                     <TextView

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ground"
+    android:background="@drawable/gradient"
     tools:context=".fresh">
     <ImageView
         android:id="@+id/imag3"
@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="72dp"
+        android:layout_height="46dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -33,8 +33,9 @@
         android:layout_marginLeft="11dp"
         android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
-        android:layout_marginBottom="537dp"
+        android:layout_marginBottom="563dp"
         android:text="The event to welcome the freshers at Nit Hamirpur."
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,11 +46,11 @@
         android:id="@+id/myGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
         android:columnWidth="100dp"
-        android:numColumns="2"
-        android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
-        android:layout_marginTop="220dp"/>
+        android:numColumns="2"
+        android:verticalSpacing="10dp" />
 
 
 </RelativeLayout>

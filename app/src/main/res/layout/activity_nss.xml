@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ground"
+    android:background="@drawable/gradient"
     tools:context=".nss">
     <ImageView
         android:id="@+id/imag7"
         android:layout_width="match_parent"
         android:layout_height="110dp"
+
         android:layout_marginBottom="621dp"
         android:background="#000000"
         android:scaleType="fitXY"
@@ -23,7 +24,7 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -33,8 +34,10 @@
         android:layout_marginLeft="11dp"
         android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
-        android:layout_marginBottom="506dp"
+        android:layout_marginBottom="491dp"
         android:text="The National Service Scheme was started to establish a meaningful linkage between the campus and the community. Mahatma Gandhi, the Father of the Nation, had recognized that the country could not progress in a desired direction until the student youth were motivated to work for the upliftment of the villages/community."
+        android:textColor="#ffffff"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

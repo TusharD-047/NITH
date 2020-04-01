@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".alu"
-    android:background="@drawable/bg">
+    android:background="@drawable/gradient">
     <ImageView
         android:id="@+id/imag1"
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_marginBottom="621dp"
-        android:background="@drawable/bg1"
+        android:background="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
         android:paddingTop="20dp"
@@ -23,7 +23,8 @@
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="72dp"
+        android:layout_height="104dp"
+        android:paddingTop="3dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
@@ -33,8 +34,9 @@
         android:layout_marginLeft="11dp"
         android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
-        android:layout_marginBottom="537dp"
-        android:text="NIMBUS is all about students from different branches coming together, forming departmental teams and societies, making technical projects and organising workshops and exhibitions. In other words, students working for Nimbus gain knowledge about all sorts of technologies around, couple it with hands on experience and spread it around the campus for all other students to learn."
+        android:layout_marginBottom="518dp"
+android:text="As our alumni base continues to grow and flourish, it has become increasingly important for us to provide you with pertinent information and ways to stay connected to National Institute of Technology Hamirpur community in an easily accessible and up-to-date platform. The mission of National Institute of Technology, Hamirpur Alumni Association is to provide a platform to never abandon the memories, made during the years at this Institute. "        android:textColor="#ffffff"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,10 +47,10 @@
         android:id="@+id/myGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
         android:columnWidth="100dp"
-        android:numColumns="auto_fit"
-        android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
-        android:layout_marginTop="220dp"/>
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp" />
 
 </RelativeLayout>
