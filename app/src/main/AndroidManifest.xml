@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".humanities.humanities_phd"></activity>
+        <activity android:name=".Login.Try"></activity>
+        <activity android:name=".humanities.humanities_phd" />
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +68,7 @@
         <activity android:name=".ambika" />
         <activity android:name=".hostels" />
         <activity android:name=".departments" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".mechanical.melabs" />
         <activity android:name=".mechanical.meprogrammes" />
         <activity android:name=".mechanical.mevision" />
@@ -163,6 +164,9 @@
         <activity android:name=".humanities.humanitiesvision" />
         <activity android:name=".humanities.humanitiescourses" />
         <activity android:name=".humanities.humanitieslabs" />
+        <activity android:name=".Login.ChangePassword" />
+        <activity android:name=".Login.ForgotPassword" />
+        <activity android:name=".Login.Verification" />
     </application>
 
 </manifest>

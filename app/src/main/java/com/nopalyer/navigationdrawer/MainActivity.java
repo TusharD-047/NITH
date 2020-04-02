@@ -13,10 +13,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.nopalyer.navigationdrawer.Login.Try;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -109,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return false;
             case R.id.login:
                 myintent = new Intent(MainActivity.this,
-                        login.class);
+                        Try.class);
                 startActivity(myintent);
                 return false;
 
