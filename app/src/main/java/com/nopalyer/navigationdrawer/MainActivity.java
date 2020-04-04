@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return false;
             case R.id.login:
                 myintent = new Intent(MainActivity.this,
-                        Try.class);
+                        login.class);
                 startActivity(myintent);
                 return false;
 
