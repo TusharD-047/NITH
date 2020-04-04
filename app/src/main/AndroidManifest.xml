@@ -13,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login.Try"></activity>
         <activity android:name=".humanities.humanities_phd" />
         <activity android:name=".splash">
             <intent-filter>
@@ -166,7 +165,6 @@
         <activity android:name=".humanities.humanitieslabs" />
         <activity android:name=".Login.ChangePassword" />
         <activity android:name=".Login.ForgotPassword" />
-        <activity android:name=".Login.Verification" />
     </application>
 
 </manifest>

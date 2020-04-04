@@ -24,8 +24,26 @@ public class ForgotPassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
+        email = (EditText) findViewById(R.id.editText5);
+        sendemail = (Button)findViewById(R.id.button3);
 
+        firebaseAuth5 = FirebaseAuth.getInstance();
 
+        sendemail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firebaseAuth5.sendPasswordResetEmail(email.getText().toString()).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(ForgotPassword.this,"Password Send to your Email", Toast.LENGTH_LONG).show();
 
+                        }else{
+                            Toast.makeText(ForgotPassword.this,task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            }
+        });
     }
 }

@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.login;
 
 public class ChangePassword extends AppCompatActivity {
     private EditText Remail;
@@ -25,9 +26,29 @@ public class ChangePassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
-        Remail = (EditText) findViewById(R.id.editText5);
+        Remail = (EditText) findViewById(R.id.Email);
         Changepassword = (Button) findViewById(R.id.passchange);
         firebaseAuth = FirebaseAuth.getInstance();
 
+        Changepassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String emailw = Remail.getText().toString();
+                final FirebaseUser user = firebaseAuth.getCurrentUser();
+                firebaseAuth.sendPasswordResetEmail(emailw).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(ChangePassword.this, "Password Send to your Email", Toast.LENGTH_LONG).show();
+                            firebaseAuth.signOut();
+                            finish();
+                            startActivity(new Intent(ChangePassword.this, login.class));
+                        }else {
+                            Toast.makeText(ChangePassword.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            }
+        });
     }
 }
