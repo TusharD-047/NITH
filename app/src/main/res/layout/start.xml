@@ -8,23 +8,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:rowCount="4"
-            android:columnCount="2"
             android:alignmentMode="alignMargins"
+            android:background="@drawable/gradient"
+            android:columnCount="2"
             android:columnOrderPreserved="false"
-            android:background="@drawable/gradient">
+            android:rowCount="4">
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
+                android:id="@+id/cscv"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:elevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:id="@+id/cscv">
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -51,21 +53,23 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
+                android:id="@+id/ece"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:elevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:id="@+id/ece">
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/ab1"
@@ -84,58 +88,62 @@
                         android:textSize="19dp" />
 
 
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/eecv"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ee"/>
+                        android:src="@drawable/ee" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Electrical Engineering "
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
+                        android:text="Electrical Engineering "
                         android:textColor="#000000"
-                        android:textSize="19dp"
-                        android:layout_marginTop="12dp"/>
-
+                        android:textSize="19dp" />
 
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
+                android:id="@+id/chemical"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:elevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:id="@+id/chemical">
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/ab2"
@@ -154,58 +162,62 @@
                         android:textSize="19dp" />
 
 
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/mecv"
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
                 android:elevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/mechanchi"/>
+                        android:src="@drawable/mechanchi" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
                         android:text="Mechanical Engineering"
                         android:textColor="#000000"
-                        android:textSize="19dp"
-                        android:layout_marginTop="12dp"/>
-
+                        android:textSize="19dp" />
 
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:layout_height="wrap_content"
+                android:id="@+id/material"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:elevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:id="@+id/material">
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
                         android:id="@+id/ab3"
@@ -224,39 +236,41 @@
                         android:textSize="19dp" />
 
 
-
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
 
-                android:layout_height="wrap_content"
+                android:id="@+id/civil"
                 android:layout_width="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
-                android:elevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="12dp"
-                android:id="@+id/civil">
+                android:elevation="6dp"
+                app:cardCornerRadius="12dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/civil"/>
+                        android:src="@drawable/civil" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Civil Engineering"
+                        android:layout_marginTop="12dp"
                         android:gravity="center"
+                        android:text="Civil Engineering"
                         android:textColor="#000000"
-                        android:textSize="19dp"
-                        android:layout_marginTop="12dp"/>
-
+                        android:textSize="19dp" />
 
 
                 </LinearLayout>

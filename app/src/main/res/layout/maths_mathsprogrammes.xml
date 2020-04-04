@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:scaleType="fitXY"
-            android:src="#ffffff"/>
+            android:src="@drawable/courses" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
