@@ -11,6 +11,6 @@ public class Test1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test1);
 
-        nu
+        num
     }
 }
