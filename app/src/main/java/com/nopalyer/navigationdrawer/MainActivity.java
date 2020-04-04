@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(myintent);
                 return false;
             case R.id.hostels:
+
                 myintent= new Intent(MainActivity.this,
                         hostels.class);
                 startActivity(myintent);
