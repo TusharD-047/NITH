@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "228457789616",
+    "firebase_url": "https://projectfull-57919.firebaseio.com",
+    "project_id": "projectfull-57919",
+    "storage_bucket": "projectfull-57919.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228457789616:android:5d0a16303614cbd6cb2375",
+        "android_client_info": {
+          "package_name": "com.nopalyer.navigationdrawer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228457789616-7vdf09s7r55d0l36kouu18n5fpvb7lij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuxHKvWFHp7maQLEvqPk-l-Jjv9Hb5QE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228457789616-7vdf09s7r55d0l36kouu18n5fpvb7lij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
