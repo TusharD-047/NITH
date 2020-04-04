@@ -97,7 +97,7 @@
         app:srcCompat="@drawable/vgff" />
 
     <TextView
-        android:id="@+id/showHide"
+        android:id="@+id/newpass1"
         android:layout_width="31dp"
         android:layout_height="23dp"
         android:alpha=".5"
