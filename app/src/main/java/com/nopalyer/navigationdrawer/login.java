@@ -83,7 +83,7 @@ public class login extends AppCompatActivity {
                         // finish();  }
                         // else
                         finish();
-                        startActivity(new Intent(login.this, Verification.class));
+                        startActivity(new Intent(login.this, Vern.class));
                         finish();
 
                     } else {
