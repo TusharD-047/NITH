@@ -61,11 +61,11 @@ public class faculty2 extends AppCompatActivity {
         if(position==0){
             science.setTextSize(25);
             science.setTextColor(Color.WHITE);
-            engineering.setTextSize(20);
+            engineering.setTextSize(25);
             engineering.setTextColor(Color.BLACK);
         }
         if(position==1){
-            science.setTextSize(20);
+            science.setTextSize(25);
             science.setTextColor(Color.BLACK);
             engineering.setTextSize(25);
             engineering.setTextColor(Color.WHITE);
