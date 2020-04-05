@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import com.nopalyer.navigationdrawer.R;
@@ -15,6 +16,7 @@ public class faculty2 extends AppCompatActivity {
     TextView science, engineering;
     ViewPager viewPager;
     PageViewAdepter pageViewAdepter;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,15 +60,15 @@ public class faculty2 extends AppCompatActivity {
     private void onChangeTab(int position) {
         if(position==0){
             science.setTextSize(25);
-            science.setTextColor(Color.RED);
+            science.setTextColor(Color.WHITE);
             engineering.setTextSize(20);
-            engineering.setTextColor(Color.BLUE);
+            engineering.setTextColor(Color.BLACK);
         }
         if(position==1){
             science.setTextSize(20);
-            science.setTextColor(Color.BLUE);
+            science.setTextColor(Color.BLACK);
             engineering.setTextSize(25);
-            engineering.setTextColor(Color.RED);
+            engineering.setTextColor(Color.WHITE);
         }
     }
 }
