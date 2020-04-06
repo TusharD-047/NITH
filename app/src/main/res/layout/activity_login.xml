@@ -31,21 +31,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="26dp"
+        android:backgroundTint="@android:color/white"
         android:drawableStart="@drawable/ic_email_black_24dp"
         android:drawableLeft="@drawable/ic_email_black_24dp"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:textSize="20dp"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.403"
-        android:backgroundTint="@android:color/white"
-        android:textColorHint="@android:color/white"/>
+        app:layout_constraintVertical_bias="0.403" />
 
     <EditText
         android:id="@+id/pass"
@@ -53,19 +54,21 @@
         android:layout_height="61dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/white"
         android:drawableStart="@drawable/ic_lock_black_24dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
         android:ems="10"
-        android:textSize="20dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:drawablePadding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@android:color/white"
-        android:textColorHint="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -95,7 +98,7 @@
         app:srcCompat="@drawable/vgff" />
 
     <TextView
-        android:id="@+id/showHide"
+        android:id="@+id/newpass1"
         android:layout_width="31dp"
         android:layout_height="23dp"
         android:alpha=".5"

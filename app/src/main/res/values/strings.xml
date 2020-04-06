@@ -4,5 +4,1227 @@
     <string name="drawerClose">drawerClose</string>
     <string name="the_himadri_boys_hostel_is_newly_constructed_hostel_and_started_functioning_in_2013_the_hostel_has_198_triplet_rooms_to_accommodate_approximately_594_students_the_hostel_has_07_floors_and_lift_facility_is_also_available_in_the_hostel_this_hostel_has_furnished_dining_hall_facility_the_hostel_is_well_equipped_with_basic_facilities_like_geysers_in_every_bathroom_water_cooler_and_deep_freezer_besides_this_the_internet_and_led_facility_is_also_available_in_of_the_hostel_the_hostel_has_a_big_recreation_hall_which_caters_to_the_needs_of_indoor_games_like_badminton_table_tennis_etc_the_volleyball_and_basketball_courts_are_also_available_in_the_hostel">The HIMADRI BOYS HOSTEL is newly constructed hostel and started functioning in 2013. The hostel has 198 (triplet) rooms to accommodate approximately 594 students. The hostel has 07 floors and lift facility is also available in the hostel. This hostel has furnished dining hall facility. The hostel is well equipped with basic facilities like geysers in every bathroom, water cooler and deep freezer. Besides this, the internet and LED facility is also available in of the hostel. The hostel has a big recreation hall which caters to the needs of indoor games like, badminton, Table Tennis, etc. The Volleyball and Basketball Courts are also available in the hostel.</string>
     <string name="ambika_girls_hostel">AMBIKA GIRLS HOSTEL</string>
+    <string name="nitwebsite">
+    https://nith.ac.in/
+    </string>
+
+
+    <string name="SinghaSir">
+        <b>A.S Singha  </b>\n
+        <b>Head Of Department</b>\n
+        Professor and Dean , Chemistry Department\n
+       Phone no. 254120\n
+        E-mail: asingha@nith.ac.in\n
+    </string>
+
+    <string name="BhartiMam">
+        <b>Bharti Gaur  </b>\n
+        Associate Professor , Chemistry Department\n
+       Phone no. 254156\n
+        E-mail: bhartigaur@nith.ac.in\n
+    </string>
+
+    <string name="PamitaAvasthi">
+        <b>Pamita Avasthi  </b>\n
+       Associate Professor , Chemistry Department\n
+       Phone no. 254140\n
+        E-mail: pamita@nith.ac.in\n
+    </string>
+
+    <string name="GhoshSir">
+        <b>Kalyan Sundar Ghosh  </b>\n
+        Assistant Professor(Grade-1) , Chemistry Department\n
+       Phone no. 254104\n
+        E-mail: Kalyan@nith.ac.in\n
+    </string>
+
+    <string name="JaiSir">
+        <b>Jai Prakash Sir </b>\n
+        Assistant Professor (Grade-2) , Chemistry Department\n
+       Phone no. 254102\n
+        E-mail: jaip@nith.ac.in\n
+    </string>
+
+    <string name="JalbirSir">
+        <b>Jalbir Kherb </b>\n
+       Assistant Professor(Grade-2), Chemistry Department\n
+       Phone no. 254101\n
+        E-mail: jalbir@nith.ac.in\n
+    </string>
+
+    <string name="RajSir">
+        <b>Raj Kaushal  </b>\n
+         Assistant Professor(Grade-2), Chemistry Department\n
+       Phone no. 254154\n
+        E-mail: rajkaushal@nith.ac.in\n
+    </string>
+
+    <string name="SunilSir">
+        <b>Dr.Sunil  </b>\n
+        Professor and Dean , Mathematics Science And Computing Department\n
+       Phone no. 254134\n
+        E-mail: sunil@nith.ac.in\n
+    </string>
+
+    <string name="YDSharmaSir">
+        <b>Y.D.Sharma </b>\n
+        <b>Head Of Department</b>\n
+        Professor and Dean , Mathematics Science And Computing Department\n
+       Phone no. 254126\n
+        E-mail: yds@nith.ac.in\n
+    </string>
+
+    <string name="PawanSir">
+        <b>Pawan Kr. Sharma  </b>\n
+      Associate Professor, Mathematics Science And Computing Department\n
+       Phone no. 254144\n
+        E-mail: psharma@nith.ac.in\n
+    </string>
+
+    <string name="VatsSir">
+        <b>R.K.Vats </b>\n
+       Associate Professor, Mathematics Science And Computing Department\n
+       Phone no. 254108\n
+        E-mail: rkvats@nith.ac.in\n
+    </string>
+
+    <string name="NehaMam">
+        <b>Neha Yadav </b>\n
+        Assistant Professor (Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: nyadav@nith.ac.in\n
+    </string>
+
+    <string name="AbhiSir">
+        <b>Abhishek Singh </b>\n
+       Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: jalbir@nith.ac.in\n
+    </string>
+
+    <string name="NidhiMam">
+        <b>Nidhi Singh  </b>\n
+         Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: nidhi@nith.ac.in\n
+    </string>
+
+    <string name="OPSir">
+        <b>Om Prakash Yadav  </b>\n
+         Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: opyadv@nith.ac.in\n
+    </string>
+
+    <string name="RajeshSir">
+        <b>Rajesh Kumar Sharma</b>\n
+         Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: rajeshnith@nith.ac.in\n
+    </string>
+
+    <string name="rifaqatSir">
+        <b>Rifaqat Ali </b>\n
+        Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: rifaqatali@nith.ac.in\n
+    </string>
+
+    <string name="SubitSir">
+        <b>Subit Kumar Jain  </b>\n
+         Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: jain.subit@nith.ac.in\n
+    </string>
+
+    <string name="SuketSir">
+        <b>Suket Kumar</b>\n
+         Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: suket@nith.ac.in\n
+    </string>
+
+    <string name="TalariSir">
+        <b>Talari Ganesh </b>\n
+        Assistant Professor(Grade-2), Mathematics Science And Computing Department\n
+       Phone no. 254101\n
+        E-mail: drganesh@nith.ac.in\n
+    </string>
+
+    <string name="ArvindSir">
+        <b>Arvind Kumar  </b>\n
+        <b>Head Of Department</b>\n
+        Associate professor,Physics and Photonics Science Department\n
+       Phone no. 254148\n
+        E-mail: akgathania@nith.ac.in\n
+    </string>
+
+    <string name="KuldeepSir">
+        <b>Kuldeep Kumar Sharma  </b>\n
+        Associate professor,Physics and Photonics Science Department\n
+       Phone no. 254117\n
+        E-mail: kks@nith.ac.in\n
+    </string>
+
+    <string name="RajeshSharmaSir">
+        <b>Rajesh Sharma  </b>\n
+       Associate professor,Physics and Photonics Science Department\n
+       Phone no. 254146\n
+        E-mail: rajeshsharma@nith.ac.in\n
+    </string>
+
+    <string name="SubhashSir">
+        <b>Subhash Chand </b>\n
+        Associate professor,Physics and Photonics Science Department\n
+       Phone no. 254136\n
+        E-mail: schand@nith.ac.in\n
+    </string>
+
+    <string name="VimalSir">
+        <b>Vimal Sharma</b>\n
+       Associate professor,Physics and Photonics Science Department\n
+       Phone no. 254106\n
+        E-mail: vmlsharma@nith.ac.in\n
+    </string>
+
+    <string name="PiarSir">
+        <b>Piar Chand </b>\n
+       Professor and Dean , Humanities Department\n
+       Phone no. 254124\n
+        E-mail: ryhalpc@nith.ac.in\n
+    </string>
+
+    <string name="SarojMam">
+        <b>Saroj Thakur  </b>\n
+        <b>Head Of Department</b>\n
+         Associate Professor, Humanities Department\n
+       Phone no. 254100\n
+        E-mail: saroj@nith.ac.in\n
+    </string>
+
+    <string name="YogeshSir">
+        <b>Yogesh Gupta  </b>\n
+        Associate Professor, Humanities Department\n
+       Phone no. 254132\n
+        E-mail: yogesh@nith.ac.in\n
+    </string>
+
+    <string name="ManojSharmaSir">
+        <b>Manoj Sharma </b>\n
+       Assistant Professor(Grade-1), Humanities Department\n
+       Phone no. 254142\n
+        E-mail: manoj@nith.ac.in\n
+    </string>
+
+    <string name="ManojYadavSir">
+        <b>Manoj Kumar Yadav  </b>\n
+      Assistant Professor(Grade-2), Humanities Department\n
+       Phone no. 254100\n
+        E-mail: manojk@nith.ac.in\n
+    </string>
+
+    <string name="SunderSir">
+        <b>Sunder Kala Negi </b>\n
+      Assistant Professor(Grade-2), Humanities Department\n
+       Phone no. 254100\n
+        E-mail: sunderkala@nith.ac.in\n
+    </string>
+
+    <string name="AdilSir">
+        <b>Mohd. Adil </b>\n
+        Assistant Professor (Grade-1), Management Department\n
+       Phone no. 254100\n
+        E-mail: adil.dms@nith.ac.in\n
+    </string>
+
+    <string name="VivekSir">
+        <b>Vivek Tiwari</b>\n
+      Assistant Professor (Grade-1), Management Department\n
+       Phone no. 254100\n
+        E-mail: vivek.dms@nith.ac.in\n
+    </string>
+
+    <string name="neerajSir">
+        <b>Neeraj Dhiman  </b>\n
+        Assistant Professor (Grade-2), Management Department\n
+       Phone no. 254100\n
+        E-mail: neerajdhiman@nith.ac.in\n
+    </string>
+
+    <string name="SachinSir">
+        <b>Sachin Kumar </b>\n
+         Assistant Professor (Grade-2), Management Department\n
+       Phone no. 254100\n
+        E-mail: sachin@nith.ac.in\n
+    </string>
+
+    <string name="ShampyMam">
+        <b>Shampy Kamboj</b>\n
+         Assistant Professor (Grade-2), Management Department\n
+       Phone no. 254100\n
+        E-mail: shampy@nith.ac.in\n
+    </string>
+
+    <string name="RichaMam">
+        <b>RichaJoshi </b>\n
+        Assistant Professor (Grade-2), Management Department\n
+       Phone no. 254100\n
+        E-mail: richajoshi@nith.ac.in\n
+    </string>
+
+    <string name="BhanuSir">
+        <b>Bhanu M.Marwaha </b>\n
+         Professor and Dean , Architecture Department\n
+       Phone no. 254914\n
+        E-mail: bhanu@nith.ac.in\n
+    </string>
+
+    <string name="MinakshiMam">
+        <b>Minakshi Jain</b>\n
+          Professor and Dean , Architecture Department\n
+       Phone no. 254910\n
+        E-mail: minakshi@nith.ac.in\n
+    </string>
+
+    <string name="InderpalSir">
+        <b>Inderpal Sir </b>\n
+        <b>Head Of Department</b>\n
+         Associate Professor, Architecture Department\n
+       Phone no. 254912\n
+        E-mail: ipsingh@nith.ac.in\n
+    </string>
+
+    <string name="AniketSir">
+        <b>Aniket Sharma </b>\n
+       Assistant Professor(Grade-1), Architecture Department\n
+       Phone no. 254928\n
+        E-mail: aniket@nith.ac.in\n
+    </string>
+
+    <string name="PuneetSir">
+        <b>Puneet Sharma  </b>\n
+      Assistant Professor(Grade-1), Architecture Department\n
+       Phone no. 254926\n
+        E-mail: architect.puneet@nith.ac.in\n
+    </string>
+
+    <string name="VandnaMam">
+        <b>Vandna Sharma</b>\n
+      Assistant Professor(Grade-1), Architecture Department\n
+       Phone no. 254920\n
+        E-mail: vandna@nith.ac.in\n
+    </string>
+
+    <string name="Venushree">
+        <b>Venu Shree </b>\n
+        Assistant Professor(Grade-2), Architecture Department\n
+       Phone no. 254922\n
+        E-mail: venushree@nith.ac.in\n
+    </string>
+
+    <string name="Amanjeet">
+        <b>Amanjeet Kaur</b>\n
+      Assistant Professor(Grade-2), Architecture Department\n
+       Phone no. 254901\n
+        E-mail: amanjeet@nith.ac.in\n
+    </string>
+
+    <string name="NeetuMam">
+        <b>Neetu Kapoor  </b>\n
+        Assistant Professor(Grade-2), Architecture Department\n
+       Phone no. 254930\n
+        E-mail: neerajdhiman@nith.ac.in\n
+    </string>
+
+    <string name="RashmiMam">
+        <b>Rashmi Kumari </b>\n
+        Assistant Professor(Grade-2), Architecture Department\n
+       Phone no. 254901\n
+        E-mail: rashmi@nith.ac.in\n
+    </string>
+
+    <string name="SAndeepSir">
+        <b>Sandeep Sharma</b>\n
+         Assistant Professor(Grade-2), Architecture Department\n
+       Phone no. 254901\n
+        E-mail: sandeep@nith.ac.in\n
+    </string>
+
+
+    <string name="RKSharma">
+        <b>R.K. Sharma  </b>\n
+        Professor and Dean , Civil Engineering Department\n
+       Phone no. 254324n
+        E-mail: ravi@nith.ac.in\n
+    </string>
+
+    <string name="RKDutta">
+        <b>R.K. Dutta   </b>\n
+        Professor and Dean , Civil Engineering Department\n
+       Phone no. 254330\n
+        E-mail: rkd@nith.ac.in\n
+    </string>
+
+    <string name="RamanSir">
+        <b>Raman Parti  </b>\n
+       Professor and Dean , Civil Engineering Department\n
+       Phone no. 254326\n
+        E-mail: ramanp@nith.ac.in\n
+    </string>
+
+    <string name="PardeepSir">
+        <b>Pardeep Kumar  </b>\n
+       Associate Professor , Civil Engineering Department\n
+       Phone no. 254332\n
+        E-mail: pkumar@nith.ac.in\n
+    </string>
+
+    <string name="Banshtusir">
+        <b>R.S.Banshtu </b>\n
+        <b>Head Of Department</b>\n
+        Associate Professor , Civil Engineering Department\n
+       Phone no. 254336\n
+        E-mail: banshtu@nith.ac.in\n
+    </string>
+
+    <string name="SurjitSir">
+        <b>Surjit Singh Katoch </b>\n
+       Associate Professor , Civil Engineering Department\n
+       Phone no. 254334\n
+        E-mail: sskatoch@nith.ac.in\n
+    </string>
+
+    <string name="VijayBansal">
+        <b>Vijay Kumar Bansal </b>\n
+         Associate Professor , Civil Engineering Department\n
+       Phone no. 254314\n
+        E-mail: vkb@nith.ac.in\n
+    </string>
+
+    <string name="VijayShankar">
+        <b>Vijay Shankar  </b>\n
+        Associate Professor , Civil Engineering Department\n
+       Phone no. 254340\n
+        E-mail: vsdogra@nith.ac.in\n
+    </string>
+
+    <string name="AmritRoy">
+        <b>Amrit Kumar Roy </b>\n
+        Assistant Professor (Grade-1) , Civil Engineering Department\n
+       Phone no. 254306\n
+        E-mail: amritroy@nith.ac.in\n
+    </string>
+
+    <string name="chanderprakash">
+        <b>Chander Prakash </b>\n
+      Assistant Professor (Grade-1) , Civil Engineering Department\n
+       Phone no. 254334\n
+        E-mail: chandermanali@nith.ac.in\n
+    </string>
+
+    <string name="MamtaAwasthi">
+        <b>Mamta Awasthi </b>\n
+       Assistant Professor (Grade-1) , Civil Engineering Department\n
+       Phone no. 254301\n
+        E-mail: mamta@nith.ac.in\n
+    </string>
+
+    <string name="SunilSharma">
+        <b>Sunil Sharma </b>\n
+        Assistant Professor (Grade-1) , Civil Engineering Department\n
+       Phone no. 254316\n
+        E-mail: sunils@nith.ac.in\n
+    </string>
+
+    <string name="UmeshPandey">
+        <b>Umesh Kumar Pandey </b>\n
+      Assistant Professor (Grade-1) , Civil Engineering Department\n
+       Phone no. 254342\n
+        E-mail: ukp@nith.ac.in\n
+    </string>
+
+    <string name="ArpitaSaha">
+        <b>Arpita Saha </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no.    \n
+        E-mail: arpita@nith.ac.in\n
+    </string>
+
+    <string name="Dharmendra">
+        <b>Dharmendra </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. 254318\n
+        E-mail: djha@nith.ac.in\n
+    </string>
+
+    <string name="JitendraYadav">
+        <b>Jitendra Singh Yadav</b>\n
+         Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no.  \n
+        E-mail: jyadav@nith.ac.in\n
+    </string>
+
+    <string name="JosephTripura">
+        <b>Joseph Tripura </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. \n
+        E-mail: jtripura@nith.ac.in\n
+    </string>
+
+    <string name="JoyPal">
+        <b>Joy Pal  </b>\n
+         Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. \n
+        E-mail: jpal@nith.ac.in\n
+    </string>
+
+    <string name="NAllasivam">
+        <b>K.Nallasivam</b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. 254312\n
+        E-mail: nallasivam@nith.ac.in\n
+    </string>
+
+    <string name="Manendra">
+        <b>ManendraSingh </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. \n
+        E-mail: manendra@nith.ac.in\n
+    </string>
+
+    <string name="RayMeena">
+        <b>Ray Singh Meena  </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. \n
+        E-mail: rsmeena@nith.ac.in\n
+    </string>
+
+    <string name="VimalKumar">
+        <b>Vimal Kumar  </b>\n
+        Assistant Professor (Grade-2) , Civil Engineering Department\n
+       Phone no. 254301\n
+        E-mail:           \n
+    </string>
+
+    <string name="LalitAwasthi">
+        <b>Lalit Kumar Awasthi </b>\n
+       professor and Dean,Computer Science And Engineering\n
+       Phone no. 254420\n
+        E-mail: lalit@nith.ac.in\n
+    </string>
+
+    <string name="DivakarYadav">
+        <b>Divakar Yadav </b>\n
+        Associate professor,Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: divakaryadav@nith.ac.in\n
+    </string>
+
+    <string name="KamleshDutta">
+        <b>Kamlesh Dutta</b>\n
+        <b>Head Of Department</b>\n
+      Associate professor,Computer Science And Engineering\n
+       Phone no. 254424\n
+        E-mail: kd@nith.ac.in\n
+    </string>
+
+    <string name="Narottam">
+        <b>Narrotam Chand </b>\n
+       Associate professor,Computer Science And Engineering\n
+       Phone no. 254430\n
+        E-mail: nar@nith.ac.in\n
+    </string>
+
+    <string name="NaveenChand">
+        <b>Naveen Chauhan  </b>\n
+        Associate professor,Computer Science And Engineering\n
+       Phone no. 254432\n
+        E-mail: naveen@nith.ac.in\n
+    </string>
+
+    <string name="siddhChauhan">
+        <b>Siddhartha Chauhan  </b>\n
+        Associate professor,Computer Science And Engineering\n
+       Phone no. 254428\n
+        E-mail: sid@nith.ac.in\n
+    </string>
+
+    <string name="TPSharma">
+        <b>T.P.Sharma </b>\n
+       Associate professor,Computer Science And Engineering\n
+       Phone no. 254426\n
+        E-mail: teek@nith.ac.in\n
+    </string>
+
+    <string name="PArdeepSingh">
+        <b>Pardeep Singh  </b>\n
+      Assistant Professor(Grade-1),Computer Science And Engineering\n
+       Phone no. 254436\n
+        E-mail: pardeep@nith.ac.in\n
+    </string>
+
+    <string name="VijayKumar">
+        <b>Vijay Kumar </b>\n
+     Assistant Professor(Grade-1),Computer Science And Engineering\n
+       Phone no. 254401\n
+        E-mail: vijaykumarchahar@nith.ac.in\n
+    </string>
+
+    <string name="ArunKumarYAdav">
+        <b>Arun Kumar Yadav </b>\n
+        Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: ayadav@nith.ac.in\n
+    </string>
+
+    <string name="Basantsubba">
+        <b>Basant Subba</b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: basantsubba@nith.ac.in\n
+    </string>
+
+    <string name="DharmendraMahato">
+        <b>Dharmendra Prasad Mahato  </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: dpm@nith.ac.in\n
+    </string>
+
+    <string name="jaloth">
+        <b>Jaloth Chandrashekar </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: jcs@nith.ac.in\n
+    </string>
+
+    <string name="jyotisrivastava">
+        <b>SJyoti Srivastava</b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: jyoti.s@nith.ac.in\n
+    </string>
+
+    <string name="LokeshChouhan">
+        <b>Lokesh Chouhan </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: lokesh@nith.ac.in\n
+    </string>
+
+    <string name="NagendraPratap">
+        <b>Nagendra Pratap Singh </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: nps@nith.ac.in\n
+    </string>
+
+    <string name="NitinGupta">
+        <b>Nitin Gupta</b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254416\n
+        E-mail: nitin@nith.ac.in\n
+    </string>
+
+    <string name="PrakaashChaudhary">
+        <b>Prakash Choudhary </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: pc@nith.ac.in\n
+    </string>
+
+    <string name="Priyanka">
+        <b>Priyanka </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail:  \n
+    </string>
+
+    <string name="RajeevKumar">
+        <b>Rajeev Kumar  </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254434\n
+        E-mail: rajeev@nith.ac.in\n
+    </string>
+
+    <string name="SangeetaSharma">
+        <b>Sangeeta Sharma</b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254401\n
+        E-mail: sangeetas@nith.ac.in\n
+    </string>
+
+    <string name="SitaraK">
+        <b>Sitara K </b>\n
+      Assistant Professor(Grade-2),Computer Science And Engineering\n
+       Phone no. 254402\n
+        E-mail: ksitara@nith.ac.in\n
+    </string>
+
+    <string name="AlokGArg">
+        <b>ALok Gargr</b>\n
+      Assistant Professor(Grade-1),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: alok.garg@nith.ac.in\n
+    </string>
+
+    <string name="RadheShyam">
+        <b>Radhe Shyam  </b>\n
+      Assistant Professor(Grade-1),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: rshyam@nith.ac.in\n
+    </string>
+
+    <string name="subhajitmajumder">
+        <b>Subhajit Majumder </b>\n
+         Assistant Professor(Grade-1),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: subhajit@nith.ac.in\n
+    </string>
+
+    <string name="TapasPalai">
+        <b>Tapas Palai</b>\n
+        <b>Head Of Department</b>\n
+        Assistant Professor(Grade-1),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: tapas@nith.ac.in\n
+    </string>
+
+    <string name="ArvindKumarGautam">
+        <b>Arvind Kumar Gautam</b>\n
+      Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: akgautam@nith.ac.in\n
+    </string>
+
+    <string name="LeelaManohar">
+        <b>Leela Manohar Aeshala  </b>\n
+      Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: leela@nith.ac.in\n
+    </string>
+
+    <string name="PoojaThakur">
+        <b>Pooja Thakur</b>\n
+         Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: pooja@nith.ac.in\n
+    </string>
+
+    <string name="RahulSaha">
+        <b>Rahul Saha</b>\n
+        Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: rsaha@nith.ac.in\n
+    </string>
+
+    <string name="SmitaMondal">
+        <b>Smita Mondal</b>\n
+        Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. 254882\n
+        E-mail: smita@nith.ac.in\n
+    </string>
+
+    <string name="TaraChandKumawat">
+        <b>Tara Chand Kumawat</b>\n
+      Assistant Professor(Grade-2),Chemical Engineering Department\n
+       Phone no. \n
+        E-mail: tckumawat@nith.ac.in\n
+    </string>
+
+    <string name="Rajeevan">
+        <b>Rajeevan Chandel </b>\n
+     Professor and dean , Electronis and Communication Engineering\n
+       Phone no. 254624\n
+        E-mail: rchandel@nith.ac.in\n
+    </string>
+
+    <string name="VinodKapoor">
+        <b>Vinod Kapoor </b>\n
+    Professor and dean , Electronis and Communication Engineering\n
+       Phone no. 254620\n
+        E-mail: kapoor@nith.ac.in\n
+    </string>
+
+    <string name="AshokKumar">
+        <b>Ashok Kumar</b>\n
+        <b>Head Of Department</b>\n
+       Associate Professor, Electronis and Communication Engineering\n
+       Phone no. 254632\n
+        E-mail: ashok@nith.ac.in\n
+    </string>
+
+    <string name="AshwaniKumarRAna">
+        <b>Ashwani Kumar Rana</b>\n
+       Associate Professor, Electronis and Communication Engineering\n
+       Phone no. 254638\n
+        E-mail: ashwani@nith.ac.in\n
+    </string>
+    <string name="GargiKhanna">
+        <b>Gargi Khanna</b>\n
+       Associate Professor, Electronis and Communication Engineering\n
+       Phone no. 254634\n
+        E-mail: gargi@nith.ac.in\n
+    </string>
+    <string name="KSPandey">
+        <b>K.S.Pandey</b>\n
+       Associate Professor, Electronis and Communication Engineering\n
+       Phone no. 254641\n
+        E-mail: kumar@nith.ac.in\n
+    </string>
+    <string name="surndersoni">
+        <b>Surender Soni</b>\n
+       Associate Professor, Electronis and Communication Engineering\n
+       Phone no. 254630\n
+        E-mail: soni@nith.ac.in\n
+    </string>
+    <string name="KrishanKumar">
+        <b>Krishan Kumar</b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+       Phone no. 254642\n
+        E-mail: krishan_rathod@nith.ac.in\n
+    </string>
+    <string name="MAheshAngira">
+        <b>Mahesh Angira</b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+        Phone no. 254601\n
+        E-mail: mahesh_angira@nith.ac.in\n
+    </string>
+    <string name="Manoranjan">
+        <b>Manoranjan Rai Bharti</b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+       Phone no. 254646\n
+        E-mail: manoranjan@nith.ac.in\n
+    </string>
+    <string name="philemonDaniel">
+        <b>Philemon Daniel</b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+       Phone no. 254650\n
+        E-mail: phildani7@nith.ac.in\n
+    </string>
+    <string name="PushpendraSingh">
+        <b>Pushpendra Singh</b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: spushp@nith.ac.in\n
+    </string>
+    <string name="RohitDhiman">
+        <b>Rohit Dhiman </b>\n
+       Assistant Professor(Grade-1), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: rohitdhiman@nith.ac.in\n
+    </string>
+    <string name="AmitBage">
+        <b>Amit Bage</b>\n
+       Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: abage@nith.ac.in\n
+    </string>
+    <string name="AbhijitBhatta">
+        <b>Abhijit Bhattacharya</b>\n
+      Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: abhijit@nith.ac.in\n
+    </string>
+    <string name="AmanKumar">
+        <b>Aman Kumar</b>\n
+      Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: akumar@nith.ac.in\n
+    </string>
+    <string name="Anuradha">
+        <b>Anuradha</b>\n
+       Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: anuradhanith@nith.ac.in\n
+    </string>
+    <string name="chandraSekhar">
+        <b>Chandra Shekhar Prasad</b>\n
+       Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: csprasad@nith.ac.in\n
+    </string>
+    <string name="DharmendraSinghYAdav">
+        <b>Dharmendra Singh Yadav</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: dsyadav@nith.ac.in\n
+    </string>
+
+    <string name="GagneshKuamr">
+        <b>Ganesh Kumar</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254648\n
+        E-mail: gagnesh@nith.ac.in\n
+    </string>
+    <string name="GopalRawat">
+        <b>Gopal Rawat</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: gopal.rawat@nith.ac.in\n
+    </string>
+    <string name="RakeshSharma">
+        <b>Rakesh Sharma</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254607\n
+        E-mail: rakeshsharma@nith.ac.in\n
+    </string>
+    <string name="SandeepSingh">
+        <b>Sandeep Kumar Singh</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: sksingh@nith.ac.in\n
+    </string>
+    <string name="sankalitaBiswas">
+        <b>Sankalita Biswas</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: sankalita@nith.ac.in\n
+    </string>
+    <string name="SaurabhKumar">
+        <b>Saurabh Kumar</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254601\n
+        E-mail: saurabh@nith.ac.in\n
+    </string>
+    <string name="VinodKumar">
+        <b>Vinod Kumar</b>\n
+        Assistant Professor(Grade-2), Electronis and Communication Engineering\n
+       Phone no. 254644\n
+        E-mail: vinodsharma@nith.ac.in\n
+    </string>
+
+    <string name="AshwaniChandel">
+        <b>Ashwani Chandel </b>\n
+       Professor and Dean , ELectrical Engineering Department\n
+       Phone no. 254534\n
+        E-mail: ashchandelin@nith.ac.in\n
+    </string>
+
+    <string name="RamNaresh">
+        <b>Ram Naresh Sharma</b>\n
+        Professor and Dean , ELectrical Engineering Department\n
+       Phone no.  254526\n
+        E-mail: rnaresh@nith.ac.in\n
+    </string>
+
+    <string name="SushilChauhan">
+        <b>Sushil Chauhan </b>\n
+       Professor and Dean , ELectrical Engineering Department\n
+       Phone no. 254525\n
+        E-mail: sushil@nith.ac.in\n
+    </string>
+
+    <string name="YRsood">
+        <b>Joy Pal  </b>\n
+       Professor and Dean , ELectrical Engineering Department\n
+       Phone no. 254522\n
+        E-mail: yrsood@nith.ac.in\n
+    </string>
+
+    <string name="BharatBhushan">
+        <b>Bharat Bhushan</b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254540\n
+        E-mail: bhushan@nith.ac.in\n
+    </string>
+
+    <string name="oprahi">
+        <b>O.P.Rahi </b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254542 \n
+        E-mail: oprahi@nith.ac.in\n
+    </string>
+
+    <string name="RAjKumar">
+        <b>Raj Kumar Jarial </b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254538 \n
+        E-mail: jarial@nith.ac.in\n
+    </string>
+
+    <string name="RavinderNath">
+        <b>Ravinder Nath Sharma  </b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254532\n
+        E-mail:   nath@nith.ac.in \n
+    </string>
+
+    <string name="VeenaSharma">
+        <b>Veena Sharma</b>\n
+        <b>Head Of Department</b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254536\n
+        E-mail: veena@nith.ac.in\n
+    </string>
+
+    <string name="ZAkir">
+        <b>Zakir Hussain</b>\n
+        Associate Professor, ELectrical Engineering Department\n
+       Phone no. 254530\n
+        E-mail: zahussain@nith.ac.in\n
+    </string>
+
+    <string name="AmitKaul">
+        <b>Amit Kaul</b>\n
+       Assistant Professor (Grade-1), ELectrical Engineering Department\n
+       Phone no. 254544\n
+        E-mail: amitkaul@nith.ac.in\n
+    </string>
+
+    <string name="anilkumaryadv">
+        <b>AnilKumarYadav </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254501\n
+        E-mail: anilkyadav@nith.ac.in\n
+    </string>
+
+    <string name="BhartiKoul">
+        <b>Bharti Koul  </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254550\n
+        E-mail: bhartibakshi@nith.ac.in\n
+    </string>
+
+    <string name="Chandrasekran">
+        <b>Chandrasekran S  </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254501\n
+        E-mail: chandru@nith.ac.in\n
+    </string>
+
+    <string name="HimeshHanda">
+        <b>Himesh Handa</b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254546\n
+        E-mail: himeshhanda@nith.ac.in\n
+    </string>
+
+    <string name="ManishaSharma">
+        <b>Manisha Sharma  </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254501\n
+        E-mail: manisha@nith.ac.in\n
+    </string>
+
+    <string name="RajanKumar">
+        <b>Rajan Kumar </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+        Phone no. 254501\n
+        E-mail: rajan@nith.ac.in\n
+    </string>
+
+    <string name="RajeshKumar">
+        <b>Rajesh Kumar </b>\n
+       Assistant Professor (Grade-2), ELectrical Engineering Department\n
+       Phone no. 254548\n
+        E-mail: rajesh_kumar@nith.ac.in\n
+    </string>
+
+    <string name="AnoopKumar">
+        <b>Anoop Kumar </b>\n
+     Professor And Dean , Mechanical Engineering Department\n
+       Phone no. 254726\n
+        E-mail: anoop@nith.ac.in\n
+    </string>
+    <string name="NSThakur">
+        <b>N.S.Thakur</b>\n
+        Professor And Dean , Mechanical Engineering Department\n
+       Phone no. 254728\n
+        E-mail: nsthakur@nith.ac.in\n
+    </string>
+    <string name="RKSehgal">
+        <b>R.K.sehgal</b>\n
+        Professor And Dean , Mechanical Engineering Department\n
+       Phone no. 254722\n
+        E-mail: rsehgal@nith.ac.in\n
+    </string>
+    <string name="Sunand">
+        <b>Sunand Kumar</b>\n
+        Professor And Dean , Mechanical Engineering Department\n
+       Phone no. 254724\n
+        E-mail: sunand@nith.ac.in\n
+    </string>
+    <string name="VinodYadava">
+        <b>Vinod Yadava</b>\n
+        Professor And Dean , Mechanical Engineering Department\n
+       Phone no. \n
+        E-mail: profvinody@nith.ac.in\n
+    </string>
+    <string name="PrashantKumar">
+        <b>Prashant Kumar</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254736\n
+        E-mail: prashant@nith.ac.in\n
+    </string>
+    <string name="RajeshSharma">
+        <b>Rajesh Sharma</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254730\n
+        E-mail: rajesh@nith.ac.in\n
+    </string>
+
+    <string name="RajivSharma">
+        <b>Rajiv Kumar Sharma</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254738\n
+        E-mail: rksfme@nith.ac.in\n
+    </string>
+    <string name="SantChauhan">
+        <b>Sant Ram Chauhan</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254734\n
+        E-mail: srchauhan@nith.ac.in\n
+    </string>
+    <string name="Siddhartha">
+        <b>Siddhartha</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254744\n
+        E-mail: sidmech@nith.ac.in\n
+    </string>
+    <string name="SomeshSharma">
+        <b>Somesh Sharma</b>\n
+        <b>Head Of Department</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254732\n
+        E-mail: somesh@nith.ac.in\n
+    </string>
+    <string name="Varun">
+        <b>Varun</b>\n
+        Associate Professor , Mechanical Engineering Department\n
+       Phone no. 254742\n
+        E-mail: varun@nith.ac.in\n
+    </string>
+    <string name="Debashish">
+        <b>Debasish Das</b>\n
+        Assistant Professor(Grade-1),Mechanical Engineering Department\n
+        E-mail: debasish@nith.ac.in\n
+    </string>
+    <string name="MOhitPant">
+        <b>Mohit Pant</b>\n
+        Assistant Professor(Grade-1),Mechanical Engineering Department\n
+       Phone no. 254754\n
+        E-mail: mohitfme@nith.ac.in\n
+    </string>
+
+    <string name="Ajoy">
+        <b>Ajoy Debharma </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: adebbarma@nith.ac.in\n
+    </string>
+
+    <string name="AkhileshChaudhary">
+        <b>Akhilesh Kumar Chaudhary</b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: akhilesh@nith.ac.in\n
+    </string>
+
+    <string name="DeepakSharma">
+        <b>DeepakSharma </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: dsharma@nith.ac.in\n
+    </string>
+
+    <string name="Dilshad">
+        <b>Dilshad Ahmad Khan </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: dilshad@nith.ac.in\n
+    </string>
+
+    <string name="LaxmikantYadav">
+        <b>Laxmikant Yadav</b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: laxmikant@nith.ac.in\n
+    </string>
+
+    <string name="ManojSinha">
+        <b>Manoj Kumar Sinha </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: mksinha@nith.ac.in\n
+    </string>
+
+    <string name="Param">
+        <b>Param Singh </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: psingh@nith.ac.in\n
+    </string>
+
+    <string name="parnikaShrivastava">
+        <b>Parnika Shrivastava </b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail:   dr.parnika@nith.ac.in \n
+    </string>
+
+    <string name="Priyadarshi">
+        <b>Priyadarshi Biplab Kumar</b>\n
+         Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: priyadarshi@nith.ac.in\n
+    </string>
+
+    <string name="RajeshKumarMech">
+        <b>Rajesh Kumar</b>\n
+         Assistant Professor(Grade-2),Mechanical Engineering Department\n
+       Phone no. 254701\n
+        E-mail: rpawar@nith.ac.in\n
+    </string>
+
+    <string name="Santosh">
+        <b>Santosh Bhaulal Bopche</b>\n
+        Assistant Professor(Grade-2),Mechanical Engineering Department\n
+        Phone no. 254740\n
+        E-mail: santoshbopche@nith.ac.in\n
+    </string>
+
+    <string name="Ravi">
+        <b>Ravi Kumar </b>\n
+        Professor And dean ,Material Science Engineering Department\ n
+       Phone no. 254382\n
+        E-mail: ranade65@nith.ac.in\n
+    </string>
+
+    <string name="Vishal">
+        <b>Vishal Singh </b>\n
+        <b>Head Of Department</b>\n
+        Associate Professor,Material Science Engineering Department\ n
+       Phone no. 254380\n
+        E-mail: vishalchib@nith.ac.in\n
+    </string>
+
+    <string name="Nitesh">
+        <b>Nitesh Kumar</b>\n
+       Assistant Professor (Grade-2),Material Science Engineering Department\ n
+       Phone no. 254380\n
+        E-mail: nitesh@nith.ac.in\n
+    </string>
+
+    <string name="RAjBhadur">
+        <b>Raj Bahadur Singh</b>\n
+        Assistant Professor (Grade-2),Material Science Engineering Department\ n
+       Phone no. 254380\n
+        E-mail: raj@nith.ac.in\n
+    </string>
+
+    <string name="Rita">
+        <b>Rita Maurya </b>\n
+        Assistant Professor (Grade-2),Material Science Engineering Department\ n
+       Phone no. 254380\n
+        E-mail: ritam@nith.ac.in\n
+    </string>
+
+    <string name="Vikram">
+        <b>Vikram Verma </b>\n
+        Assistant Professor (Grade-2),Material Science Engineering Department\ n
+       Phone no. 254380\n
+        E-mail: vikram@nith.ac.in\n
+    </string>
 
 </resources>
