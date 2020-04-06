@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#000000"
+    android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/science"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Science"
+            android:gravity="center"
+            android:background="#00bcd4" />
+        <TextView
+            android:id="@+id/engineering"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Engineering"
+            android:gravity="center"
+            android:background="#00bcd4"/>
+
+    </LinearLayout>
+

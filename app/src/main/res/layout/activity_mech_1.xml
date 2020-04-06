@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_1"
+    android:layout_marginLeft="2dp"
+    tools:context=".mech_1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_11"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/SomeshSharma"
+                android:textColor="@color/yellow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/archi_2"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/AnoopKumar"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_2"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/NSThakur"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_3"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/RKSehgal"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_4"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Sunand"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_5"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/VinodYadava"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_6"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/PrashantKumar"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_7"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/RajeshKumarMech"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_8"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/RajivSharma"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_9"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/SantChauhan"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_10"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Siddhartha"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_12"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Debashish"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_13"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/MOhitPant"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_14"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Ajoy"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_15"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/AkhileshChaudhary"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_16"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/DeepakSharma"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_17"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Dilshad"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_18"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/LaxmikantYadav"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_19"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/ManojSinha"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_20"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Param"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_21"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/parnikaShrivastava"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_22"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Priyadarshi"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_23"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/RajeshKumarMech"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/mech_24"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginLeft="5dp"
+                android:textIsSelectable="true"
+                android:text="@string/Santosh"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

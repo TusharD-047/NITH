@@ -13,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudentsPage"></activity>
+        <activity android:name=".student.StudentsPage" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".humanities.humanities_phd" />
         <activity android:name=".splash">
             <intent-filter>
@@ -166,6 +172,22 @@
         <activity android:name=".humanities.humanitieslabs" />
         <activity android:name=".Login.ChangePassword" />
         <activity android:name=".Login.ForgotPassword" />
+        <activity android:name=".student.mse_1" />
+        <activity android:name=".student.mech_1" />
+        <activity android:name=".student.elec_1" />
+        <activity android:name=".student.ece_1" />
+        <activity android:name=".student.chemical_1" />
+        <activity android:name=".student.cse_1" />
+        <activity android:name=".student.civil_1" />
+        <activity android:name=".student.archi_1" />
+        <activity android:name=".student.management_1" />
+        <activity android:name=".student.physics_1" />
+        <activity android:name=".student.humanity_1" />
+        <activity android:name=".student.msc_1" />
+        <activity android:name=".student.chem_1" />
+        <activity android:name=".student.science" />
+        <activity android:name=".student.engineering" />
+        <activity android:name=".student.faculty2" />
     </application>
 
 </manifest>
