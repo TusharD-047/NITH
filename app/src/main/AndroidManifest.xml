@@ -13,13 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".student.StudentsPage" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Login.verification"></activity>
+        <activity android:name=".student.StudentsPage"></activity>
         <activity android:name=".humanities.humanities_phd" />
         <activity android:name=".splash">
             <intent-filter>

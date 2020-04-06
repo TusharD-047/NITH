@@ -29,10 +29,11 @@ public class login extends AppCompatActivity {
     private EditText email,password;
     private Button Login;
     private TextView ForgotPass;
-    private TextView show_pass_button;
+    private TextView showHide;
     private FirebaseAuth firebaseAuth;
     private FirebaseUser firebaseUser;
     private FirebaseDatabase firebaseDatabase;
+    private int ShowPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +44,7 @@ public class login extends AppCompatActivity {
         password = (EditText)findViewById(R.id.pass);
         Login = (Button)findViewById(R.id.button);
         ForgotPass = (TextView)findViewById(R.id.textView);
-        show_pass_button=(TextView)findViewById(R.id.showHide);
+        showHide=(TextView)findViewById(R.id.newpass1);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -65,6 +66,30 @@ public class login extends AppCompatActivity {
                 }
             });
         }
+
+        ShowPass = 1;
+        showHide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ShowPass ==1)
+                {
+                    ShowPass =0;
+                    password.setTransformationMethod(null);
+                    if(password.getText().length()>0)
+                        password.setSelection(password.getText().length());
+                    showHide.setBackgroundResource(R.drawable.ic_images2);
+
+                }
+                else{
+                    ShowPass=1;
+                    password.setTransformationMethod(new PasswordTransformationMethod());
+                    if(password.getText().length()>0)
+                        password.setSelection(password.getText().length());
+                    showHide.setBackgroundResource(R.drawable.ic_images1);
+                }
+            }
+        });
+
     }
 
     private void validate(String username, String userpassword){
@@ -104,19 +129,6 @@ public class login extends AppCompatActivity {
         }
     }
 
-    public void ShowHidePassword(View view)
-    {
-        if(view.getId()==R.id.showHide){
-            if(password.getTransformationMethod().equals(PasswordTransformationMethod.getInstance())){
-                ((ImageView)(view)).setImageResource(R.drawable.ic_remove_red_eye_black_24dp);
-                password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-            }
-            else{
-                ((ImageView)(view)).setImageResource(R.drawable.ic_imgonline_com_ua_resize_m1azcot0r5md);
-                password.setTransformationMethod(PasswordTransformationMethod.getInstance());
-            }
-        }
-    }
 
     private void checkEmailVerification(){
         FirebaseUser user = firebaseAuth.getCurrentUser();
