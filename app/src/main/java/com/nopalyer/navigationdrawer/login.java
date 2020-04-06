@@ -6,12 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nopalyer.navigationdrawer.Login.ForgotPassword;
+import com.nopalyer.navigationdrawer.Login.verification;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
 
 public class login extends AppCompatActivity {
@@ -34,17 +33,21 @@ public class login extends AppCompatActivity {
     private FirebaseUser firebaseUser;
     private FirebaseDatabase firebaseDatabase;
     private int ShowPass;
+    Boolean isFirstRun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        email = (EditText)findViewById(R.id.email);
+        isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);
+
+        email = (EditText)findViewById(R.id.email1);
         password = (EditText)findViewById(R.id.pass);
-        Login = (Button)findViewById(R.id.button);
-        ForgotPass = (TextView)findViewById(R.id.textView);
-        showHide=(TextView)findViewById(R.id.newpass1);
+        Login = (Button)findViewById(R.id.sendmail);
+        ForgotPass = (TextView)findViewById(R.id.email3);
+        showHide=(TextView)findViewById(R.id.showHide);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -115,7 +118,6 @@ public class login extends AppCompatActivity {
                         // finish();  }
                         // else
                         finish();
-                        sendEmailVerification();
                         checkEmailVerification();
                         finish();
 
@@ -140,24 +142,19 @@ public class login extends AppCompatActivity {
             startActivity(new Intent(login.this,StudentsPage.class));
         }else {
             Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
-            firebaseAuth.signOut();
-        }
-    }
+            finish();
+            if (isFirstRun) {
 
-    private void sendEmailVerification(){
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        if(user!= null){
-            user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if(task.isSuccessful()){
-                        Toast.makeText(login.this, "Verification Mail Sent!", Toast.LENGTH_LONG).show();
-                        firebaseAuth.signOut();
-                    }else {
-                        Toast.makeText(login.this, "Verification Email not sent, Try Again1", Toast.LENGTH_LONG).show();
-                    }
-                }
-            });
+                //show start activity
+                startActivity(new Intent(login.this,verification.class));
+            }else{
+                Toast.makeText(login.this, "Email Already Sent", Toast.LENGTH_LONG)
+                        .show();
+            }
+
+
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                    .putBoolean("isFirstRun", false).apply();
         }
     }
 }
