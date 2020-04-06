@@ -24,6 +24,7 @@
         app:layout_constraintVertical_bias="0.654" />
 
 
+
     <EditText
         android:id="@+id/email"
         android:layout_width="371dp"
@@ -98,7 +99,7 @@
         app:srcCompat="@drawable/vgff" />
 
     <TextView
-        android:id="@+id/newpass1"
+        android:id="@+id/showHide"
         android:layout_width="31dp"
         android:layout_height="23dp"
         android:alpha=".5"
