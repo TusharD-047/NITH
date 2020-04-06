@@ -68,6 +68,7 @@
                     android:layout_height="match_parent"
                     android:background="?attr/colorButtonNormal"
                     android:gravity="center"
+                    android:onClick="signout"
                     android:orientation="vertical"
                     android:padding="16dp">
 

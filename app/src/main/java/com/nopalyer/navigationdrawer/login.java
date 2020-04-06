@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 import com.nopalyer.navigationdrawer.Login.ForgotPassword;
 
@@ -29,6 +30,7 @@ public class login extends AppCompatActivity {
     private TextView ForgotPass;
     private TextView show_pass_button;
     private FirebaseAuth firebaseAuth;
+    private FirebaseUser firebaseUser;
     private FirebaseDatabase firebaseDatabase;
 
     @Override
@@ -41,22 +43,27 @@ public class login extends AppCompatActivity {
         Login = (Button)findViewById(R.id.button);
         ForgotPass = (TextView)findViewById(R.id.textView);
         show_pass_button=(TextView)findViewById(R.id.showHide);
-        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                validate(email.getText().toString(),password.getText().toString());
-            }
-        });
+        if(firebaseUser != null){
+            startActivity(new Intent(login.this, StudentsPage.class));
+        }else {
+            firebaseAuth = FirebaseAuth.getInstance();
+            Login.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    validate(email.getText().toString(),password.getText().toString());
+                }
+            });
 
-        ForgotPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(login.this, ForgotPassword.class));
-            }
-        });
+            ForgotPass.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(login.this, ForgotPassword.class));
+                }
+            });
+        }
     }
 
     private void validate(String username, String userpassword){
@@ -76,14 +83,14 @@ public class login extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        Toast.makeText(login.this, "Login successful", Toast.LENGTH_LONG).show();
                         //if (admin.equals(email))
                         //{ finish();
                         //startActivity(new Intent(login_form.this, AdminPage.class));
                         // finish();  }
                         // else
                         finish();
-                        startActivity(new Intent(login.this, StudentsPage.class));
+                        sendEmailVerification();
+                        checkEmailVerification();
                         finish();
 
                     } else {
@@ -107,6 +114,37 @@ public class login extends AppCompatActivity {
                 ((ImageView)(view)).setImageResource(R.drawable.ic_imgonline_com_ua_resize_m1azcot0r5md);
                 password.setTransformationMethod(PasswordTransformationMethod.getInstance());
             }
+        }
+    }
+
+    private void checkEmailVerification(){
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        Boolean emailflag = user.isEmailVerified();
+
+        if(emailflag){
+            Toast.makeText(login.this, "Login successful", Toast.LENGTH_LONG).show();
+            finish();
+            startActivity(new Intent(login.this,StudentsPage.class));
+        }else {
+            Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
+            firebaseAuth.signOut();
+        }
+    }
+
+    private void sendEmailVerification(){
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        if(user!= null){
+            user.sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if(task.isSuccessful()){
+                        Toast.makeText(login.this, "Verification Mail Sent!", Toast.LENGTH_LONG).show();
+                        firebaseAuth.signOut();
+                    }else {
+                        Toast.makeText(login.this, "Verification Email not sent, Try Again1", Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
         }
     }
 }
