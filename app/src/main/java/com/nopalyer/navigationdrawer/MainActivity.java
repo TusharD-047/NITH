@@ -168,6 +168,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             default:
                 break;
+
+            case R.id.aboutdevelopers:
+                myintent = new Intent(MainActivity.this,
+                        aboutdevelopers.class);
+                startActivity(myintent);
+                return false;
         }
 
 
