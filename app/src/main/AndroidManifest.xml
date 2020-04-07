@@ -188,6 +188,11 @@
         <activity android:name=".student.clubs.activities.DetailActivity" />
         <activity android:name=".student.clubs.activities.DetailActivity1" />
         <activity android:name=".student.clubs.activities.DetailActivity2" />
+        <activity android:name=".campus"/>
+        <activity android:name=".news"/>
+        <activity android:name=".tender"/>
+        <activity android:name=".achievement"/>
+        <activity android:name=".aboutdevelopers"/>
     </application>
 
 </manifest>
