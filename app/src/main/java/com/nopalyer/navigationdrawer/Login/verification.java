@@ -53,4 +53,11 @@ public class verification extends AppCompatActivity {
             });
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        firebaseAuth.signOut();
+        startActivity(new Intent(verification.this,login.class));
+    }
 }
