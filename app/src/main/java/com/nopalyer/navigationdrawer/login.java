@@ -3,6 +3,7 @@ package com.nopalyer.navigationdrawer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -34,6 +35,7 @@ public class login extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private int ShowPass;
     Boolean isFirstRun;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,7 @@ public class login extends AppCompatActivity {
         Login = (Button)findViewById(R.id.sendmail);
         ForgotPass = (TextView)findViewById(R.id.email3);
         showHide=(TextView)findViewById(R.id.newpass1);
+        pd =new ProgressDialog(this);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -108,6 +111,11 @@ public class login extends AppCompatActivity {
         } else if (userpassword.length() < 6) {
             Toast.makeText(login.this, " Password Incorrect!", Toast.LENGTH_LONG).show();
         } else if (!(username.isEmpty() && userpassword.isEmpty())) {
+            pd.setMessage("Siging In");
+            pd.setCancelable(false);
+            pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            pd.show();
+
             firebaseAuth.signInWithEmailAndPassword(username, userpassword).addOnCompleteListener(login.this, new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
@@ -118,11 +126,13 @@ public class login extends AppCompatActivity {
                         // finish();  }
                         // else
                         finish();
+                        pd.dismiss();
                         checkEmailVerification();
                         finish();
 
-                    } else {
+                    }else {
                         Toast.makeText(login.this, "Invalid Password or Email Id", Toast.LENGTH_LONG).show();
+                        pd.dismiss();
                     }
                 }
             });
