@@ -1,58 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <ScrollView
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true">
+        tools:context=".MainActivity">
+
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorBack">
+            android:background="@color/colorBack"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#8a56ab">
+                android:background="#8a56ab"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/firstlayer"
                     android:gravity="center"
-                    android:background="@drawable/firstlayer">
+                    android:orientation="vertical">
 
-                    <ImageView
-                        android:layout_marginTop="50px"
-                        android:layout_marginBottom="50px"
-                        android:layout_width="300px"
-                        android:layout_height="300px"
-                        android:src="@drawable/profile"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:cardCornerRadius="50dp">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/anshika2" />
+                    </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
                         android:text="Anshika Arya"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:textStyle="normal"
+                        android:layout_marginTop="5px"
+                        android:layout_marginBottom="50px"
                         android:text="student"
                         android:textColor="#68686C"
-                        android:layout_marginBottom="50px"
-                        android:layout_marginTop="5px"/>
-
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
 
 
                 </LinearLayout>
@@ -63,216 +76,214 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/secondlayer"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:paddingLeft="50px"
-                android:paddingBottom="70px"
                 android:paddingTop="70px"
-                android:gravity="center"
-                android:background="@drawable/secondlayer">
+                android:paddingBottom="70px">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Student Profile"
+                        android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:textColor="#ffffff"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
-                <View
-                    android:layout_width="1px"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20px"
-                    android:layout_marginRight="20px"
-                    android:background="#000000"/>
 
             </LinearLayout>
 
             <LinearLayout
-                android:paddingTop="50px"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="120px">
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:orientation="vertical"
+                android:paddingTop="50px">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Name:"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Name:"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Anshika Arya"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="Anshika Arya"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_marginTop="10px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="10px"
-                    android:background="#990099"/>
+                    android:background="#990099" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Roll No. :"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Roll No. :"/>
+                        android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <EditText
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="6"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
                         android:textStyle="normal"
-                        android:text="193060"/>
+                        android:backgroundTint="#FFFFFF"/>
 
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_marginTop="10px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="10px"
-                    android:background="#990099"/>
+                    android:background="#990099" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Department:"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Department:"/>
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#FFFFFF"
+                        android:popupBackground="#330033"
+                        />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ffffff"
-                        android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="Mechanical Enggineering Department"/>
 
                 </LinearLayout>
+
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_marginTop="10px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="10px"
-                    android:background="#990099"/>
+                    android:background="#990099" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Email-Id:"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="Email-Id:"/>
+                        android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <EditText
+                        android:layout_width="300dp"
                         android:layout_height="wrap_content"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
                         android:textStyle="normal"
-                        android:text="anshikaarya41@gmail.com"/>
+                        android:inputType="textEmailAddress"
+                        android:backgroundTint="#FFFFFF"/>
+
 
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_marginTop="10px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="10px"
-                    android:background="#990099"/>
+                    android:background="#990099" />
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="contact no.:"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="contact no.:"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="6299169076"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="6299169076"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
                     android:layout_marginTop="10px"
                     android:layout_marginRight="20px"
                     android:layout_marginBottom="10px"
-                    android:background="#990099"/>
+                    android:background="#990099" />
 
 
             </LinearLayout>
+
             <Button
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:text="Edit"
-                android:background="@drawable/roundbutton"
-                android:layout_gravity="center"
-                android:id="@+id/edit"/>
-
-
-
-
-
-
-
-
-
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="Save" />
 
 
         </LinearLayout>
 
 
-    </ScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
