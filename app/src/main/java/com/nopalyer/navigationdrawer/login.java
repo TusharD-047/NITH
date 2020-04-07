@@ -47,7 +47,7 @@ public class login extends AppCompatActivity {
         password = (EditText)findViewById(R.id.pass);
         Login = (Button)findViewById(R.id.sendmail);
         ForgotPass = (TextView)findViewById(R.id.email3);
-        showHide=(TextView)findViewById(R.id.showHide);
+        showHide=(TextView)findViewById(R.id.newpass1);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
