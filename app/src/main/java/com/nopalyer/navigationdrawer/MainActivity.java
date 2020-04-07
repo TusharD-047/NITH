@@ -121,6 +121,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(myintent);
                 return false;
 
+            case R.id.website:
+                myintent = new Intent(MainActivity.this,
+                        website.class);
+                startActivity(myintent);
+                return false;
+
+
             default:
                 break;
         }

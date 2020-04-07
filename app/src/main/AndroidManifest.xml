@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login.verification"></activity>
-        <activity android:name=".student.StudentsPage"></activity>
+        <activity android:name=".website"></activity>
+        <activity android:name=".Login.verification" />
+        <activity android:name=".student.StudentsPage" />
         <activity android:name=".humanities.humanities_phd" />
         <activity android:name=".splash">
             <intent-filter>
@@ -183,11 +185,10 @@
         <activity android:name=".student.branchfaculty.science" />
         <activity android:name=".student.branchfaculty.engineering" />
         <activity android:name=".student.branchfaculty.faculty2" />
-        <activity android:name=".student.clubs.Clu"/>
-        <activity android:name=".student.clubs.activities.DetailActivity"/>
-        <activity android:name=".student.clubs.activities.DetailActivity1"/>
-        <activity android:name=".student.clubs.activities.DetailActivity2"/>
-
+        <activity android:name=".student.clubs.Clu" />
+        <activity android:name=".student.clubs.activities.DetailActivity" />
+        <activity android:name=".student.clubs.activities.DetailActivity1" />
+        <activity android:name=".student.clubs.activities.DetailActivity2" />
     </application>
 
 </manifest>
