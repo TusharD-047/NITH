@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@drawable/background_1"
     android:layout_marginLeft="2dp"
-    tools:context=".chem_1">
+    tools:context=".student.branchfaculty.chem_1">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer.student;
+package com.nopalyer.navigationdrawer.student.branchfaculty;
 
 import android.content.Intent;
 import android.os.Bundle;
