@@ -33,5 +33,9 @@
         android:id="@+id/website"
         android:title="NITH Website" />
 
+    <item
+        android:id="@+id/aboutdevelopers"
+        android:title="About us" />
+
 
 </menu>
