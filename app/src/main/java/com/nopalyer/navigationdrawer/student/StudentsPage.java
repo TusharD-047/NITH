@@ -16,7 +16,7 @@ import com.nopalyer.navigationdrawer.student.clubs.Clu;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card;
+    CardView faculty_card,clubs_card,myProfile;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -26,6 +26,7 @@ public class StudentsPage extends AppCompatActivity {
 
         faculty_card = (CardView) findViewById(R.id.faculty_card);
         clubs_card = (CardView) findViewById(R.id.club);
+        myProfile = (CardView) findViewById(R.id.pro) ;
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -41,6 +42,13 @@ public class StudentsPage extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.clubs.Clu.class));
+            }
+        });
+        myProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
+                startActivity(new Intent(StudentsPage.this,com.nopalyer.navigationdrawer.profile.studentp.class));
             }
         });
     }

@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/home1"
-        android:title="HOME" />
+        android:title="ABOUT NITH" />
 
     <item
         android:id="@+id/login"
@@ -29,6 +29,13 @@
         android:id="@+id/registration"
         android:title="REGISTRATION" />
 
+    <item
+        android:id="@+id/website"
+        android:title="NITH Website" />
+
+    <item
+        android:id="@+id/aboutdevelopers"
+        android:title="About us" />
 
 
 </menu>
