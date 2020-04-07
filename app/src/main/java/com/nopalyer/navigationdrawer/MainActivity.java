@@ -6,17 +6,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.nopalyer.navigationdrawer.student.clubs.adapters.ItemCardViewAdapter;
+import com.nopalyer.navigationdrawer.student.clubs.models.DepClubs;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -26,6 +36,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     NavigationView navigationView;
     ActionBarDrawerToggle toggle;
+    RecyclerView recyclerView;
+    final String STATE_TITLE = "state_title";
+    private ArrayList<hme> list1;
+    final String STATE_LIST = "state_list";
+    final String STATE_MODE = "state_mode";
+
+    int mode;
+
 
     @SuppressLint("RestrictedApi")
     @Override
@@ -83,7 +101,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
+
+        recyclerView.setLayoutManager(new GridLayoutManager(this,1));
+        recyclerView.setHasFixedSize(true);
+//        ((AppCompatActivity)getActivity()).getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.design_default_color_primary)));
+        list1 = new ArrayList<>();
+        list1.addAll(home.getListData());
+        showRecyclerCardView();
+
+
+    }
+
+    // menu
+
+    public void setLayoutAnimation(){
+        Context context = recyclerView.getContext();
+        LayoutAnimationController layoutAnimationController = AnimationUtils.loadLayoutAnimation(context,R.anim.item_animation_slide_from_right);
+
+        recyclerView.setLayoutAnimation(layoutAnimationController);
+        recyclerView.getAdapter().notifyDataSetChanged();
+        recyclerView.scheduleLayoutAnimation();
     }
 
     @Override
@@ -133,5 +172,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         return false;
+    }
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(STATE_TITLE, "");
+        outState.putParcelableArrayList(STATE_LIST, list1);
+        outState.putInt(STATE_MODE, mode);
+    }
+
+
+    private void showRecyclerCardView() {
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        SimpleRecyclerAdapter cardViewAdapter1 = new SimpleRecyclerAdapter(this);
+        cardViewAdapter1.setListDClubs(list1);
+        recyclerView.setAdapter(cardViewAdapter1);
     }
 }
