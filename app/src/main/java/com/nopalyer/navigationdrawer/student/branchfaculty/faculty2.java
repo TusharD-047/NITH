@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer.student;
+package com.nopalyer.navigationdrawer.student.branchfaculty;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.student.branchfaculty.PageViewAdepter;
 
 public class faculty2 extends AppCompatActivity {
 

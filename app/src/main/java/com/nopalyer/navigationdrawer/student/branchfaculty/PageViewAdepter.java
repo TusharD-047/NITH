@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer.student;
+package com.nopalyer.navigationdrawer.student.branchfaculty;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,10 +16,10 @@ public class PageViewAdepter extends FragmentPagerAdapter {
         Fragment fragment = null;
         switch(position){
             case 0:
-                fragment = new science();
+                fragment = new com.nopalyer.navigationdrawer.student.branchfaculty.science();
                 break;
             case 1:
-                fragment = new engineering();
+                fragment = new com.nopalyer.navigationdrawer.student.branchfaculty.engineering();
                 break;
         }
         return fragment;

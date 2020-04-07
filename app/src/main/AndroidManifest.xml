@@ -167,22 +167,27 @@
         <activity android:name=".humanities.humanitieslabs" />
         <activity android:name=".Login.ChangePassword" />
         <activity android:name=".Login.ForgotPassword" />
-        <activity android:name=".student.mse_1" />
-        <activity android:name=".student.mech_1" />
-        <activity android:name=".student.elec_1" />
-        <activity android:name=".student.ece_1" />
-        <activity android:name=".student.chemical_1" />
-        <activity android:name=".student.cse_1" />
-        <activity android:name=".student.civil_1" />
-        <activity android:name=".student.archi_1" />
-        <activity android:name=".student.management_1" />
-        <activity android:name=".student.physics_1" />
-        <activity android:name=".student.humanity_1" />
-        <activity android:name=".student.msc_1" />
-        <activity android:name=".student.chem_1" />
-        <activity android:name=".student.science" />
-        <activity android:name=".student.engineering" />
-        <activity android:name=".student.faculty2" />
+        <activity android:name=".student.branchfaculty.mse_1" />
+        <activity android:name=".student.branchfaculty.mech_1" />
+        <activity android:name=".student.branchfaculty.elec_1" />
+        <activity android:name=".student.branchfaculty.ece_1" />
+        <activity android:name=".student.branchfaculty.chemical_1" />
+        <activity android:name=".student.branchfaculty.cse_1" />
+        <activity android:name=".student.branchfaculty.civil_1" />
+        <activity android:name=".student.branchfaculty.archi_1" />
+        <activity android:name=".student.branchfaculty.management_1" />
+        <activity android:name=".student.branchfaculty.physics_1" />
+        <activity android:name=".student.branchfaculty.humanity_1" />
+        <activity android:name=".student.branchfaculty.msc_1" />
+        <activity android:name=".student.branchfaculty.chem_1" />
+        <activity android:name=".student.branchfaculty.science" />
+        <activity android:name=".student.branchfaculty.engineering" />
+        <activity android:name=".student.branchfaculty.faculty2" />
+        <activity android:name=".student.clubs.Clu"/>
+        <activity android:name=".student.clubs.activities.DetailActivity"/>
+        <activity android:name=".student.clubs.activities.DetailActivity1"/>
+        <activity android:name=".student.clubs.activities.DetailActivity2"/>
+
     </application>
 
 </manifest>

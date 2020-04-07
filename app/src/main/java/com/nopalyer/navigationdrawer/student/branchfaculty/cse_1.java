@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer.student;
+package com.nopalyer.navigationdrawer.student.branchfaculty;
 
 import android.os.Bundle;
 
@@ -6,11 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nopalyer.navigationdrawer.R;
 
-public class humanity_1 extends AppCompatActivity {
+public class cse_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_humanity_1);
+        setContentView(R.layout.activity_cse_1);
     }
 }

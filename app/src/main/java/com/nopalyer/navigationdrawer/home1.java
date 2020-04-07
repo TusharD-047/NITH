@@ -9,46 +9,54 @@ import android.view.View;
 import android.widget.Toast;
 
 public class home1 extends AppCompatActivity {
-    private CardView dir_card,pl_card,mag_card,map_card;
+    private CardView city_card,college_card,srijan_card,vision_card;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home1);
+        setContentView(R.layout.activity_home);
+        city_card=(CardView) findViewById(R.id.city_card);
+        college_card=(CardView) findViewById(R.id.college_card);
+        srijan_card=(CardView) findViewById(R.id.srijan_card);
+        vision_card=(CardView) findViewById(R.id.vision_card);
 
-        dir_card=(CardView) findViewById(R.id.dir_card);
-        pl_card=(CardView) findViewById(R.id.pl_card);
-        map_card=(CardView) findViewById(R.id.map_card);
-        mag_card=(CardView) findViewById(R.id.mag_card);
-
-        dir_card.setOnClickListener(new View.OnClickListener() {
+        city_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(home1.this,"Na Ho Paega",Toast.LENGTH_SHORT);
-                startActivity(new Intent(home1.this,dir.class));
-            }
-        });
-        pl_card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(home1.this,pl.class));
-
-            }
-        });
-        map_card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(home1.this,map.class));
-
-            }
-        });
-        mag_card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(home1.this,mag.class));
-
+                startActivity(new Intent(home1.this, about_city.class));
             }
         });
 
+
+
+
+
+        college_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(home1.this, about_college.class));
+            }
+        });
+
+
+
+        srijan_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(home1.this, srijan.class));
+            }
+        });
+
+
+
+
+        vision_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(home1.this, vision.class));
+
+
+            }
+        });
 
     }
 }

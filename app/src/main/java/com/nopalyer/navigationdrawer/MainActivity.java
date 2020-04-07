@@ -13,12 +13,13 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private CardView city_card,college_card,srijan_card,vision_card;
+    private CardView dir_card,pl_card,mag_card,map_card;
 
     DrawerLayout drawerLayout;
     Toolbar toolbar;
@@ -31,49 +32,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        city_card=(CardView) findViewById(R.id.city_card);
-        college_card=(CardView) findViewById(R.id.college_card);
-        srijan_card=(CardView) findViewById(R.id.srijan_card);
-        vision_card=(CardView) findViewById(R.id.vision_card);
 
-        city_card.setOnClickListener(new View.OnClickListener() {
+        dir_card=(CardView) findViewById(R.id.dir_card);
+        pl_card=(CardView) findViewById(R.id.pl_card);
+        map_card=(CardView) findViewById(R.id.map_card);
+        mag_card=(CardView) findViewById(R.id.mag_card);
+
+        dir_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, about_city.class));
+                Toast.makeText(MainActivity.this,"Na Ho Paega",Toast.LENGTH_SHORT);
+                startActivity(new Intent(MainActivity.this,dir.class));
             }
         });
-
-
-
-
-
-        college_card.setOnClickListener(new View.OnClickListener() {
+        pl_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, about_college.class));
-            }
-        });
-
-
-
-        srijan_card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, srijan.class));
-            }
-        });
-
-
-
-
-        vision_card.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, vision.class));
-
+                startActivity(new Intent(MainActivity.this,pl.class));
 
             }
         });
+        map_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,map.class));
+
+            }
+        });
+        mag_card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,mag.class));
+
+            }
+        });
+
 
 
         drawerLayout = findViewById(R.id.drawer);
