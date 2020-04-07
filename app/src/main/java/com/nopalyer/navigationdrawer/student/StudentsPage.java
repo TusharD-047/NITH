@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.student;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -16,7 +17,7 @@ import com.nopalyer.navigationdrawer.student.clubs.Clu;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile;
+    CardView faculty_card,clubs_card,myProfile,website;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -27,6 +28,8 @@ public class StudentsPage extends AppCompatActivity {
         faculty_card = (CardView) findViewById(R.id.faculty_card);
         clubs_card = (CardView) findViewById(R.id.club);
         myProfile = (CardView) findViewById(R.id.pro) ;
+        website = (CardView) findViewById(R.id.website1);
+
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -49,6 +52,13 @@ public class StudentsPage extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
                 startActivity(new Intent(StudentsPage.this,com.nopalyer.navigationdrawer.profile.studentp.class));
+            }
+        });
+        website.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://nith.ac.in/")));
             }
         });
     }
