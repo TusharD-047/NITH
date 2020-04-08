@@ -10,4 +10,6 @@
     <color name="white">#ffffff</color>
     <color name="yellow">#FFEB3B</color>
     <color name="colorBack">#330033</color>
+    <color name="lineseparator">#357E81</color>
+
 </resources>

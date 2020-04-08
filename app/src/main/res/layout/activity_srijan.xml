@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/blur_srijan"
     tools:context=".srijan">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="    Srijan: The College Magazine"
+            android:text="Srijan: The College Magazine"
+            android:layout_gravity="center_horizontal"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
-        android:lineSpacingExtra="10dp"
-        android:text="Over the years, we have been working to preserve this lost art through our constant efforts to bring to you each year, a new and
-different edition of SRIJAN depicting various aspects of college life.
-The team SRIJAN works all the year round to bring to you the annual	Varnika Upmanyu
-cultural magazine of NITH.The magazine seeks to unleash the artistry, creativity and the imagination of our budding engineers — to bring out the artist and the writer in everybody. The magazine also addresses the events, activities and happenings of the institute, and provides a peek through into the minds of the individuals.The magazine also serves to showcase the multi-cultural and multilingual environment that makes this premier institute homely and more. More importantly, it provides a platform for students and other members alike an opportunity to express themselves. "
-        android:textColor="@android:color/background_light"
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Over the years, we have been working to preserve this lost art through our constant efforts to bring to you each year, a new and
+different edition of SRIJAN depicting various aspects of college life.\nThe team SRIJAN works all the year round to bring to you the annual	Varnika Upmanyu
+cultural magazine of NITH.\nThe magazine seeks to unleash the artistry, creativity and the imagination of our budding engineers — to bring out the artist and the writer in everybody.The magazine also addresses the events, activities and happenings of the institute, and provides a peek through into the minds of the individuals.\nThe magazine also serves to showcase the multi-cultural and multilingual environment that makes this premier institute homely and more. More importantly, it provides a platform for students and other members alike an opportunity to express themselves. "
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
 
 
     </LinearLayout>

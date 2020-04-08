@@ -20,22 +20,15 @@
         android:id="@+id/hostels"
         android:title="HOSTELS" />
 
-    <item
-        android:id="@+id/courses"
-        android:title="COURSES" />
+    <group
+        android:id="@+id/separator">
+        <item
+            android:id="@+id/website"
+            android:title="NITH WEBSITE" />
 
-
-    <item
-        android:id="@+id/registration"
-        android:title="REGISTRATION" />
-
-    <item
-        android:id="@+id/website"
-        android:title="NITH WEBSITE" />
-
-    <item
-        android:id="@+id/aboutdevelopers"
-        android:title="ABOUT US" />
-
+        <item
+            android:id="@+id/aboutdevelopers"
+            android:title="ABOUT US" />
+    </group>
 
 </menu>

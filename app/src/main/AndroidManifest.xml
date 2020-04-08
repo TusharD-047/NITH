@@ -53,7 +53,6 @@
         <activity android:name=".pl" />
         <activity android:name=".dir" />
         <activity android:name=".events" />
-        <activity android:name=".registration" />
         <activity android:name=".login" />
         <activity android:name=".functionaries" />
         <activity android:name=".hostelbooklet" />
