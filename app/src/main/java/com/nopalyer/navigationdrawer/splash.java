@@ -30,7 +30,7 @@ public class splash extends AppCompatActivity {
 
             public void run() {
                 try{
-                    sleep(5000);
+                    sleep(4000);
                 }
                 catch (InterruptedException e) {
                     e.printStackTrace();

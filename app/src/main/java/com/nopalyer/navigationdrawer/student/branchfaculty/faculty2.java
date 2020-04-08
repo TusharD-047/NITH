@@ -26,6 +26,12 @@ public class faculty2 extends AppCompatActivity {
         science = (TextView) findViewById(R.id.science);
         engineering = (TextView)findViewById(R.id.engineering);
         viewPager = (ViewPager)findViewById(R.id.fragment_container);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Branch Faculty");
+         toolbar.setTitleTextColor(Color.WHITE);
+
         pageViewAdepter = new PageViewAdepter(getSupportFragmentManager());
         viewPager.setAdapter(pageViewAdepter);
         science.setOnClickListener(new View.OnClickListener() {

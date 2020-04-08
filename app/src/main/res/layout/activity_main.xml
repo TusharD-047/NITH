@@ -255,9 +255,9 @@ android:layout_height="match_parent"
 android:id="@+id/navigationView"
 app:menu="@menu/menu_item"
 app:headerLayout="@layout/header"
-android:background="#ffffff"
+android:background="@drawable/gradient"
 android:layout_gravity="start"
-app:itemTextColor="#000000"
+app:itemTextColor="#EC9706"
 app:itemIconTint="#aaaaaa"/>
 
 

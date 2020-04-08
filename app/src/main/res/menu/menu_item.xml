@@ -31,11 +31,11 @@
 
     <item
         android:id="@+id/website"
-        android:title="NITH Website" />
+        android:title="NITH WEBSITE" />
 
     <item
         android:id="@+id/aboutdevelopers"
-        android:title="About us" />
+        android:title="ABOUT US" />
 
 
 </menu>
