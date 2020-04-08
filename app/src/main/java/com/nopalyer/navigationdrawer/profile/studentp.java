@@ -47,11 +47,10 @@ public class studentp extends AppCompatActivity {
 
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
         StorageReference storageReference = firebaseStorage.getReference();
-        storageReference.child("Profile").child(firebaseAuth.getUid()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+        storageReference.child("Profile").child(firebaseAuth.getUid()).child("Photo.jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 Picasso.get().load(uri).fit().centerCrop().into(profile);
-
             }
         });
 
