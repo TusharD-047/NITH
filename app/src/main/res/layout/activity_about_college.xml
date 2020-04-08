@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".about_college"
     android:background="@drawable/blur_college">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="National Institute Of Technology,Hamirpur"
+        android:textSize="19sp" />
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="360dp"
-        android:layout_height="600dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Established in 1986, NIT Hamirpur is an institute of engineering and technology. Earlier, it was known as the Regional Engineering College. In the beginning, the classes were taken at the Government Polytechnic College. Later on, when the development of the campus began, the institute opened three departments, namely Electrical and Electronics Engineering, Civil Engineering and Mechanical Engineering. By 1988, the institute added two more departments, namely Communication Engineering and Computer Science. In 2000, the Department of Architecture was opened. In 2013, the Department of Chemical Engineering was built.
 
 In 2002, the institute was awarded the status of a deemed university and it was considered among the NIT Group of Institutions. After 2005, the institute began offering PhD level programmes. Presently, the institute comprises 15 departments and two centres, namely the Centre for Excellence in Energy and Environment and Centre for Material Science and Engineering.Various known organisations visit the institute for placements. Many students have bagged great salary offers.
@@ -18,23 +28,10 @@ In 2002, the institute was awarded the status of a deemed university and it was 
 "
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        android:lineSpacingExtra="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="362dp"
-        android:layout_height="51dp"
-        android:text="National Institute Of Technology,Hamirpur"
-        android:textSize="19sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+</ScrollView>
