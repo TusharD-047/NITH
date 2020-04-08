@@ -33,21 +33,20 @@ public class StudentsPage extends AppCompatActivity {
         faculty_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StudentsPage.this, "Faculties Of NITH", Toast.LENGTH_SHORT);
+                Toast.makeText(StudentsPage.this, "Faculties Of NITH", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.branchfaculty.faculty2.class));
             }
         });
         clubs_card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
+                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.clubs.Clu.class));
             }
         });
         myProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
                 startActivity(new Intent(StudentsPage.this,com.nopalyer.navigationdrawer.profile.studentp.class));
             }
         });

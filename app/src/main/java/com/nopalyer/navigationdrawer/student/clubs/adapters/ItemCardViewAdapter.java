@@ -74,7 +74,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
             imgPhoto = itemView.findViewById(R.id.img_card);
             tvName = itemView.findViewById(R.id.tv_name_card);
             tvDescription = itemView.findViewById(R.id.tv_desc_card);
-            button = itemView.findViewById(R.id.button);
+            button = itemView.findViewById(R.id.savedetails);
         }
     }
 }

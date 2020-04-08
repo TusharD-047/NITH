@@ -111,7 +111,7 @@ public class login extends AppCompatActivity {
         } else if (userpassword.length() < 6) {
             Toast.makeText(login.this, " Password Incorrect!", Toast.LENGTH_LONG).show();
         } else if (!(username.isEmpty() && userpassword.isEmpty())) {
-            pd.setMessage("Siging In");
+            pd.setMessage("Signing In");
             pd.setCancelable(false);
             pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
             pd.show();

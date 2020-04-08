@@ -59,7 +59,7 @@
         <Button
             android:textColor="@android:color/white"
             android:background="#00cccc"
-            android:id="@+id/button"
+            android:id="@+id/savedetails"
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="8dp"

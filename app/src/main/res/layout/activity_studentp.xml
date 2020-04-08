@@ -29,19 +29,21 @@
                     android:background="@drawable/firstlayer">
 
                     <ImageView
-                        android:layout_marginTop="50px"
-                        android:layout_marginBottom="50px"
+                        android:id="@+id/profilep"
                         android:layout_width="300px"
                         android:layout_height="300px"
-                        android:src="@drawable/profile"/>
+                        android:layout_marginTop="50px"
+                        android:layout_marginBottom="50px"
+                        android:src="@drawable/profile" />
 
                     <TextView
+                        android:id="@+id/name1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
                         android:text="Anshika Arya"
-                        android:textColor="#000000"/>
+                        android:textColor="#000000"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -115,12 +117,13 @@
                         android:text="Name:"/>
 
                     <TextView
+                        android:id="@+id/name123"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Anshika Arya"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="Anshika Arya"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
                 <View
@@ -145,12 +148,13 @@
                         android:text="Roll No. :"/>
 
                     <TextView
+                        android:id="@+id/roll123"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="193060"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="193060"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
                 <View
@@ -175,12 +179,13 @@
                         android:text="Department:"/>
 
                     <TextView
+                        android:id="@+id/department123"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Mechanical Enggineering Department"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="Mechanical Enggineering Department"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
                 <View
@@ -205,12 +210,13 @@
                         android:text="Email-Id:"/>
 
                     <TextView
+                        android:id="@+id/email123"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="anshikaarya41@gmail.com"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="anshikaarya41@gmail.com"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
                 <View
@@ -235,12 +241,13 @@
                         android:text="contact no.:"/>
 
                     <TextView
+                        android:id="@+id/contact123"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="6299169076"
                         android:textColor="#ffffff"
                         android:textSize="18sp"
-                        android:textStyle="normal"
-                        android:text="6299169076"/>
+                        android:textStyle="normal" />
 
                 </LinearLayout>
                 <View
@@ -253,22 +260,6 @@
 
 
             </LinearLayout>
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:text="Edit"
-                android:background="@drawable/roundbutton"
-                android:layout_gravity="center"
-                android:id="@+id/edit"/>
-
-
-
-
-
-
-
-
-
 
 
         </LinearLayout>
