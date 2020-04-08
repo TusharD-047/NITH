@@ -51,6 +51,7 @@ public class studentp extends AppCompatActivity {
             @Override
             public void onSuccess(Uri uri) {
                 Picasso.get().load(uri).fit().centerCrop().into(profile);
+
             }
         });
 
