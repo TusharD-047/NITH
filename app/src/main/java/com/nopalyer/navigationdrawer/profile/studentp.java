@@ -2,6 +2,7 @@ package com.nopalyer.navigationdrawer.profile;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import com.squareup.picasso.Picasso;
 public class studentp extends AppCompatActivity {
     private ImageView profile;
     private TextView name,roll,department,contact,email,name1;
+    ProgressDialog pd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +42,15 @@ public class studentp extends AppCompatActivity {
         department = (TextView)findViewById(R.id.department123);
         contact = (TextView)findViewById(R.id.contact123);
         email = (TextView)findViewById(R.id.email123);
+        pd =new ProgressDialog(this);
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         final FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
-
+        pd.setMessage("Retrieving Info ! Please Smile");
+        pd.setCancelable(false);
+        pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        pd.show();
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
         StorageReference storageReference = firebaseStorage.getReference();
         storageReference.child("Profile").child(firebaseAuth.getUid()).child("Photo.jpg").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
@@ -63,12 +69,13 @@ public class studentp extends AppCompatActivity {
                 department.setText(dataSnapshot.child("Department").getValue().toString().trim());
                 email.setText(firebaseUser.getEmail());
                 contact.setText(dataSnapshot.child("Contact").getValue().toString().trim());
+                pd.dismiss();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Toast.makeText(studentp.this, databaseError.getCode(),Toast.LENGTH_SHORT).show();
-
+                pd.dismiss();
             }
         });
     }
