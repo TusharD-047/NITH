@@ -23,8 +23,8 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
-import com.nopalyer.navigationdrawer.student.clubs.adapters.ItemCardViewAdapter;
-import com.nopalyer.navigationdrawer.student.clubs.models.DepClubs;
+import com.nopalyer.navigationdrawer.AboutNithhp.home1;
+
 
 import java.util.ArrayList;
 
@@ -150,11 +150,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         events.class);
                 startActivity(myintent);
                 return false;
-            case R.id.registration:
-                myintent = new Intent(MainActivity.this,
-                        registration.class);
-                startActivity(myintent);
-                return false;
+
             case R.id.home1:
                 myintent = new Intent(MainActivity.this,
                         home1.class);
