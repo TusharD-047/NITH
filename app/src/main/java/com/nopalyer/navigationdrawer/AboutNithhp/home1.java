@@ -34,8 +34,7 @@ public class home1 extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("About Nith");
-        toolbar.setTitleTextColor(Color.WHITE);
+        getSupportActionBar().setTitle("");
 
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
