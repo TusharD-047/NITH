@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:id="@+id/toolbar"
-        android:background="@android:color/black"/>
+        android:background="@drawable/newlogo"/>
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -20,15 +20,6 @@
         android:layoutAnimation="@anim/layout_slide1"/>
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_alignParentBottom = "true"
-        android:layout_height="wrap_content">
-
-
-    </LinearLayout>
 
 
 </RelativeLayout>
