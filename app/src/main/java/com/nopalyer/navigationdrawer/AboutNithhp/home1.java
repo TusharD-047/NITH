@@ -25,11 +25,17 @@ public class home1 extends AppCompatActivity {
     final String STATE_TITLE = "state_title";
     final String STATE_LIST = "state_list";
     final String STATE_MODE = "state_mode";
+    Toolbar toolbar;
     int mode;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aboutnith1);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
         recyclerView.setLayoutManager(new GridLayoutManager(this,1));
