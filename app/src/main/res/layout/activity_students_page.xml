@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="STUDENT PAGE"
+                android:paddingLeft="20dp"
                 android:textColor="#ffffff"
                 android:gravity="center"
                 android:textSize="24sp"
