@@ -28,14 +28,19 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:background="@drawable/firstlayer">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        app:cardCornerRadius="60dp">
 
                     <ImageView
                         android:id="@+id/profilep"
-                        android:layout_width="300px"
-                        android:layout_height="300px"
-                        android:layout_marginTop="50px"
-                        android:layout_marginBottom="50px"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:src="@drawable/profile" />
+                </androidx.cardview.widget.CardView>
 
                     <TextView
                         android:id="@+id/name1"
