@@ -31,14 +31,12 @@
         android:id="@+id/myGrid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnWidth="100dp"
+        android:columnWidth="150dp"
         android:layout_marginTop="15dp"
         android:horizontalSpacing="20dp"
         android:numColumns="2"
         android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:verticalSpacing="20dp"
-        android:layout_below="@+id/textView15"/>
+        android:verticalSpacing="20dp" />
 
 
 </LinearLayout>
