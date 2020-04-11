@@ -55,7 +55,6 @@ public class studentp extends AppCompatActivity {
         setContentView(R.layout.activity_studentp);
 
         profile = (ImageView)findViewById(R.id.profilep);
-
         name = (TextView)findViewById(R.id.name123);
         roll = (TextView)findViewById(R.id.roll123);
         name1 = (TextView)findViewById(R.id.name1);

@@ -22,7 +22,7 @@ public class ChangePassword extends AppCompatActivity {
     private TextView Remail;
     private Button Changepassword;
     private FirebaseAuth firebaseAuth;
-    final FirebaseUser user = firebaseAuth.getCurrentUser();
+    private FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class ChangePassword extends AppCompatActivity {
         Remail = (TextView) findViewById(R.id.Email);
         Changepassword = (Button) findViewById(R.id.passchange);
         firebaseAuth = FirebaseAuth.getInstance();
-
+        user = firebaseAuth.getCurrentUser();
         Remail.setText(user.getEmail());
 
         Changepassword.setOnClickListener(new View.OnClickListener() {
