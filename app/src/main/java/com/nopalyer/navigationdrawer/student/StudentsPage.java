@@ -71,17 +71,11 @@ public class StudentsPage extends AppCompatActivity {
         });
     }
 
-        public void signout(View v){
-            firebaseAuth.signOut();
-            finish();
-            startActivity(new Intent(StudentsPage.this, login.class));
-        }
-
-        @Override
-        public void onBackPressed() {
-            super.onBackPressed();
-            startActivity(new Intent(StudentsPage.this, MainActivity.class));
-        }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(StudentsPage.this, MainActivity.class));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -100,7 +94,9 @@ public class StudentsPage extends AppCompatActivity {
         switch (id)
         {
             case R.id.logout:
-                Toast.makeText(this,"Logged Out",Toast.LENGTH_SHORT).show();
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(StudentsPage.this, login.class));
                 break;
 
 
