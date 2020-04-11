@@ -3,7 +3,8 @@
 
     <item
         android:id="@+id/home1"
-        android:title="ABOUT NITH" />
+        android:title="ABOUT NITH"
+        android:icon="@drawable/ic_school_black_24dp"/>
 
     <item
         android:id="@+id/login"
@@ -18,7 +19,8 @@
 
     <item
         android:id="@+id/hostels"
-        android:title="HOSTELS" />
+        android:title="HOSTELS"
+        android:icon="@drawable/ic_domain_black_24dp"/>
 
     <group
         android:id="@+id/separator">
