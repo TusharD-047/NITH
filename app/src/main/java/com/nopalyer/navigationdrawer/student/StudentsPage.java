@@ -1,15 +1,21 @@
 package com.nopalyer.navigationdrawer.student;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.login;
@@ -19,6 +25,7 @@ public class StudentsPage extends AppCompatActivity {
 
     CardView faculty_card,clubs_card,myProfile,website;
     private FirebaseAuth firebaseAuth;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +36,9 @@ public class StudentsPage extends AppCompatActivity {
         clubs_card = (CardView) findViewById(R.id.club);
         myProfile = (CardView) findViewById(R.id.pro) ;
         website = (CardView) findViewById(R.id.website1);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
 
+        setSupportActionBar(toolbar);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -56,7 +65,7 @@ public class StudentsPage extends AppCompatActivity {
         website.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StudentsPage.this, "Clubs Of NITH", Toast.LENGTH_SHORT);
+                Toast.makeText(StudentsPage.this, "Nith Website", Toast.LENGTH_SHORT);
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://nith.ac.in/")));
             }
         });
@@ -74,6 +83,35 @@ public class StudentsPage extends AppCompatActivity {
             startActivity(new Intent(StudentsPage.this, MainActivity.class));
         }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.spmenu_item,menu);
+
+        return true;
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        int id= item.getItemId();
+
+        switch (id)
+        {
+            case R.id.logout:
+                Toast.makeText(this,"Logged Out",Toast.LENGTH_SHORT).show();
+                break;
+
+
+            case R.id.changepass:
+               startActivity(new Intent(StudentsPage.this,ChangePassword.class));
+               break;
+
+        }
+
+
+        return true;
+    }
+}
 

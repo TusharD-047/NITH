@@ -1,53 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".dir">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <ImageView
         android:id="@+id/imageView3"
-        android:paddingTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:layout_marginBottom="621dp"
+        android:background="#000000"
+        android:paddingTop="25dp"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
-        android:background="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="166dp"
-        android:layout_height="176dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="255dp"
-        android:layout_marginRight="255dp"
-        android:layout_marginBottom="226dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/dir1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="166dp"
+            android:layout_height="176dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="255dp"
+            android:layout_marginBottom="226dp"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/dir1" />
+
+        <TextView
         android:id="@+id/email"
-        android:layout_width="335dp"
-        android:layout_height="380dp"
-        android:layout_marginStart="143dp"
-        android:layout_marginLeft="143dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
         android:layout_marginTop="53dp"
-        android:layout_marginEnd="210dp"
-        android:layout_marginRight="210dp"
-        android:layout_marginBottom="346dp"
+
+        android:layout_marginBottom="10dp"
         android:text="Message
 
 Greetings and a Warm Welcome to one and all for joining us at National Institute of Technology, Hamirpur, India. National Institute of Technology, Hamirpur, is one of the premier autonomous Institution of National Importance in Northern India under the act of Parliament-2007. It is a state of art Institution and a dream destination for those who wish to be leaders in Science and Technology. Besides being recognized nationally and internationally for excellent education at undergraduate level, we are also making wide strides in innovative research and other development activities.
@@ -66,7 +68,7 @@ Hamirpur [H.P.] – 177 005
 Email: director@nith.ac.in, directornith@gmail.com
 Phone: +91 – 1972 – 222308"
         android:textColor="#100000"
-        android:textSize="9sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
@@ -74,24 +76,23 @@ Phone: +91 – 1972 – 222308"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.109" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="171dp"
-        android:layout_height="142dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="45dp"
-        android:text="Prof. Vinod Yadava(Director's)
-  My prime priority will be to build National Inatitute of Technology Hamirpura a world class imparting quality and interesting teaching with emphasis to perform useful tasks and carrying out excellent reseach having impact on society and industry"
-        android:textColor="#520360"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="45dp"
+            android:text="Prof. Vinod Yadava(Director's)\nMy prime priority will be to build National Inatitute of Technology Hamirpura a world class imparting quality and interesting teaching with emphasis to perform useful tasks and carrying out excellent reseach having impact on society and industry"
+            android:textColor="#520360"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.405" />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
