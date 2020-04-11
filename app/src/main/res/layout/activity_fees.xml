@@ -4,14 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hostelbooklet">
-
+    tools:context=".fees">
     <com.github.barteksc.pdfviewer.PDFView
-        android:id="@+id/pdffeesstructure1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </com.github.barteksc.pdfviewer.PDFView>
-
-
+        android:layout_height="match_parent"
+        android:id="@+id/fees2019"/>
 </LinearLayout>

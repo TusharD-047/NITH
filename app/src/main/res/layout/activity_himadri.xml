@@ -1,63 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".himadri"
+    android:orientation="vertical"
     android:background="@drawable/gradient">
-
-    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:id="@+id/hb"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="7dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
         android:gravity="center"
-        android:text="             HIMADRI BOYS HOSTEL"
+        android:text="HIMADRI BOYS HOSTEL"
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/img14"
-        app:layout_constraintEnd_toStartOf="@+id/img14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:background="@android:color/black"/>
 
     <ImageView
         android:id="@+id/img14"
-        android:layout_width="409dp"
-        android:layout_height="277dp"
-        android:layout_marginBottom="265dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/himadri" />
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="320dp"
-        android:layout_height="422dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="338dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_height="match_parent"
         android:text="@string/the_himadri_boys_hostel_is_newly_constructed_hostel_and_started_functioning_in_2013_the_hostel_has_198_triplet_rooms_to_accommodate_approximately_594_students_the_hostel_has_07_floors_and_lift_facility_is_also_available_in_the_hostel_this_hostel_has_furnished_dining_hall_facility_the_hostel_is_well_equipped_with_basic_facilities_like_geysers_in_every_bathroom_water_cooler_and_deep_freezer_besides_this_the_internet_and_led_facility_is_also_available_in_of_the_hostel_the_hostel_has_a_big_recreation_hall_which_caters_to_the_needs_of_indoor_games_like_badminton_table_tennis_etc_the_volleyball_and_basketball_courts_are_also_available_in_the_hostel"
         android:textColor="#F7F8FB"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.003" />
+        android:textSize="18sp" />
+    </LinearLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

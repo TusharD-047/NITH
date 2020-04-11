@@ -1,68 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".shivalik"
+    android:orientation="vertical"
     android:background="@drawable/gradient">
-    >
+
     <TextView
         android:id="@+id/hb"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="7dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
         android:gravity="center"
-        android:text="            SHIVALIK BOYS HOSTEL"
+        android:text="SHIVALIK BOYS HOSTEL"
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/img14"
-        app:layout_constraintEnd_toStartOf="@+id/img14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:background="@android:color/black"/>
 
     <ImageView
         android:id="@+id/img14"
         android:layout_width="409dp"
-        android:layout_height="277dp"
-        android:layout_marginBottom="265dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
+        android:layout_height="280dp"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/shivalik" />
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="330dp"
-        android:layout_height="359dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="338dp"
-        android:text="Shivalik Boys(IIIT UNA) Hostel is an oldest hostel and started functioning in 1987.The hostel has 15 six seated and 10 four seated rooms to accommodate approximately 130 students. The hostel is well equipped with basic facilities like LED T.V., Music System, Geysers, Water Coolers, deep freezer etc. .
-
-
-
-
-
-"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="10dp"
+        android:layout_height="wrap_content"
+        android:text="Shivalik Boys(IIIT UNA) Hostel is an oldest hostel and started functioning in 1987.The hostel has 15 six seated and 10 four seated rooms to accommodate approximately 130 students. The hostel is well equipped with basic facilities like LED T.V., Music System, Geysers, Water Coolers, deep freezer etc. ."
         android:textColor="#F0F1F6"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="18sp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

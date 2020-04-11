@@ -1,65 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ambika"
+    android:orientation="vertical"
     android:background="@drawable/gradient"
     >
 
 
     <TextView
         android:id="@+id/hb"
-        android:layout_width="414dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="7dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
         android:gravity="center"
         android:text="@string/ambika_girls_hostel"
         android:textColor="#ffffff"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/img14"
-        app:layout_constraintEnd_toStartOf="@+id/img14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:background="@android:color/black"
+        android:textStyle="bold|italic" />
 
     <ImageView
         android:id="@+id/img14"
         android:layout_width="418dp"
         android:layout_height="297dp"
-        android:layout_marginBottom="265dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
-        app:srcCompat="@drawable/ambika" />
+        android:src="@drawable/ambika"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/t1"
-        android:layout_width="335dp"
-        android:layout_height="289dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
-        android:layout_marginBottom="338dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="10dp"
+       android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
         android:text="The Ambika Girls Hostel started functioning in 2012. The hostel has 66 double seated, 26 triple seated, 04 four seated and 25 five seated rooms to accommodate approximately 351 students. The hostel has a well-furnished common room cum recreation hall and a dining hall. The hostel is well equipped with all the basic facilities like Plasma T.V., Washing Machine, Geysers, Deep Freezer, Water Coolers, etc. The hostel has furnished dining hall facility with Music System. .
 
 "
         android:textColor="#F3F4FB"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="18sp" />
+</LinearLayout>

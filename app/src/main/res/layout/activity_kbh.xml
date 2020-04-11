@@ -1,66 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".kbh"
     android:background="@drawable/gradient">
-    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/hb"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="7dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/black"
         android:gravity="center"
-        android:text="             KAILASH BOYS HOSTEL"
+        android:text="KAILASH BOYS HOSTEL"
         android:textColor="#ffffff"
         android:textSize="24sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/img14"
-        app:layout_constraintEnd_toStartOf="@+id/img14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textStyle="bold|italic" />
 
     <ImageView
         android:id="@+id/img14"
-        android:layout_width="409dp"
-        android:layout_height="277dp"
-        android:layout_marginBottom="265dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255"
-        app:srcCompat="@drawable/kbh" />
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+
+        app:srcCompat="@drawable/kbh"
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/t14"
-        android:layout_width="322dp"
-        android:layout_height="391dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginLeft="172dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginRight="181dp"
-        android:layout_marginBottom="338dp"
-        android:text="The Kailash Boys Hostel is one of the oldest hostels and started functioning in 1989.The hostel has 204 three seated rooms to accommodate approximately 612 students. The hostel has a big recreation hall which caters to the needs of indoor games like, Badminton, Table Tennis, etc. The hostel also has furnished Dining Hall, Reading Room, Gymnasium, Sick Room and Guest Room facility. The hostel is well equipped with basic facilities like LED T.V., Music System, Geysers in every bathroom, Water Cooler at each floor, Deep Freezer, etc. A Volleyball Court in lawn of the courtyard has been developed for student’s outdoor activity. Besides this, the internet facility is available in all rooms of the hostel. The hostel also runs a cooperative canteen (4-H food court) for the benefit of all the students.
-
-"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Kailash Boys Hostel is one of the oldest hostels and started functioning in 1989.The hostel has 204 three seated rooms to accommodate approximately 612 students. The hostel has a big recreation hall which caters to the needs of indoor games like, Badminton, Table Tennis, etc. The hostel also has furnished Dining Hall, Reading Room, Gymnasium, Sick Room and Guest Room facility. The hostel is well equipped with basic facilities like LED T.V., Music System, Geysers in every bathroom, Water Cooler at each floor, Deep Freezer, etc. A Volleyball Court in lawn of the courtyard has been developed for student’s outdoor activity. Besides this, the internet facility is available in all rooms of the hostel. The hostel also runs a cooperative canteen (4-H food court) for the benefit of all the students."
         android:textColor="#F6F7FB"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img14"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:lineSpacingExtra="10dp"/>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

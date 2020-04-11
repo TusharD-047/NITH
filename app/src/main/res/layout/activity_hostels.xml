@@ -23,11 +23,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
                 android:gravity="center"
                 android:text="HOSTELS"
                 android:textColor="#ffffff"
-
                 android:textColorHighlight="#F4EBEB"
                 android:textColorHint="#F8F2F2"
                 android:textSize="30sp"
@@ -73,7 +71,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/ambika" />
+                        android:id="@+id/ambika"/>
 
                     <TextView
                         android:layout_width="116dp"
@@ -111,7 +109,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/pgh" />
+                        android:id="@+id/pgh"/>
 
                     <TextView
                         android:layout_width="116dp"
@@ -149,7 +147,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/kbh" />
+                        android:id="@+id/kbh"/>
 
                     <TextView
                         android:layout_width="105dp"
@@ -188,7 +186,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/himgiri" />
+
+                        android:id="@+id/himgiri"/>
 
                     <TextView
                         android:layout_width="105dp"
@@ -227,7 +226,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/himadri" />
+                        android:id="@+id/hima"
+                        />
 
                     <TextView
                         android:layout_width="116dp"
@@ -265,7 +265,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/udyagiri" />
+                        android:id="@+id/udya"
+                        />
 
                     <TextView
                         android:layout_width="116dp"
@@ -303,7 +304,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/aravali" />
+                        android:id="@+id/ara"
+                        />
 
                     <TextView
                         android:layout_width="107dp"
@@ -341,7 +343,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/satpura" />
+                        android:id="@+id/sat"
+                        />
 
                     <TextView
                         android:layout_width="116dp"
@@ -377,7 +380,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/dhauladhar" />
+                        android:id="@+id/dau"/>
 
                     <TextView
                         android:layout_width="115dp"
@@ -415,7 +418,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/shivalik" />
+                        android:id="@+id/shiv"/>
 
                     <TextView
                         android:layout_width="116dp"
@@ -452,7 +455,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/neelkanth" />
+                        android:id="@+id/neel"/>
 
                     <TextView
                         android:layout_width="116dp"
@@ -488,7 +491,8 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/manimahesh" />
+                        android:id="@+id/mani"
+                        />
 
                     <TextView
                         android:layout_width="116dp"
@@ -524,7 +528,7 @@
                     <ImageView
                         android:layout_width="119dp"
                         android:layout_height="89dp"
-                        android:src="@drawable/vindyanchal" />
+                        android:id="@+id/vin"/>
 
                     <TextView
                         android:layout_width="116dp"
