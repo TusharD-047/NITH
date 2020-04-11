@@ -1,56 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/gradient"
     tools:context=".sm">
     <ImageView
         android:id="@+id/imag9"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:layout_marginBottom="621dp"
         android:background="#000000"
         android:scaleType="fitXY"
-        android:paddingTop="20dp"
-        android:src="@drawable/newlogo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/newlogo" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
-        android:layout_height="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
         android:textColor="#ffffff"
-        android:textSize="13dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginBottom="537dp"
-        android:text="The Society for the Promotion of Indian Classical Music And Culture Amongst Youth"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+        android:textSize="18dp"
+        android:text="The Society for the Promotion of Indian Classical Music And Culture Amongst Youth" />
 
     <GridView
         android:id="@+id/myGrid"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnWidth="100dp"
+        android:columnWidth="145dp"
         android:numColumns="2"
         android:verticalSpacing="10dp"
-        android:horizontalSpacing="10dp"
-        android:layout_marginTop="220dp"/>
+        android:horizontalSpacing="10dp" />
 
-</RelativeLayout>
+</LinearLayout>

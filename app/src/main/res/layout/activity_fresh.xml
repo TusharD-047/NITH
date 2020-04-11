@@ -15,7 +15,7 @@
         android:background="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/newlogo"
-        android:paddingTop="20dp"/>
+  />
 
     <TextView
         android:id="@+id/textView15"
