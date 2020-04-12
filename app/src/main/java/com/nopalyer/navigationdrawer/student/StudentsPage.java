@@ -19,11 +19,12 @@ import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.login;
+import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.nopalyer.navigationdrawer.student.clubs.Clu;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile,website;
+    CardView faculty_card,clubs_card,myProfile,website,aboutdev;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
 
@@ -36,6 +37,7 @@ public class StudentsPage extends AppCompatActivity {
         clubs_card = (CardView) findViewById(R.id.club);
         myProfile = (CardView) findViewById(R.id.pro) ;
         website = (CardView) findViewById(R.id.website1);
+        aboutdev = (CardView) findViewById(R.id.au);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -67,6 +69,12 @@ public class StudentsPage extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(StudentsPage.this, "Nith Website", Toast.LENGTH_SHORT);
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://nith.ac.in/")));
+            }
+        });
+        aboutdev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.aboutus21.aboutdev.class));
             }
         });
     }

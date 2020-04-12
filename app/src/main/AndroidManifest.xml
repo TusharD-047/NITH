@@ -20,7 +20,7 @@
         <activity android:name=".fees"></activity>
         <activity android:name=".AboutNithhp.home1" />
         <activity android:name=".AboutNithhp.chljae" />
-        <activity android:name=".AboutNithhp.homekabhihome" />
+        <activity android:name=".student.aboutus21.aboutdev" />
         <activity android:name=".profile.studentp" />
         <activity android:name=".Login.verification" />
         <activity android:name=".student.StudentsPage" />
