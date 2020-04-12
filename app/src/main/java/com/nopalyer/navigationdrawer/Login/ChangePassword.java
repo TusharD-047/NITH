@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.Login;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,6 +25,7 @@ public class ChangePassword extends AppCompatActivity {
     private Button Changepassword;
     private FirebaseAuth firebaseAuth;
     private FirebaseUser user;
+    private Toolbar toolbar;
 
 
     @Override
@@ -31,6 +34,13 @@ public class ChangePassword extends AppCompatActivity {
         setContentView(R.layout.activity_change_password);
         Remail = (TextView) findViewById(R.id.Email);
         Changepassword = (Button) findViewById(R.id.passchange);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Change Password");
+        toolbar.setTitleTextColor(Color.WHITE);
+
+
         firebaseAuth = FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
         Remail.setText(user.getEmail());

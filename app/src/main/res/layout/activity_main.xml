@@ -10,15 +10,11 @@
     android:background="@drawable/gradient"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,22 +25,35 @@
                 android:layout_width="50dp"
                 android:layout_height="90dp"
                 app:cardBackgroundColor="#000000">
-    <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:background="#000000"
-        android:layout_gravity="center_vertical"/>
-        </androidx.cardview.widget.CardView>
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:layout_gravity="center_vertical"/>
+            </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="#000000"
-            android:paddingTop="15dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/newlogo" />
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#000000"
+                android:paddingTop="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/newlogo" />
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
 
 
         <ImageView
@@ -248,6 +257,7 @@
 
     </LinearLayout>
     </ScrollView>
+    </LinearLayout>
 
 <com.google.android.material.navigation.NavigationView
 android:layout_width="match_parent"
@@ -258,7 +268,8 @@ app:headerLayout="@layout/header"
 android:background="@drawable/gradient"
 android:layout_gravity="start"
 app:itemTextColor="#EC9706"
-app:itemIconTint="#aaaaaa"/>
+    app:itemIconPadding="15dp"
+app:itemIconTint="#357E81"/>
 
 
     </androidx.drawerlayout.widget.DrawerLayout>

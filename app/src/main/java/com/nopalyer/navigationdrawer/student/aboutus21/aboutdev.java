@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.student.aboutus21;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -21,6 +23,7 @@ public class aboutdev extends AppCompatActivity {
     ViewPager viewPager;
     Adapter adapter;
     Button btnPrev, btnNext;
+    Toolbar toolbar;
 
     /*asumsikan page default di halaman pertama*/
     int page = 0; /*nilai 0 sama dengan satu*/
@@ -41,6 +44,11 @@ public class aboutdev extends AppCompatActivity {
 
         /*buat metode page change*/
         pageChange();
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("About Us");
+        toolbar.setTitleTextColor(Color.WHITE);
     }
 
     private void pageChange() {
@@ -142,12 +150,12 @@ public class aboutdev extends AppCompatActivity {
 
         // list color bg
         int[] list_bg = {
-                getResources().getColor(R.color.shreyansh),
-                getResources().getColor(R.color.shivani),
-                getResources().getColor(R.color.tushar),
-                getResources().getColor(R.color.anshika),
-                getResources().getColor(R.color.yash),
-                getResources().getColor(R.color.sweety)
+                R.drawable.border_aboutus,
+                R.drawable.border_aboutus,
+                R.drawable.border_aboutus,
+                R.drawable.border_aboutus,
+                R.drawable.border_aboutus,
+                R.drawable.border_aboutus,
         };
 
         @Override
@@ -169,7 +177,7 @@ public class aboutdev extends AppCompatActivity {
             TextView judul = view.findViewById(R.id.heading);
             TextView desk = view.findViewById(R.id.desc);
 
-            linearLayout.setBackgroundColor(list_bg[position]);
+            linearLayout.setBackgroundResource(list_bg[position]);
             imageView.setImageResource(list_img[position]);
             judul.setText(list_judul[position]);
             desk.setText(list_desk[position]);
