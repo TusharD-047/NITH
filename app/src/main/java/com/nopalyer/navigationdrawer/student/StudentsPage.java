@@ -1,7 +1,6 @@
 package com.nopalyer.navigationdrawer.student;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,12 +18,11 @@ import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.login;
-import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
-import com.nopalyer.navigationdrawer.student.clubs.Clu;
+import com.nopalyer.navigationdrawer.student.calender.calender1;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile,website,aboutdev;
+    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
 
@@ -38,6 +36,8 @@ public class StudentsPage extends AppCompatActivity {
         myProfile = (CardView) findViewById(R.id.pro) ;
         website = (CardView) findViewById(R.id.website1);
         aboutdev = (CardView) findViewById(R.id.au);
+        calender = (CardView) findViewById(R.id.cal);
+
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -75,6 +75,12 @@ public class StudentsPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.aboutus21.aboutdev.class));
+            }
+        });
+        calender.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, calender1.class));
             }
         });
     }
