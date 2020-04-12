@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="Gaurav">
+        Designation:Assistant registrar\n
+        Phone no.:254049\n
+        email id:ar-es@nith.ac.in\n
+    </string>
+
+    <string name="KumarSaurabh">
+        Designation:Assistant registrar\n
+        Phone no.:254028\n
+        email id:ar-es@nith.ac.in\n
+    </string>
+    <string name="AshwaniSoni">
+        Designation:Assistant registrar\n
+        Phone no.:254022\n
+        email id:ashwanisoni@nith.ac.in\n
+    </string>
+    <string name="SatpalSharma">
+        Designation:Superintendent\n
+        Phone no.:254024\n
+        email id:satpal@nith.ac.in\n
+    </string>
+    <string name="SurinderSingh">
+        Designation:ASG-1\n
+        Phone no.:254022\n
+        email id:surinder@nith.ac.in\n
+    </string>
+    <string name="RamKumar">
+        Designation:Sr. Stenographer\n
+        Phone no.:254024\n
+        email id:ramkumar@nith.ac.in\n
+    </string>
+    <string name="VipanK">
+        Designation://jr. Assistant\n
+        Phone no.:254024\n
+        email id:vipank@nith.ac.in\n
+    </string>
+    <string name="Sangeeta">
+        Designation:Stenographer\n
+        Phone no.:254019\n
+        email id:sangeeta@nith.ac.in\n
+    </string>
+    <string name="VinodAdmin">
+        Designation:Sr.Office Attendant\n
+        Phone no.:254049\n
+
+    </string>
+    <string name="Partap">
+        Designation:Office Attendant SG-2\n
+        Phone no.:254049\n
+    </string>
+    <string name="Bhagwan">
+        Designation:Office Attendant SG-1\n
+        Phone no.:254049\n
+    </string>
+</resources>

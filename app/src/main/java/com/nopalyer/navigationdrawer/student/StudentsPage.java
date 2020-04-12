@@ -19,10 +19,11 @@ import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.login;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
+import com.nopalyer.navigationdrawer.student.help.help;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender;
+    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
 
@@ -37,6 +38,7 @@ public class StudentsPage extends AppCompatActivity {
         website = (CardView) findViewById(R.id.website1);
         aboutdev = (CardView) findViewById(R.id.au);
         calender = (CardView) findViewById(R.id.cal);
+        help = (CardView) findViewById(R.id.help);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -81,6 +83,12 @@ public class StudentsPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(StudentsPage.this, calender1.class));
+            }
+        });
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.help.help.class));
             }
         });
     }

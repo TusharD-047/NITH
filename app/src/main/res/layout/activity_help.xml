@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help"
+    android:background="@drawable/background_1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="#000000"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="Info"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Gaurav Yadav"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/Gaurav"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Kumar Saurabh"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/KumarSaurabh"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+
+            </TableRow>
+
+            <TableRow>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Satpal Sharma"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/SatpalSharma"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Surinder Singh"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/SurinderSingh"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Ram Kumar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/RamKumar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Ashwani Kumar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/AshwaniSoni"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Vipan Kumar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/VipanK"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Sangeeta"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/Sangeeta"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Vinod Kumar"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/VinodAdmin"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Partap Chand"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/Partap"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_1"
+                    android:gravity="center_vertical"
+                    android:text="Bhagwan Das"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_1"
+                    android:gravity="center"
+                    android:text="@string/Bhagwan"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </TableRow>
+
+
+
+
+
+        </TableLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
