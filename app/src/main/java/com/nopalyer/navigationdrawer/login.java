@@ -163,7 +163,6 @@ public class login extends AppCompatActivity {
                         .show();
             }
 
-
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                     .putBoolean("isFirstRun", false).apply();
         }

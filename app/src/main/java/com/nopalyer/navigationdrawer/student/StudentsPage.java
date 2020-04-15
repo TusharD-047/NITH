@@ -31,7 +31,6 @@ public class StudentsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students_page);
-
         faculty_card = (CardView) findViewById(R.id.faculty_card);
         clubs_card = (CardView) findViewById(R.id.club);
         myProfile = (CardView) findViewById(R.id.pro) ;
@@ -69,7 +68,7 @@ public class StudentsPage extends AppCompatActivity {
         website.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(StudentsPage.this, "Nith Website", Toast.LENGTH_SHORT);
+                Toast.makeText(StudentsPage.this, "Nith Website", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://nith.ac.in/")));
             }
         });
