@@ -14,10 +14,16 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.login;
+import com.nopalyer.navigationdrawer.profile.studentp;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
 import com.nopalyer.navigationdrawer.student.help.help;
 
@@ -25,6 +31,8 @@ public class StudentsPage extends AppCompatActivity {
 
     CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule;
     private FirebaseAuth firebaseAuth;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
     Toolbar toolbar;
 
     @Override
@@ -39,6 +47,7 @@ public class StudentsPage extends AppCompatActivity {
         calender = (CardView) findViewById(R.id.cal);
         help = (CardView) findViewById(R.id.help);
         schedule = (CardView)findViewById(R.id.spsch);
+        firebaseDatabase = FirebaseDatabase.getInstance();
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -91,10 +100,24 @@ public class StudentsPage extends AppCompatActivity {
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.help.help.class));
             }
         });
-        schedule.setOnClickListener(new View.OnClickListener() {
+        databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+        databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(StudentsPage.this,Spschedule.class));
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final String deprtmnt = dataSnapshot.child("Department").getValue().toString().trim();
+                schedule.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(StudentsPage.this, Spschedule.class);
+                        intent.putExtra("Department", deprtmnt);
+                        startActivity(intent);
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
     }
