@@ -42,6 +42,7 @@ public class Spschedule extends AppCompatActivity {
     private DatabaseReference databaseReference;
     ProgressDialog pd;
     private Spinner sp1,sp2;
+    public static String dep,year2;
     private Button show;
     ArrayAdapter<String> adapter_year,adapter_group,adapter_department;
     SharedPreferences sharedprefs;
@@ -120,6 +121,7 @@ public class Spschedule extends AppCompatActivity {
                     adapter_group = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,group);
                     sp2.setAdapter(adapter_group);
                     sp2.setSelection(lastposition_grp);
+                    year2 = year[position];
                     sp2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -132,6 +134,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==1)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -143,6 +146,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==2)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -154,6 +158,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==3)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -165,6 +170,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==4)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -176,6 +182,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==5)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -187,6 +194,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==6)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -198,6 +206,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==7)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -209,6 +218,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==8)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -219,6 +229,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==9)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -229,6 +240,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==10)
                             {
                                 show.setEnabled(true);
+                                dep = group[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -251,7 +263,7 @@ public class Spschedule extends AppCompatActivity {
                     adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
-
+                    year2 = year[position];
                     sp2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -265,6 +277,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==1)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -276,6 +289,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==2)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -287,6 +301,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==3)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -298,6 +313,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==4)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -309,6 +325,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==5)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -320,6 +337,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==6)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -331,6 +349,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==7)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -342,6 +361,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==8)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -352,6 +372,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==9)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -363,6 +384,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==10)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -384,7 +406,7 @@ public class Spschedule extends AppCompatActivity {
                     adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
-
+                    year2 = year[position];
                     sp2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -397,6 +419,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==1)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -408,6 +431,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==2)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -419,6 +443,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==3)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -430,6 +455,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==4)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -440,6 +466,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==5)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -451,6 +478,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==6)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -462,6 +490,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==7)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -473,6 +502,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==8)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -483,6 +513,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==9)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -494,6 +525,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==10)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -515,7 +547,7 @@ public class Spschedule extends AppCompatActivity {
                     adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
-
+                    year2 = year[position];
                     sp2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
@@ -528,6 +560,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==1)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -539,6 +572,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==2)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -550,6 +584,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==3)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -561,6 +596,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==4)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -571,6 +607,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==5)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -582,6 +619,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==6)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -593,6 +631,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==7)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -604,6 +643,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==8)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -614,6 +654,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==9)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
@@ -625,6 +666,7 @@ public class Spschedule extends AppCompatActivity {
                             if(position==10)
                             {
                                 show.setEnabled(true);
+                                dep = department[position];
                                 show.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
