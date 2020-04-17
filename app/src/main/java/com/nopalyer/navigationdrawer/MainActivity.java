@@ -129,31 +129,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.departments:
-                Intent myintent = new Intent(MainActivity.this,
-                        departments.class);
+                Intent myintent = new Intent(MainActivity.this, departments.class);
                 startActivity(myintent);
                 return false;
             case R.id.hostels:
 
-                myintent= new Intent(MainActivity.this,
-                        hostels.class);
+                myintent= new Intent(MainActivity.this, hostels.class);
                 startActivity(myintent);
                 return false;
             case R.id.login:
-                myintent = new Intent(MainActivity.this,
-                        login.class);
+                myintent = new Intent(MainActivity.this, login.class);
                 startActivity(myintent);
                 return false;
 
             case R.id.events:
-                myintent = new Intent(MainActivity.this,
-                        events.class);
+                myintent = new Intent(MainActivity.this, events.class);
                 startActivity(myintent);
                 return false;
 
             case R.id.home1:
-                myintent = new Intent(MainActivity.this,
-                        home1.class);
+                myintent = new Intent(MainActivity.this, home1.class);
                 startActivity(myintent);
                 return false;
 
@@ -166,8 +161,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.aboutdevelopers:
-                myintent = new Intent(MainActivity.this,
-                        aboutdevelopers.class);
+                myintent = new Intent(MainActivity.this, aboutdevelopers.class);
                 startActivity(myintent);
                 return false;
         }
