@@ -31,8 +31,6 @@ public class StudentsPage extends AppCompatActivity {
 
     CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule;
     private FirebaseAuth firebaseAuth;
-    private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference databaseReference;
     Toolbar toolbar;
 
     @Override
@@ -47,7 +45,6 @@ public class StudentsPage extends AppCompatActivity {
         calender = (CardView) findViewById(R.id.cal);
         help = (CardView) findViewById(R.id.help);
         schedule = (CardView)findViewById(R.id.spsch);
-        firebaseDatabase = FirebaseDatabase.getInstance();
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -100,24 +97,10 @@ public class StudentsPage extends AppCompatActivity {
                 startActivity(new Intent(StudentsPage.this, com.nopalyer.navigationdrawer.student.help.help.class));
             }
         });
-        databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        schedule.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                final String deprtmnt = dataSnapshot.child("Department").getValue().toString().trim();
-                schedule.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(StudentsPage.this, Spschedule.class);
-                        intent.putExtra("Department", deprtmnt);
-                        startActivity(intent);
-                    }
-                });
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, Spschedule.class));
             }
         });
     }

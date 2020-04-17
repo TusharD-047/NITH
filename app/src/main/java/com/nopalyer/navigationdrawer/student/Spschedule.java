@@ -36,8 +36,6 @@ import java.util.ArrayList;
 public class Spschedule extends AppCompatActivity {
 
     private PDFView pdfView;
-    public String Department = "";
-    public String FirstYearCSE = "",FirstYearECE = "",FirstYearMechanical = "";
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     ProgressDialog pd;
@@ -54,36 +52,7 @@ public class Spschedule extends AppCompatActivity {
         setContentView(R.layout.activity_spschedule);
         pdfView = findViewById(R.id.kya);
         pd =new ProgressDialog(this);
-        pd.setMessage("Loading... ! Please Smile");
-        pd.setCancelable(false);
-        pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        pd.show();
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference("Schedule");
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                FirstYearCSE = dataSnapshot.child("FirstYearCSE").getValue().toString();
-                FirstYearECE = dataSnapshot.child("FirstYearECE").getValue().toString();
-                FirstYearMechanical = dataSnapshot.child("FirstYearMechanical").getValue().toString();
-                Intent intent = getIntent();
-                Department = intent.getStringExtra("Department");
-                String url = "";
-                if(Department.equals("Electronics And Communication Engineering")){
-                    url = FirstYearECE;
-                }if(Department.equals("Mechanical Engineering")){
-                    url = FirstYearMechanical;
-                }if(Department.equals("Computer Science and Engineering")){
-                    url = FirstYearCSE;
-                }
-                new RetrievePDFStream().execute(url);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
 
         // SPINNER STARTS==========================================================================================================================
 
@@ -135,118 +104,58 @@ public class Spschedule extends AppCompatActivity {
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                       Toast.makeText(Spschedule.this,"You Selected A group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected B group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected C group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected D group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==8)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==9)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==10)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected E group",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                         }
@@ -278,119 +187,59 @@ public class Spschedule extends AppCompatActivity {
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==8)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==9)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==10)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 2nd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                         }
 
@@ -420,118 +269,58 @@ public class Spschedule extends AppCompatActivity {
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==8)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==9)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==10)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 3rd year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                         }
 
@@ -561,118 +350,59 @@ public class Spschedule extends AppCompatActivity {
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year cse",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year cse dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
+
                             }
 
                             if(position==8)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                             if(position==9)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
 
                             if(position==10)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
-                                show.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Toast.makeText(Spschedule.this,"You Selected 4th year ece dd",Toast.LENGTH_SHORT).show();
-                                    }
-                                });
                             }
                         }
 
@@ -691,6 +421,39 @@ public class Spschedule extends AppCompatActivity {
         });
 
         // SPINNER ENDS==================================================================================================================================
+
+        show.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                pd.setMessage("Loading... ! Please Smile");
+                pd.setCancelable(false);
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
+                databaseReference = firebaseDatabase.getReference("Schedule");
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        String FirstYearCSE = dataSnapshot.child("FirstYearCSE").getValue().toString();
+                        String FirstYearECE = dataSnapshot.child("FirstYearECE").getValue().toString();
+                        String FirstYearMechanical = dataSnapshot.child("FirstYearMechanical").getValue().toString();
+                        String url = "";
+                        if(year2.equals("1st") && dep.equals("H")){
+                            url = FirstYearECE;
+                        }if(year2.equals("1st") && dep.equals("G")){
+                            url = FirstYearMechanical;
+                        }if(year2.equals("1st") && dep.equals("C")){
+                            url = FirstYearCSE;
+                        }
+                        new RetrievePDFStream().execute(url);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
     }
     class RetrievePDFStream extends AsyncTask<String,Void,InputStream>
     {
