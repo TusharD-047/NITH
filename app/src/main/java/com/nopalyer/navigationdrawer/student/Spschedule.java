@@ -70,7 +70,7 @@ public class Spschedule extends AppCompatActivity {
 
         final String[] year = {"Choose year","1st","2nd","3rd","4th"};
         final String[] group = {"Choose group","A","B","C","D","E","F","G","H","I","J"};
-        final String[] department = {"Choose department","CSE","CSE DD","ECE","ECE DD","Mechanical","Civil","Electrical","Architecture","Material Science","Chemical"};
+        final String[] department = {"Choose branch","CSE","CSE DD","ECE","ECE DD","Mechanical","Civil","Electrical","Architecture","Material Science","Chemical"};
 
         sharedprefs = getSharedPreferences("yash",MODE_PRIVATE);
         editor=sharedprefs.edit();
@@ -115,43 +115,36 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = group[position];
                             }
-
                             if(position==8)
                             {
                                 show.setEnabled(true);
@@ -199,43 +192,36 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==4)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==5)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==8)
                             {
                                 show.setEnabled(true);
@@ -246,7 +232,6 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==10)
                             {
                                 show.setEnabled(true);
@@ -282,19 +267,16 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==3)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==4)
                             {
                                 show.setEnabled(true);
@@ -305,19 +287,16 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==8)
                             {
                                 show.setEnabled(true);
@@ -328,7 +307,6 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==10)
                             {
                                 show.setEnabled(true);
@@ -364,13 +342,11 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==2)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==3)
                             {
                                 show.setEnabled(true);
@@ -387,20 +363,17 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==6)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==7)
                             {
                                 show.setEnabled(true);
                                 dep = department[position];
 
                             }
-
                             if(position==8)
                             {
                                 show.setEnabled(true);
@@ -411,7 +384,6 @@ public class Spschedule extends AppCompatActivity {
                                 show.setEnabled(true);
                                 dep = department[position];
                             }
-
                             if(position==10)
                             {
                                 show.setEnabled(true);
