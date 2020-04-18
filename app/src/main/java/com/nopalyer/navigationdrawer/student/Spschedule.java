@@ -2,10 +2,12 @@ package com.nopalyer.navigationdrawer.student;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -45,6 +47,7 @@ public class Spschedule extends AppCompatActivity {
     ArrayAdapter<String> adapter_year,adapter_group,adapter_department;
     SharedPreferences sharedprefs;
     SharedPreferences.Editor editor;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +56,11 @@ public class Spschedule extends AppCompatActivity {
         pdfView = findViewById(R.id.kya);
         pd =new ProgressDialog(this);
         firebaseDatabase = FirebaseDatabase.getInstance();
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Schedule");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         // SPINNER STARTS==========================================================================================================================
 
@@ -71,7 +79,8 @@ public class Spschedule extends AppCompatActivity {
         final int lastposition_grp = sharedprefs.getInt("lastselected_grp",0);
         final int lastposition_dep = sharedprefs.getInt("lastselected_dep",0);
 
-        adapter_year= new ArrayAdapter<>(Spschedule.this,android.R.layout.simple_spinner_item,year);
+        adapter_year= new ArrayAdapter<>(Spschedule.this,R.layout.colourful_spinner_items,year);
+        adapter_year.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
         sp1.setAdapter(adapter_year);
         sp1.setSelection(lastposition_yr);
 
@@ -87,7 +96,8 @@ public class Spschedule extends AppCompatActivity {
                 }
                 if(position==1)
                 {
-                    adapter_group = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,group);
+                    adapter_group = new ArrayAdapter<String>(Spschedule.this,R.layout.colourful_spinner_items,group);
+                    adapter_group.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
                     sp2.setAdapter(adapter_group);
                     sp2.setSelection(lastposition_grp);
                     year2 = year[position];
@@ -169,7 +179,8 @@ public class Spschedule extends AppCompatActivity {
 
                 if(position==2)
                 {
-                    adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
+                    adapter_department = new ArrayAdapter<String>(Spschedule.this,R.layout.colourful_spinner_items,department);
+                    adapter_department.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
                     year2 = year[position];
@@ -252,7 +263,8 @@ public class Spschedule extends AppCompatActivity {
 
                 if(position==3)
                 {
-                    adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
+                    adapter_department = new ArrayAdapter<String>(Spschedule.this,R.layout.colourful_spinner_items,department);
+                    adapter_department.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
                     year2 = year[position];
@@ -333,7 +345,8 @@ public class Spschedule extends AppCompatActivity {
 
                 if(position==4)
                 {
-                    adapter_department = new ArrayAdapter<String>(Spschedule.this,android.R.layout.simple_spinner_item,department);
+                    adapter_department = new ArrayAdapter<String>(Spschedule.this,R.layout.colourful_spinner_items,department);
+                    adapter_department.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
                     sp2.setAdapter(adapter_department);
                     sp2.setSelection(lastposition_dep);
                     year2 = year[position];

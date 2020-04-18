@@ -6,53 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".student.Spschedule">
+    tools:context=".student.Spschedule"
+    android:background="@drawable/gradient">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="#000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
             android:text="Select Year"
-            android:textSize="18dp">
+            android:textSize="18sp"
+            android:textColor="#ffffff">
 
         </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:text="Select group"
-            android:textSize="18dp">
-
-        </TextView>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
         <Spinner
             android:id="@+id/sp1"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_weight="1"
-            android:backgroundTint="#000000"
+            android:backgroundTint="#ffffff"
             android:dropDownWidth="match_parent"
             android:spinnerMode="dropdown">
 
         </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Select group"
+            android:textSize="18sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:id="@+id/sp2"
             android:layout_weight="1"
-            android:backgroundTint="#000000">
+            android:backgroundTint="#ffffff">
         </Spinner>
 
     </LinearLayout>
@@ -62,20 +79,23 @@
         android:layout_height="wrap_content"
         android:text="Show"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:id="@+id/show">
 
     </Button>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineseparator">
+
+    </View>
+
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/kya"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@drawable/gradient"/>
 
 </LinearLayout>
