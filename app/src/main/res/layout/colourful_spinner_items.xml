@@ -5,7 +5,6 @@
     android:textSize="18sp"
     android:gravity="center_horizontal"
     android:textColor="#ffffff"
-    android:paddingLeft="5dp"
     android:layout_height="30dp">
 
 </CheckedTextView>
