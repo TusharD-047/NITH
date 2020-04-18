@@ -433,16 +433,37 @@ public class Spschedule extends AppCompatActivity {
                 databaseReference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String FirstYearCSE = dataSnapshot.child("FirstYearCSE").getValue().toString();
-                        String FirstYearECE = dataSnapshot.child("FirstYearECE").getValue().toString();
-                        String FirstYearMechanical = dataSnapshot.child("FirstYearMechanical").getValue().toString();
+                        String FirstYearA = dataSnapshot.child("FirstYearA").getValue().toString();
+                        String FirstYearB = dataSnapshot.child("FirstYearB").getValue().toString();
+                        String FirstYearC = dataSnapshot.child("FirstYearC").getValue().toString();
+                        String FirstYearD = dataSnapshot.child("FirstYearD").getValue().toString();
+                        String FirstYearE = dataSnapshot.child("FirstYearE").getValue().toString();
+                        String FirstYearF = dataSnapshot.child("FirstYearF").getValue().toString();
+                        String FirstYearG = dataSnapshot.child("FirstYearG").getValue().toString();
+                        String FirstYearH = dataSnapshot.child("FirstYearH").getValue().toString();
+                        String FirstYearI = dataSnapshot.child("FirstYearI").getValue().toString();
+                        String FirstYearJ = dataSnapshot.child("FirstYearJ").getValue().toString();
                         String url = "";
-                        if(year2.equals("1st") && dep.equals("H")){
-                            url = FirstYearECE;
-                        }if(year2.equals("1st") && dep.equals("G")){
-                            url = FirstYearMechanical;
+                        if(year2.equals("1st") && dep.equals("A")){
+                            url = FirstYearA;
+                        }if(year2.equals("1st") && dep.equals("B")){
+                            url = FirstYearB;
                         }if(year2.equals("1st") && dep.equals("C")){
-                            url = FirstYearCSE;
+                            url = FirstYearC;
+                        }if(year2.equals("1st") && dep.equals("D")){
+                            url = FirstYearD;
+                        }if(year2.equals("1st") && dep.equals("E")){
+                            url = FirstYearE;
+                        }if(year2.equals("1st") && dep.equals("F")){
+                            url = FirstYearF;
+                        }if(year2.equals("1st") && dep.equals("G")){
+                            url = FirstYearG;
+                        }if(year2.equals("1st") && dep.equals("H")){
+                            url = FirstYearH;
+                        }if(year2.equals("1st") && dep.equals("I")){
+                            url = FirstYearI;
+                        }if(year2.equals("1st") && dep.equals("J")){
+                            url = FirstYearJ;
                         }
                         new RetrievePDFStream().execute(url);
                     }
