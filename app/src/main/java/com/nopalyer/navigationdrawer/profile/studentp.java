@@ -6,14 +6,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Picture;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,12 +53,16 @@ public class studentp extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
     FirebaseStorage firebaseStorage;
+    Spinner yearspinner;
+    SharedPreferences sharedprefs;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studentp);
 
+        yearspinner=(Spinner)findViewById(R.id.profilespinner);
         profile = (ImageView)findViewById(R.id.profilep);
         name = (TextView)findViewById(R.id.name123);
         roll = (TextView)findViewById(R.id.roll123);
@@ -68,6 +76,33 @@ public class studentp extends AppCompatActivity {
         final FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
+
+        //spinner starts=============================================================================================================================================
+        final  String[] year = {"Choose year","1st year","2nd year","3rd year","4th year"};
+        sharedprefs = getSharedPreferences("yash",MODE_PRIVATE);
+        editor=sharedprefs.edit();
+
+        final int lastposition_yr = sharedprefs.getInt("lastselected_yr",0); // Load data
+
+        ArrayAdapter<String> adapter_year= new ArrayAdapter<String>(studentp.this,R.layout.colourful_spinner_items,year);
+        adapter_year.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
+        yearspinner.setAdapter(adapter_year);
+        yearspinner.setSelection(lastposition_yr);    // Update views
+        yearspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                editor.putInt("lastselected_yr",position).apply();  // save data
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+         //spinner ends==============================================================================================================================================
+
         pd.setMessage("Retrieving Info ! Please Smile");
         pd.setCancelable(false);
         pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
