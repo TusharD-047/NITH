@@ -1,11 +1,16 @@
 package com.nopalyer.navigationdrawer.teacher;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
 import com.nopalyer.navigationdrawer.R;
@@ -13,8 +18,10 @@ import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
 
 public class Tpmain extends AppCompatActivity implements View.OnClickListener {
-    private CardView sch, not,att, cal, pro,msg,ok, help, website, au;
+    private CardView sch, not,att, cal, pro,msg,ok, help, website, au,assign;
+    Toolbar toolbar;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +36,9 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
         help = (CardView) findViewById(R.id.help);
         website = (CardView) findViewById(R.id.website);
         au = (CardView) findViewById(R.id.au);
+        assign = (CardView)findViewById(R.id.assigntp);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+
 
         sch.setOnClickListener(this);
         not.setOnClickListener(this);
@@ -40,6 +50,7 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
         help.setOnClickListener(this);
         website.setOnClickListener(this);
         au.setOnClickListener(this);
+        assign.setOnClickListener(this);
 
     }
 
@@ -87,6 +98,10 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.au:
                 i = new Intent(this, aboutdev.class);
+                startActivity(i);
+                break;
+            case R.id.assign:
+                i = new Intent(this, tpassign.class);
                 startActivity(i);
                 break;
             default:

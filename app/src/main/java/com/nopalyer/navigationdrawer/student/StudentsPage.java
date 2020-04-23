@@ -1,14 +1,18 @@
 package com.nopalyer.navigationdrawer.student;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
@@ -29,10 +33,11 @@ import com.nopalyer.navigationdrawer.student.help.help;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule;
+    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule,assignm;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,7 @@ public class StudentsPage extends AppCompatActivity {
         calender = (CardView) findViewById(R.id.cal);
         help = (CardView) findViewById(R.id.help);
         schedule = (CardView)findViewById(R.id.spsch);
+        assignm = (CardView)findViewById(R.id.assign);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -101,6 +107,12 @@ public class StudentsPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(StudentsPage.this, Spschedule.class));
+            }
+        });
+        assignm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, spassign.class));
             }
         });
     }

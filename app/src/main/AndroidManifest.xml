@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".student.Spschedule"></activity>
+        <activity android:name=".teacher.tpassign"></activity>
+        <activity android:name=".student.spassign" />
+        <activity android:name=".student.Spschedule" />
         <activity android:name=".fees" />
         <activity android:name=".AboutNithhp.home1" />
         <activity android:name=".AboutNithhp.chljae" />

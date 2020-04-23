@@ -56,6 +56,7 @@ public class studentp extends AppCompatActivity {
     Spinner yearspinner;
     SharedPreferences sharedprefs;
     SharedPreferences.Editor editor;
+    public static String save ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +93,16 @@ public class studentp extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 editor.putInt("lastselected_yr",position).apply();  // save data
-
+                if (position==0)
+                    save = year[position];
+                if (position==1)
+                    save = year[position];
+                if (position==2)
+                    save = year[position];
+                if (position==3)
+                    save = year[position];
+                if (position==4)
+                    save = year[position];
             }
 
             @Override
