@@ -106,60 +106,62 @@ public class Spschedule extends AppCompatActivity {
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
                         {
                             editor.putInt("lastselected_grp",position).apply();
+                            dep = group[position];
                           if(position==0)
                           {
                            show.setEnabled(false);
                           }
-                            if(position==1)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==2)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==3)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==4)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==5)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==6)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==7)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==8)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==9)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
-                            if(position==10)
-                            {
-                                show.setEnabled(true);
-                                dep = group[position];
-                            }
+                            else
+                                {
+                                    pd.setMessage("Loading... ! Please Smile");
+                                    pd.setCancelable(false);
+                                    pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                                    pd.show();
+                                    databaseReference = firebaseDatabase.getReference("Schedule");
+                                    databaseReference.addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                            String FirstYearA = dataSnapshot.child("FirstYearA").getValue().toString();
+                                            String FirstYearB = dataSnapshot.child("FirstYearB").getValue().toString();
+                                            String FirstYearC = dataSnapshot.child("FirstYearC").getValue().toString();
+                                            String FirstYearD = dataSnapshot.child("FirstYearD").getValue().toString();
+                                            String FirstYearE = dataSnapshot.child("FirstYearE").getValue().toString();
+                                            String FirstYearF = dataSnapshot.child("FirstYearF").getValue().toString();
+                                            String FirstYearG = dataSnapshot.child("FirstYearG").getValue().toString();
+                                            String FirstYearH = dataSnapshot.child("FirstYearH").getValue().toString();
+                                            String FirstYearI = dataSnapshot.child("FirstYearI").getValue().toString();
+                                            String FirstYearJ = dataSnapshot.child("FirstYearJ").getValue().toString();
+                                            String url = "";
+                                            if(year2.equals("1st") && dep.equals("A")){
+                                                url = FirstYearA;
+                                            }if(year2.equals("1st") && dep.equals("B")){
+                                                url = FirstYearB;
+                                            }if(year2.equals("1st") && dep.equals("C")){
+                                                url = FirstYearC;
+                                            }if(year2.equals("1st") && dep.equals("D")){
+                                                url = FirstYearD;
+                                            }if(year2.equals("1st") && dep.equals("E")){
+                                                url = FirstYearE;
+                                            }if(year2.equals("1st") && dep.equals("F")){
+                                                url = FirstYearF;
+                                            }if(year2.equals("1st") && dep.equals("G")){
+                                                url = FirstYearG;
+                                            }if(year2.equals("1st") && dep.equals("H")){
+                                                url = FirstYearH;
+                                            }if(year2.equals("1st") && dep.equals("I")){
+                                                url = FirstYearI;
+                                            }if(year2.equals("1st") && dep.equals("J")){
+                                                url = FirstYearJ;
+                                            }
+                                            new RetrievePDFStream().execute(url);
+                                        }
+
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                        }
+                                    });
+                                }
 
                         }
 
@@ -407,59 +409,6 @@ public class Spschedule extends AppCompatActivity {
 
         // SPINNER ENDS==================================================================================================================================
 
-        show.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                pd.setMessage("Loading... ! Please Smile");
-                pd.setCancelable(false);
-                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                pd.show();
-                databaseReference = firebaseDatabase.getReference("Schedule");
-                databaseReference.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String FirstYearA = dataSnapshot.child("FirstYearA").getValue().toString();
-                        String FirstYearB = dataSnapshot.child("FirstYearB").getValue().toString();
-                        String FirstYearC = dataSnapshot.child("FirstYearC").getValue().toString();
-                        String FirstYearD = dataSnapshot.child("FirstYearD").getValue().toString();
-                        String FirstYearE = dataSnapshot.child("FirstYearE").getValue().toString();
-                        String FirstYearF = dataSnapshot.child("FirstYearF").getValue().toString();
-                        String FirstYearG = dataSnapshot.child("FirstYearG").getValue().toString();
-                        String FirstYearH = dataSnapshot.child("FirstYearH").getValue().toString();
-                        String FirstYearI = dataSnapshot.child("FirstYearI").getValue().toString();
-                        String FirstYearJ = dataSnapshot.child("FirstYearJ").getValue().toString();
-                        String url = "";
-                        if(year2.equals("1st") && dep.equals("A")){
-                            url = FirstYearA;
-                        }if(year2.equals("1st") && dep.equals("B")){
-                            url = FirstYearB;
-                        }if(year2.equals("1st") && dep.equals("C")){
-                            url = FirstYearC;
-                        }if(year2.equals("1st") && dep.equals("D")){
-                            url = FirstYearD;
-                        }if(year2.equals("1st") && dep.equals("E")){
-                            url = FirstYearE;
-                        }if(year2.equals("1st") && dep.equals("F")){
-                            url = FirstYearF;
-                        }if(year2.equals("1st") && dep.equals("G")){
-                            url = FirstYearG;
-                        }if(year2.equals("1st") && dep.equals("H")){
-                            url = FirstYearH;
-                        }if(year2.equals("1st") && dep.equals("I")){
-                            url = FirstYearI;
-                        }if(year2.equals("1st") && dep.equals("J")){
-                            url = FirstYearJ;
-                        }
-                        new RetrievePDFStream().execute(url);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-            }
-        });
     }
     class RetrievePDFStream extends AsyncTask<String,Void,InputStream>
     {
