@@ -72,22 +72,53 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/title123"
-        android:layout_width="387dp"
-        android:layout_height="67dp"
-        android:hint="Title"
-        android:paddingLeft="50dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Enter Title"
+            android:textSize="18sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/title123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="#ffffff">
+
+        </EditText>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/upassign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:text="Upload">
 
     </Button>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineseparator">
+
+    </View>
 
 </LinearLayout>
