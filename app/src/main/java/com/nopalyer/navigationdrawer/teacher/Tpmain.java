@@ -109,14 +109,16 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
                 startActivity(browsIntent);
                 break;
 
+            case R.id.assigntp:
+                i = new Intent(this, tpassign.class);
+                startActivity(i);
+                break;
+
             case R.id.au:
                 i = new Intent(this, aboutdev.class);
                 startActivity(i);
                 break;
-            case R.id.assign:
-                i = new Intent(this, tpassign.class);
-                startActivity(i);
-                break;
+
             default:
                 break;
         }
