@@ -224,7 +224,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/attendance2" />
+                        android:src="@drawable/attendance" />
 
                     <TextView
                         android:layout_width="wrap_content"
