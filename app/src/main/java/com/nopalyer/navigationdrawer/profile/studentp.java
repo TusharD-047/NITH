@@ -145,29 +145,7 @@ public class studentp extends AppCompatActivity {
             }
         });
 
-       /* add.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                UploadImage();
-            }
-        });*/
-
     }
-   /* private void UploadImage(){
-
-        UploadTask uploadTask = imageReference.putFile(imagePath);
-        uploadTask.addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(studentp.this,"Upload Failed",Toast.LENGTH_SHORT).show();
-            }
-        }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Toast.makeText(studentp.this,"Uploaded Image Successfully",Toast.LENGTH_SHORT).show();
-            }
-        });
-    }*/
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
