@@ -37,7 +37,7 @@ public class StudentsPage extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
+;    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

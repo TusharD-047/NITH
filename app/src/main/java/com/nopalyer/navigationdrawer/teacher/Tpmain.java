@@ -6,15 +6,21 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.login;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
 import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
@@ -22,6 +28,7 @@ import com.nopalyer.navigationdrawer.student.calender.calender1;
 public class Tpmain extends AppCompatActivity implements View.OnClickListener {
     private CardView sch, not,att, cal, pro,msg,ok, help, website, au,assign;
     Toolbar toolbar;
+    private FirebaseAuth firebaseAuth;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -40,6 +47,10 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
         au = (CardView) findViewById(R.id.au);
         assign = (CardView)findViewById(R.id.assigntp);
         toolbar = (Toolbar)findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+
+        firebaseAuth = FirebaseAuth.getInstance();
 
 
         sch.setOnClickListener(this);
@@ -115,6 +126,39 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
     public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(Tpmain.this, MainActivity.class));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.spmenu_item,menu);
+
+        return true;
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        int id= item.getItemId();
+
+        switch (id)
+        {
+            case R.id.logout:
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(Tpmain.this, login.class));
+                break;
+
+
+            case R.id.changepass:
+                startActivity(new Intent(Tpmain.this, ChangePassword.class));
+                break;
+
+        }
+
+
+        return true;
     }
 }
 
