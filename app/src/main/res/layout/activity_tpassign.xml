@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".teacher.tpassign">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Select Year"
+            android:textSize="18sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/assignsp1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ffffff"
+            android:dropDownWidth="match_parent"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Select group"
+            android:textSize="18sp"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/assignsp2"
+            android:layout_weight="1"
+            android:backgroundTint="#ffffff">
+        </Spinner>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title123"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:hint="Title"
+        android:paddingLeft="50dp" />
+
+    <Button
+        android:id="@+id/upassign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Upload">
+
+    </Button>
+
+</LinearLayout>

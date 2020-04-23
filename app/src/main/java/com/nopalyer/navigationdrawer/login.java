@@ -37,7 +37,7 @@ public class login extends AppCompatActivity {
     private int ShowPass;
     Boolean isFirstRun;
     ProgressDialog pd;
-    String teacher = "shreyanshjain2674@gmail.com";
+    final String teacher = "shreyanshjain2674@gmail.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,20 +122,7 @@ public class login extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        if (teacher.equals(username)) {
-                            finish();
-                            startActivity(new Intent(login.this, Tpmain.class));
-                            finish();
-                            pd.dismiss();
-                            checkEmailVerification();
-                            finish();
-                        }else{
-                            finish();
-                            startActivity(new Intent(login.this,StudentsPage.class));
-                            pd.dismiss();
-                            checkEmailVerification();
-                            finish();
-                        }
+                        checkEmailVerification(username);
                     }else{
                         Toast.makeText(login.this, "Invalid Password or Email Id", Toast.LENGTH_LONG).show();
                         pd.dismiss();
@@ -148,14 +135,20 @@ public class login extends AppCompatActivity {
     }
 
 
-    private void checkEmailVerification(){
+    private void checkEmailVerification(String email){
         FirebaseUser user = firebaseAuth.getCurrentUser();
         Boolean emailflag = user.isEmailVerified();
 
         if(emailflag){
             Toast.makeText(login.this, "Login successful", Toast.LENGTH_LONG).show();
             finish();
-            startActivity(new Intent(login.this,StudentsPage.class));
+            if(teacher.equals(email)){
+                startActivity(new Intent(login.this,Tpmain.class));
+                pd.dismiss();
+            }else {
+                startActivity(new Intent(login.this,StudentsPage.class));
+                pd.dismiss();
+            }
         }else {
             Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
             finish();

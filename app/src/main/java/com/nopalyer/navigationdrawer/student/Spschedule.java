@@ -5,22 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -33,7 +28,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
 
 public class Spschedule extends AppCompatActivity {
 
@@ -66,7 +60,7 @@ public class Spschedule extends AppCompatActivity {
 
         sp1 = (Spinner) findViewById(R.id.sp1);
         sp2 = (Spinner) findViewById(R.id.sp2);
-        show = (Button) findViewById(R.id.show);
+        show = (Button) findViewById(R.id.upassign);
 
         final String[] year = {"Choose year","1st","2nd","3rd","4th"};
         final String[] group = {"Choose group","A","B","C","D","E","F","G","H","I","J"};
