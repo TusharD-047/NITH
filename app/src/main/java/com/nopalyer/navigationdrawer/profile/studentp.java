@@ -43,6 +43,8 @@ import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class studentp extends AppCompatActivity {
     private ImageView profile;
@@ -56,7 +58,6 @@ public class studentp extends AppCompatActivity {
     Spinner yearspinner;
     SharedPreferences sharedprefs;
     SharedPreferences.Editor editor;
-    public static String save ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,41 +78,6 @@ public class studentp extends AppCompatActivity {
         final FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
-
-        //spinner starts=============================================================================================================================================
-        final  String[] year = {"Choose year","1st year","2nd year","3rd year","4th year"};
-        sharedprefs = getSharedPreferences("yash",MODE_PRIVATE);
-        editor=sharedprefs.edit();
-
-        final int lastposition_yr = sharedprefs.getInt("lastselected_yr",0); // Load data
-
-        ArrayAdapter<String> adapter_year= new ArrayAdapter<String>(studentp.this,R.layout.colourful_spinner_items,year);
-        adapter_year.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
-        yearspinner.setAdapter(adapter_year);
-        yearspinner.setSelection(lastposition_yr);    // Update views
-        yearspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                editor.putInt("lastselected_yr",position).apply();  // save data
-                if (position==0)
-                    save = year[position];
-                if (position==1)
-                    save = year[position];
-                if (position==2)
-                    save = year[position];
-                if (position==3)
-                    save = year[position];
-                if (position==4)
-                    save = year[position];
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
-
-         //spinner ends==============================================================================================================================================
 
         pd.setMessage("Retrieving Info ! Please Smile");
         pd.setCancelable(false);
@@ -154,6 +120,52 @@ public class studentp extends AppCompatActivity {
                 startActivityForResult(Intent.createChooser(intent,"Select Image"),PICK_IMAGE);
             }
         });
+
+        //spinner starts=============================================================================================================================================
+        final  String[] year = {"Choose year","1st year","2nd year","3rd year","4th year"};
+        sharedprefs = getSharedPreferences("yash",MODE_PRIVATE);
+        editor=sharedprefs.edit();
+
+        final int lastposition_yr = sharedprefs.getInt("lastselected_yr",0); // Load data
+
+        ArrayAdapter<String> adapter_year= new ArrayAdapter<String>(studentp.this,R.layout.colourful_spinner_items,year);
+        adapter_year.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
+        yearspinner.setAdapter(adapter_year);
+        yearspinner.setSelection(lastposition_yr);    // Update views
+        yearspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                editor.putInt("lastselected_yr",position).apply();  // save data
+                String save = "";
+                if (position==0){
+                    save = year[position];
+                }
+                if (position==1){
+                    save = year[position];
+                }
+                if (position==2){
+                    save = year[position];
+                }
+                if (position==3){
+                    save = year[position];
+                }
+                if (position==4) {
+                    save = year[position];
+                }
+                DatabaseReference ref = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+                Map<String,Object> map1 = new HashMap<>();
+                map1.put("Year", save);
+                ref.updateChildren(map1);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        //spinner ends==============================================================================================================================================
+
 
     }
 

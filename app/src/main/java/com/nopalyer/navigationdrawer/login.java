@@ -37,7 +37,7 @@ public class login extends AppCompatActivity {
     private int ShowPass;
     Boolean isFirstRun;
     ProgressDialog pd;
-    String teacher = "teacher@gmail.com";
+    String teacher = "shreyanshjain2674@gmail.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

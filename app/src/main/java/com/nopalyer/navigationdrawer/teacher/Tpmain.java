@@ -13,7 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 
+import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.student.StudentsPage;
 import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
 
@@ -109,8 +111,11 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(Tpmain.this, MainActivity.class));
+    }
 }
 
 

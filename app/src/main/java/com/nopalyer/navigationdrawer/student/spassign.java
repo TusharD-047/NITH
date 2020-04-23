@@ -7,8 +7,6 @@ import android.widget.TextView;
 
 import com.nopalyer.navigationdrawer.R;
 
-import static com.nopalyer.navigationdrawer.profile.studentp.save;
-
 public class spassign extends AppCompatActivity {
 
     @Override
@@ -16,6 +14,5 @@ public class spassign extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spassign);
         TextView textView = findViewById(R.id.tre);
-        textView.setText(save);
     }
 }
