@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.nopalyer.navigationdrawer.Login.ForgotPassword;
 import com.nopalyer.navigationdrawer.Login.verification;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
+import com.nopalyer.navigationdrawer.teacher.Tpmain;
 
 public class login extends AppCompatActivity {
 
@@ -36,6 +37,7 @@ public class login extends AppCompatActivity {
     private int ShowPass;
     Boolean isFirstRun;
     ProgressDialog pd;
+    String teacher = "teacher@gmail.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,7 +100,7 @@ public class login extends AppCompatActivity {
 
     }
 
-    private void validate(String username, String userpassword){
+    private void validate(final String username, String userpassword){
         if (TextUtils.isEmpty(username) && TextUtils.isEmpty(userpassword)) {
             Toast.makeText(login.this, "Please enter all fields", Toast.LENGTH_LONG).show();
             return;
@@ -120,20 +122,23 @@ public class login extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        //if (admin.equals(email))
-                        //{ finish();
-                        //startActivity(new Intent(login_form.this, AdminPage.class));
-                        // finish();  }
-                        // else
-                        finish();
-                        pd.dismiss();
-                        checkEmailVerification();
-                        finish();
-
-                    }else {
+                        if (teacher.equals(username)) {
+                            finish();
+                            startActivity(new Intent(login.this, Tpmain.class));
+                            finish();
+                            pd.dismiss();
+                            checkEmailVerification();
+                            finish();
+                        }else{
+                            finish();
+                            startActivity(new Intent(login.this,StudentsPage.class));
+                            pd.dismiss();
+                            checkEmailVerification();
+                            finish();
+                        }
+                    }else{
                         Toast.makeText(login.this, "Invalid Password or Email Id", Toast.LENGTH_LONG).show();
                         pd.dismiss();
-
                     }
                 }
             });
