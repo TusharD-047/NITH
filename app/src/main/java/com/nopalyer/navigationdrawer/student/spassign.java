@@ -2,6 +2,7 @@ package com.nopalyer.navigationdrawer.student;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -39,11 +40,19 @@ public class spassign extends AppCompatActivity {
     ProgressDialog pd2;
     String year = "";
     String branch = "";
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spassign);
+
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Assignment");
+        toolbar.setTitleTextColor(Color.WHITE);
+
         Bundle bundle = getIntent().getExtras();
         year = bundle.getString("year");
         branch = bundle.getString("dep");
@@ -106,7 +115,8 @@ public class spassign extends AppCompatActivity {
                                     View view = super.getView(position, convertView, parent);
 
                                     TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                                    myText.setTextColor(Color.BLACK);
+                                    myText.setTextColor(Color.WHITE);
+                                    myText.setTextSize(20);
 
                                     return view;
                                 }
@@ -148,7 +158,8 @@ public class spassign extends AppCompatActivity {
                             View view = super.getView(position, convertView, parent);
 
                             TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                            myText.setTextColor(Color.BLACK);
+                            myText.setTextColor(Color.WHITE);
+                            myText.setTextSize(20);
 
                             return view;
                         }
