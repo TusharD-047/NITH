@@ -57,7 +57,12 @@ public class login extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         if(firebaseUser != null){
-            startActivity(new Intent(login.this, Tpmain.class));
+            String mail = firebaseUser.getEmail();
+            if(teacher.equals(mail)){
+                startActivity(new Intent(login.this,Tpmain.class));
+            }else {
+                startActivity(new Intent(login.this,StudentsPage.class));
+            }
         }else {
             firebaseAuth = FirebaseAuth.getInstance();
             Login.setOnClickListener(new View.OnClickListener() {

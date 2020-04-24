@@ -31,15 +31,20 @@ import com.nopalyer.navigationdrawer.profile.studentp;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
 import com.nopalyer.navigationdrawer.student.help.help;
 
+import java.util.HashMap;
+
 public class StudentsPage extends AppCompatActivity {
 
     CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule,assignm;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference ref;
+    HashMap<String, Object> student = new HashMap<>();
 
 ;    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students_page);
         faculty_card = (CardView) findViewById(R.id.faculty_card);
@@ -57,6 +62,7 @@ public class StudentsPage extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
 
         faculty_card.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -112,7 +118,24 @@ public class StudentsPage extends AppCompatActivity {
         assignm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(StudentsPage.this, spassign.class));
+                ref =firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+                ref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        student = (HashMap<String, Object>) dataSnapshot.getValue();
+                        String year = student.get("Year").toString();
+                        String branch = student.get("Department").toString();
+                        Intent i = new Intent(StudentsPage.this,spassign.class);
+                        i.putExtra("year",year);
+                        i.putExtra("dep",branch);
+                        startActivity(i);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        Toast.makeText(StudentsPage.this,databaseError.getCode(),Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
