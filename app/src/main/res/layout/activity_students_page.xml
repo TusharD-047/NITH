@@ -81,7 +81,7 @@
                         android:text="Schedule"
                         android:textColor="#131313"
                         android:textSize="18dp"
-                        android:textStyle="normal" />
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -118,6 +118,7 @@
                         android:layout_marginTop="12dp"
                         android:text="Notifications"
                         android:textColor="#191515"
+                        android:textStyle="bold"
                         android:textSize="18dp" />
 
 
@@ -155,6 +156,7 @@
                         android:layout_marginTop="12dp"
                         android:text="Study Material"
                         android:textColor="#000000"
+                        android:textStyle="bold"
                         android:textSize="18dp" />
 
 
@@ -165,6 +167,47 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="5dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="0dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorButtonNormal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/assign" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Assignment"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/registration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
@@ -184,14 +227,15 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/assign1" />
+                        android:src="@drawable/registration" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:text="Assignment"
+                        android:text="Registration"
                         android:textColor="#000000"
+                        android:textStyle="bold"
                         android:textSize="18dp" />
 
 
@@ -199,6 +243,7 @@
 
 
             </androidx.cardview.widget.CardView>
+
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/attendance"
@@ -228,6 +273,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Attendance"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -265,6 +311,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Calender"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -303,6 +350,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="My Profile"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -342,6 +390,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Branch Faculty"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -380,6 +429,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Clubs"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -417,6 +467,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Help"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -455,6 +506,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:text="Visit Website"
+                        android:textStyle="bold"
                         android:textColor="#000000"
                         android:textSize="18dp" />
 
@@ -492,6 +544,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:textStyle="bold"
                         android:text="About Us"
                         android:textColor="#000000"
                         android:textSize="18dp" />
