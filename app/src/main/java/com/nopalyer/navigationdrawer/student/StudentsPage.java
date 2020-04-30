@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.Registration;
 import com.nopalyer.navigationdrawer.login;
 import com.nopalyer.navigationdrawer.profile.studentp;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
@@ -35,7 +36,7 @@ import java.util.HashMap;
 
 public class StudentsPage extends AppCompatActivity {
 
-    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule,assignm;
+    CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule,assignm,registration;
     private FirebaseAuth firebaseAuth;
     Toolbar toolbar;
     private FirebaseDatabase firebaseDatabase;
@@ -56,6 +57,7 @@ public class StudentsPage extends AppCompatActivity {
         help = (CardView) findViewById(R.id.help);
         schedule = (CardView)findViewById(R.id.spsch);
         assignm = (CardView)findViewById(R.id.assign);
+        registration= (CardView)findViewById(R.id.registration);
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -113,6 +115,12 @@ public class StudentsPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(StudentsPage.this, Spschedule.class));
+            }
+        });
+        registration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(StudentsPage.this, Registration.class));
             }
         });
         assignm.setOnClickListener(new View.OnClickListener() {

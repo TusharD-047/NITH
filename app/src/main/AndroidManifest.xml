@@ -17,7 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".teacher.tpassign"></activity>
+        <activity android:name=".Bonafide_Application"></activity>
+        <activity android:name=".Btech_registration" />
+        <activity android:name=".Registration" />
+        <activity android:name=".teacher.tpassign" />
         <activity android:name=".student.spassign" />
         <activity android:name=".student.Spschedule" />
         <activity android:name=".fees" />
