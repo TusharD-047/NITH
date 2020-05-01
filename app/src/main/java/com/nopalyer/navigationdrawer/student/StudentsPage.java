@@ -26,9 +26,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.nopalyer.navigationdrawer.Login.ChangePassword;
 import com.nopalyer.navigationdrawer.MainActivity;
 import com.nopalyer.navigationdrawer.R;
-import com.nopalyer.navigationdrawer.Registration;
 import com.nopalyer.navigationdrawer.login;
 import com.nopalyer.navigationdrawer.profile.studentp;
+import com.nopalyer.navigationdrawer.student.Register.Register;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
 import com.nopalyer.navigationdrawer.student.help.help;
 
@@ -120,7 +120,7 @@ public class StudentsPage extends AppCompatActivity {
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(StudentsPage.this, Registration.class));
+                startActivity(new Intent(StudentsPage.this, Register.class));
             }
         });
         assignm.setOnClickListener(new View.OnClickListener() {

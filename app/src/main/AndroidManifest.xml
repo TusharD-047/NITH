@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Bonafide_Application"></activity>
         <activity android:name=".Btech_registration" />
-        <activity android:name=".Registration" />
+        <activity android:name=".student.Register.Register" />
         <activity android:name=".teacher.tpassign" />
         <activity android:name=".student.spassign" />
         <activity android:name=".student.Spschedule" />
