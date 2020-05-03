@@ -19,7 +19,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nopalyer.navigationdrawer.Login.ForgotPassword;
 import com.nopalyer.navigationdrawer.Login.verification;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
@@ -34,10 +38,10 @@ public class login extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseUser firebaseUser;
     private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
     private int ShowPass;
     Boolean isFirstRun;
     ProgressDialog pd;
-    final String teacher = "shreyanshjain2674@gmail.com";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,10 +61,10 @@ public class login extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         if(firebaseUser != null){
-            String mail = firebaseUser.getEmail();
-            if(teacher.equals(mail)){
+            String role = getIntent().getExtras().getString("roless");
+            if(role.equals("teacher")){
                 startActivity(new Intent(login.this,Tpmain.class));
-            }else {
+            }if(role.equals("student")) {
                 startActivity(new Intent(login.this,StudentsPage.class));
             }
         }else {
@@ -127,7 +131,7 @@ public class login extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
-                        checkEmailVerification(username);
+                        checkEmailVerification();
                     }else{
                         Toast.makeText(login.this, "Invalid Password or Email Id", Toast.LENGTH_LONG).show();
                         pd.dismiss();
@@ -140,20 +144,33 @@ public class login extends AppCompatActivity {
     }
 
 
-    private void checkEmailVerification(String email){
+    private void checkEmailVerification(){
         FirebaseUser user = firebaseAuth.getCurrentUser();
         Boolean emailflag = user.isEmailVerified();
 
         if(emailflag){
             Toast.makeText(login.this, "Login successful", Toast.LENGTH_LONG).show();
             finish();
-            if(teacher.equals(email)){
-                startActivity(new Intent(login.this,Tpmain.class));
-                pd.dismiss();
-            }else {
-                startActivity(new Intent(login.this,StudentsPage.class));
-                pd.dismiss();
-            }
+            databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+            databaseReference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    String role = dataSnapshot.child("role").getValue().toString();
+
+                    if(role.equals("teacher")){
+                        startActivity(new Intent(login.this,Tpmain.class));
+                        pd.dismiss();
+                    }if(role.equals("student")) {
+                        startActivity(new Intent(login.this,StudentsPage.class));
+                        pd.dismiss();
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                }
+            });
         }else {
             Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
             finish();

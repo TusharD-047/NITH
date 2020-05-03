@@ -54,17 +54,19 @@ public class studentp extends AppCompatActivity {
     StorageReference storageReference;
     FirebaseAuth firebaseAuth;
     FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
     FirebaseStorage firebaseStorage;
     Spinner yearspinner;
-    SharedPreferences sharedprefs;
-    SharedPreferences.Editor editor;
+    SharedPreferences sharedprefs,sharedPreferences2;
+    SharedPreferences.Editor editor,editor2;
+    String save = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_studentp);
 
-        yearspinner=(Spinner)findViewById(R.id.profilespinner);
+        yearspinner=(Spinner)findViewById(R.id.profileSpinner);
         profile = (ImageView)findViewById(R.id.profilep);
         name = (TextView)findViewById(R.id.name123);
         roll = (TextView)findViewById(R.id.roll123);
@@ -83,7 +85,7 @@ public class studentp extends AppCompatActivity {
         pd.setCancelable(false);
         pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         pd.show();
-        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+        databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
         storageReference = firebaseStorage.getReference();
         storageReference.child(firebaseAuth.getUid()).child("image").child("Profile").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
@@ -122,13 +124,13 @@ public class studentp extends AppCompatActivity {
         });
 
         //spinner starts=============================================================================================================================================
-        final  String[] year = {"Choose year","1st year","2nd year","3rd year","4th year"};
+        final  String[] year1 = {"Choose year","1st year","2nd year","3rd year","4th year"};
         sharedprefs = getSharedPreferences("yash",MODE_PRIVATE);
         editor=sharedprefs.edit();
 
         final int lastposition_yr = sharedprefs.getInt("lastselected_yr",0); // Load data
 
-        ArrayAdapter<String> adapter_year= new ArrayAdapter<String>(studentp.this,R.layout.colourful_spinner_items,year);
+        ArrayAdapter<String> adapter_year= new ArrayAdapter<String>(studentp.this,R.layout.colourful_spinner_items,year1);
         adapter_year.setDropDownViewResource(R.layout.colourful_spinner_dropdown);
         yearspinner.setAdapter(adapter_year);
         yearspinner.setSelection(lastposition_yr);    // Update views
@@ -136,26 +138,12 @@ public class studentp extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 editor.putInt("lastselected_yr",position).apply();  // save data
-                String save = "";
-                if (position==0){
-                    save = year[position];
-                }
-                if (position==1){
-                    save = year[position];
-                }
-                if (position==2){
-                    save = year[position];
-                }
-                if (position==3){
-                    save = year[position];
-                }
-                if (position==4) {
-                    save = year[position];
-                }
-                DatabaseReference ref = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
-                Map<String,Object> map1 = new HashMap<>();
-                map1.put("Year", save);
-                ref.updateChildren(map1);
+                save = year1[position];
+
+                sharedPreferences2 = getSharedPreferences("shree",MODE_PRIVATE);
+                editor2 = sharedPreferences2.edit();
+                editor2.putString("yearupdate",save).apply();
+
             }
 
             @Override
@@ -163,6 +151,7 @@ public class studentp extends AppCompatActivity {
 
             }
         });
+
 
         //spinner ends==============================================================================================================================================
 

@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -23,6 +24,13 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.nopalyer.navigationdrawer.AboutNithhp.home1;
 
 
@@ -41,6 +49,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ArrayList<hme> list1;
     final String STATE_LIST = "state_list";
     final String STATE_MODE = "state_mode";
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference ref;
+    ProgressDialog pd;
 
     int mode;
 
@@ -51,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        pd =new ProgressDialog(this);
 
         dir_card=(CardView) findViewById(R.id.dir_card);
         pl_card=(CardView) findViewById(R.id.pl_card);
@@ -138,8 +151,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(myintent);
                 return false;
             case R.id.login:
-                myintent = new Intent(MainActivity.this, login.class);
-                startActivity(myintent);
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if (user != null){
+                    pd.setMessage("Signing In ! Please Smile");
+                    pd.setCancelable(false);
+                    pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                    pd.show();
+                    FirebaseAuth firebaseAuth1 = FirebaseAuth.getInstance();
+                    ref= firebaseDatabase.getReference(firebaseAuth1.getUid()).child("Profile");
+                    ref.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            String rooles = dataSnapshot.child("role").getValue().toString();
+                            Intent myintent = new Intent(MainActivity.this, login.class);
+                            myintent.putExtra("roless",rooles);
+                            startActivity(myintent);
+                            pd.dismiss();
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
+                }else {
+                    startActivity(new Intent(MainActivity.this,login.class));
+                }
+
                 return false;
 
             case R.id.events:

@@ -59,7 +59,7 @@ public class spassign extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
-        ListForm = (ListView)findViewById(R.id.ListPDF);
+        ListForm = (ListView)findViewById(R.id.Listassign);
         pd2 =new ProgressDialog(this);
         uploadPDFS = new ArrayList<>();
         ref2 = firebaseDatabase.getReference("Group").child(firebaseAuth.getUid());
@@ -174,5 +174,12 @@ public class spassign extends AppCompatActivity {
             });
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+        startActivity(new Intent(spassign.this,StudentsPage.class));
     }
 }

@@ -1,6 +1,7 @@
 package com.nopalyer.navigationdrawer.student;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
@@ -42,6 +43,7 @@ public class StudentsPage extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference ref;
     HashMap<String, Object> student = new HashMap<>();
+    SharedPreferences spyr;
 
 ;    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -58,6 +60,7 @@ public class StudentsPage extends AppCompatActivity {
         schedule = (CardView)findViewById(R.id.spsch);
         assignm = (CardView)findViewById(R.id.assign);
         registration= (CardView)findViewById(R.id.registration);
+
 
         toolbar = (Toolbar)findViewById(R.id.toolbar);
 
@@ -126,7 +129,13 @@ public class StudentsPage extends AppCompatActivity {
         assignm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Bundle bundle = getIntent().getExtras();
+                //updateYear = bundle.getString("yearupdate");
+                spyr = getSharedPreferences("shree",MODE_PRIVATE);
+                final String updtyear = spyr.getString("yearupdate","");
+
                 ref =firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+                ref.child("Year").setValue(updtyear);
                 ref.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
