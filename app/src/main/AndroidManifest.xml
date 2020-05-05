@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bonafide_Application"></activity>
+        <activity android:name=".ViewActivity"></activity>
+        <activity android:name=".Bonafide_Application" />
         <activity android:name=".Btech_registration" />
         <activity android:name=".student.Register.Register" />
         <activity android:name=".teacher.tpassign" />
