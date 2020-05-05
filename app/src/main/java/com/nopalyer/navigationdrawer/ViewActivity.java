@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 
 import android.graphics.Canvas;
@@ -57,7 +58,7 @@ public class ViewActivity extends AppCompatActivity {
     private static final String TAG = "AdminActivity";
     private TextView name,faname,rolln,dobn,semtr,catg;
     Bundle bundle;
-    private Button addpdf;
+    private Button addpdf,edit,next;
     private FirebaseAuth firebaseAuth;
     private ProgressDialog mProgress;
     final long ONE_MEGABYTE = 1024*1024*5;
@@ -90,7 +91,7 @@ public class ViewActivity extends AppCompatActivity {
                 mProgress.show();
                 if(generatePDF(email,bundle)) {
                     mProgress.dismiss();
-                    Toast.makeText(ViewActivity.this,"PDF created", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ViewActivity.this,"PDF created and save in phone storage Vindroid Folder", Toast.LENGTH_LONG).show();
                     //openPDF(email);
                 }else {
                     mProgress.dismiss();
@@ -99,6 +100,19 @@ public class ViewActivity extends AppCompatActivity {
             }
         });
 
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewActivity.this,Btech_registration.class));
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ViewActivity.this,UpDocument.class));
+            }
+        });
     }
 
     private void  UI(){
@@ -109,6 +123,8 @@ public class ViewActivity extends AppCompatActivity {
         semtr = (TextView)findViewById(R.id.tvSem);
         catg = (TextView)findViewById(R.id.tvCategory);
         addpdf = (Button)findViewById(R.id.addpdf);
+        edit = (Button)findViewById(R.id.edit);
+        next = (Button)findViewById(R.id.upload2);
         firebaseAuth = FirebaseAuth.getInstance();
     }
 
