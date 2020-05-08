@@ -119,11 +119,12 @@
                 app:cardBackgroundColor="@color/Table_bg">
 
 
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="Choose File"/>
+                <Button
+                    android:id="@+id/upPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Choose File" />
             </androidx.cardview.widget.CardView>
         </TableRow>
 
@@ -166,12 +167,12 @@
                 app:cardBackgroundColor="@color/Table_bg">
 
 
-
                 <Button
+                    android:id="@+id/upId"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Choose File"/>
+                    android:text="Choose File" />
             </androidx.cardview.widget.CardView>
         </TableRow>
 
@@ -214,11 +215,12 @@
                 app:cardBackgroundColor="@color/Table_bg">
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Choose File"/>
+                <Button
+                    android:id="@+id/upForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Choose File" />
 
             </androidx.cardview.widget.CardView>
 

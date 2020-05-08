@@ -66,6 +66,8 @@ public class login extends AppCompatActivity {
                 startActivity(new Intent(login.this,Tpmain.class));
             }if(role.equals("student")) {
                 startActivity(new Intent(login.this,StudentsPage.class));
+            }if(role.equals("admin")){
+                startActivity(new Intent(login.this,AdminActivity.class));
             }
         }else {
             firebaseAuth = FirebaseAuth.getInstance();
@@ -162,6 +164,9 @@ public class login extends AppCompatActivity {
                         pd.dismiss();
                     }if(role.equals("student")) {
                         startActivity(new Intent(login.this,StudentsPage.class));
+                        pd.dismiss();
+                    }if(role.equals("admin")){
+                        startActivity(new Intent(login.this,AdminActivity.class));
                         pd.dismiss();
                     }
                 }
