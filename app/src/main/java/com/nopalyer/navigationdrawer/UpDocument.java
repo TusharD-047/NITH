@@ -192,7 +192,7 @@ public class UpDocument extends AppCompatActivity {
                         Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                         while(!uri.isComplete());
                         Uri url1 = uri.getResult();
-                        uploadPDF uploadPDF = new uploadPDF("Profile",url1.toString());
+                        uploadPDF uploadPDF = new uploadPDF(name,url1.toString());
                         mref.child(yr).child(dep).child(roll).child(mref.push().getKey()).setValue(uploadPDF);
                         pd1.dismiss();
                         Toast.makeText(UpDocument.this,"Form Uploaded",Toast.LENGTH_SHORT).show();
