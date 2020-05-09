@@ -30,7 +30,6 @@
         android:id="@+id/myGrid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
         android:columnWidth="145dp"
         android:numColumns="2"

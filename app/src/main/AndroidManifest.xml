@@ -18,10 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminDetails"></activity>
-        <activity android:name=".AdminRoll" />
-        <activity android:name=".AdminDept" />
-        <activity android:name=".AdminActivity" />
+        <activity android:name=".Admin.AdminDetails"></activity>
+        <activity android:name=".Admin.AdminRoll" />
+        <activity android:name=".Admin.AdminDept" />
+        <activity android:name=".Admin.AdminActivity" />
         <activity android:name=".UpDocument" />
         <activity android:name=".ViewActivity" />
         <activity android:name=".Bonafide_Application" />

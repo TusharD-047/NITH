@@ -1,11 +1,11 @@
-package com.nopalyer.navigationdrawer;
+package com.nopalyer.navigationdrawer.Admin;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,61 +15,68 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.uploadPDF;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminRoll extends AppCompatActivity {
+public class AdminDetails extends AppCompatActivity {
 
     private ListView ListForm;
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
-    List<String> listDataHeader;
-    String dep = "",yr = "";
+    List<uploadPDF> uploadPDFS;
+    String yr,dep,roll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_roll);
+        setContentView(R.layout.activity_admin_details);
+
+        yr = getIntent().getExtras().getString("yr");
+        dep = getIntent().getExtras().getString("dep");
+        roll = getIntent().getExtras().getString("roll");
 
         firebaseAuth = FirebaseAuth.getInstance();
-        ListForm = (ListView)findViewById(R.id.ListRoll);
-        dep = getIntent().getExtras().getString("dep");
-        yr = getIntent().getExtras().getString("yr");
+        ListForm = (ListView)findViewById(R.id.ListDetails);
+        uploadPDFS = new ArrayList<>();
 
         viewAllFiles();
 
         ListForm.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = listDataHeader.get(position);
-                Intent i = new Intent(AdminRoll.this, AdminDetails.class);
-                i.putExtra("roll", item);
-                i.putExtra("dep", dep);
-                i.putExtra("yr", yr);
-                startActivity(i);
+                uploadPDF uploadPDF = uploadPDFS.get(position);
+
+                Intent intent = new Intent();
+                intent.setType(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(uploadPDF.getUrl()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                Intent newIntent = Intent.createChooser(intent,"Open File");
+                startActivity(newIntent);
             }
         });
     }
 
     private void viewAllFiles() {
-
-        listDataHeader = new ArrayList<>();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Application Form").child(yr).child(dep);
-        databaseReference.addChildEventListener(new ChildEventListener() {
+        databaseReference = FirebaseDatabase.getInstance().getReference("Application Form").child(yr).child(dep).child(roll);
+        databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                final String headertitile = dataSnapshot.getKey();
-                listDataHeader.add(headertitile);
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for(DataSnapshot postSnapshot: dataSnapshot.getChildren()){
 
-                String[] uploads = new String[listDataHeader.size()];
+                    uploadPDF uploadPDF = postSnapshot.getValue(com.nopalyer.navigationdrawer.uploadPDF.class);
+                    uploadPDFS.add(uploadPDF);
+                }
+                String[] uploads = new String[uploadPDFS.size()];
                 for(int i=0; i<uploads.length;i++){
-                    uploads[i] = listDataHeader.get(i);
+                    uploads[i] = uploadPDFS.get(i).getNaMe();
                 }
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,uploads){
 
@@ -85,21 +92,6 @@ public class AdminRoll extends AppCompatActivity {
                     }
                 };
                 ListForm.setAdapter(adapter);
-            }
-
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
             }
 
             @Override

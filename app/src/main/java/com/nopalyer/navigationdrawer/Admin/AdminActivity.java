@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer;
+package com.nopalyer.navigationdrawer.Admin;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,6 +20,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.nopalyer.navigationdrawer.R;
+import com.nopalyer.navigationdrawer.login;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,6 +109,6 @@ public class AdminActivity extends AppCompatActivity {
     public void logout(View view){
         firebaseAuth.signOut();
         finish();
-        startActivity(new Intent(AdminActivity.this,login.class));
+        startActivity(new Intent(AdminActivity.this, login.class));
     }
 }

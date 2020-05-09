@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.nopalyer.navigationdrawer.Admin.AdminActivity;
 import com.nopalyer.navigationdrawer.Login.ForgotPassword;
 import com.nopalyer.navigationdrawer.Login.verification;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
@@ -67,7 +68,7 @@ public class login extends AppCompatActivity {
             }if(role.equals("student")) {
                 startActivity(new Intent(login.this,StudentsPage.class));
             }if(role.equals("admin")){
-                startActivity(new Intent(login.this,AdminActivity.class));
+                startActivity(new Intent(login.this, AdminActivity.class));
             }
         }else {
             firebaseAuth = FirebaseAuth.getInstance();

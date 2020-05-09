@@ -33,7 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="25dp"
         android:columnWidth="145dp"
         android:horizontalSpacing="10dp"
         android:numColumns="2"

@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:text="National Institute Of Technology\n                    Hamirpur"
+            android:text="National Institute Of Technology\nHamirpur"
+            android:gravity="center"
             android:textColor="@color/colorBack"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -32,7 +33,7 @@
             android:layout_marginLeft="10dp"
             android:lineSpacingExtra="5dp"
             android:text="Established in 1986, NIT Hamirpur is an institute of engineering and technology. Earlier, it was known as the Regional Engineering College. In the beginning, the classes were taken at the Government Polytechnic College. Later on, when the development of the campus began, the institute opened three departments, namely Electrical and Electronics Engineering, Civil Engineering and Mechanical Engineering.\nBy 1988, the institute added two more departments, namely Communication Engineering and Computer Science. In 2000, the Department of Architecture was opened. In 2013, the Department of Chemical Engineering was built.\nIn 2002, the institute was awarded the status of a deemed university and it was considered among the NIT Group of Institutions. After 2005, the institute began offering PhD level programmes. Presently, the institute comprises 15 departments and two centres, namely the Centre for Excellence in Energy and Environment and Centre for Material Science and Engineering.Various known organisations visit the institute for placements. Many students have bagged great salary offers."
-            android:textColor="#F37878"
+            android:textColor="#00BFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>

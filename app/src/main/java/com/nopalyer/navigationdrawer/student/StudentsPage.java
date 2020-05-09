@@ -35,6 +35,7 @@ import com.nopalyer.navigationdrawer.student.help.help;
 
 import java.util.HashMap;
 
+
 public class StudentsPage extends AppCompatActivity {
 
     CardView faculty_card,clubs_card,myProfile,website,aboutdev,calender,help,schedule,assignm,registration;
