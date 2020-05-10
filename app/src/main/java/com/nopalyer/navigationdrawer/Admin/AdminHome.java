@@ -28,6 +28,8 @@ public class AdminHome extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        firebaseAuth = FirebaseAuth.getInstance();
+
         btechreg = (CardView)findViewById(R.id.adminbtechreg);
 
         btechreg.setOnClickListener(new View.OnClickListener() {
