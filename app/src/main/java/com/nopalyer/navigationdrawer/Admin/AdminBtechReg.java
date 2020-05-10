@@ -26,7 +26,7 @@ import com.nopalyer.navigationdrawer.login;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdminActivity extends AppCompatActivity {
+public class AdminBtechReg extends AppCompatActivity {
 
     private ListView ListForm;
     private FirebaseAuth firebaseAuth;
@@ -36,7 +36,7 @@ public class AdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin);
+        setContentView(R.layout.admin_btechreg);
 
         firebaseAuth = FirebaseAuth.getInstance();
         ListForm = (ListView)findViewById(R.id.ListYear);
@@ -47,7 +47,7 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = listDataHeader.get(position);
-                Intent i = new Intent(AdminActivity.this, AdminDept.class);
+                Intent i = new Intent(AdminBtechReg.this, AdminDept.class);
                 i.putExtra("yr", item);
                 startActivity(i);
             }
@@ -106,9 +106,4 @@ public class AdminActivity extends AppCompatActivity {
         });
     }
 
-    public void logout(View view){
-        firebaseAuth.signOut();
-        finish();
-        startActivity(new Intent(AdminActivity.this, login.class));
-    }
 }
