@@ -14,6 +14,14 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.nopalyer.navigationdrawer.Admin.AdminBtechReg;
+import com.nopalyer.navigationdrawer.Admin.AdminNoReg;
 import com.nopalyer.navigationdrawer.Bonafide_Application;
 import com.nopalyer.navigationdrawer.Btech_registration;
 import com.nopalyer.navigationdrawer.R;
@@ -24,6 +32,10 @@ public class SimpleRecyclerAdapter2 extends RecyclerView.Adapter<SimpleRecyclerA
 
     private Context context;
     private ArrayList<reg> listreg;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference ref1,ref2;
+    String semcon,sembon;
 
     public SimpleRecyclerAdapter2(Context context) {
         this.context = context;
@@ -50,23 +62,63 @@ public class SimpleRecyclerAdapter2 extends RecyclerView.Adapter<SimpleRecyclerA
 
     @Override
     public void onBindViewHolder(@NonNull SimpleRecyclerAdapter2.SimpleViewHolder holder, final int position) {
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+
+        ref1 = firebaseDatabase.getReference("Admin Switch").child("Semester Switch");
+        ref1.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                semcon = dataSnapshot.child("Condition").getValue().toString();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+        ref2 = firebaseDatabase.getReference("Admin Switch").child("Bonafide Switch");
+        ref2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                sembon = dataSnapshot.child("Condition").getValue().toString();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         holder.textView.setText(getListreg().get(position).getName());
         Glide.with(context).load(getListreg().get(position).getPhoto()).into(holder.imageView);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final Intent intent;
                 switch (position){
                     case 0:
-                        intent= new Intent(context, Btech_registration.class);
+                        if (semcon.equals("On")){
+                            Intent intent = new Intent(context, AdminBtechReg.class);
+                            context.startActivity(intent);
+                        }if (semcon.equals("Off")){
+                            Intent intent = new Intent(context, AdminNoReg.class);
+                            context.startActivity(intent);
+                        }
                         break;
                     case 1:
-                        intent= new Intent(context, Bonafide_Application.class);
+                        if (sembon.equals("On")){
+                            Intent intent = new Intent(context, Bonafide_Application.class);
+                            context.startActivity(intent);
+                        }if (sembon.equals("Off")){
+                            Intent intent = new Intent(context, AdminNoReg.class);
+                            context.startActivity(intent);
+                        }
                         break;
                     default:
                         throw new IllegalStateException("Unexpected value: " + position);
                 }
-                context.startActivity(intent);
+
             }
         });
     }

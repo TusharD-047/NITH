@@ -67,7 +67,6 @@ public class AdminHome extends AppCompatActivity {
 
         }
 
-
         return true;
 
     }
