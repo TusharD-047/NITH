@@ -42,7 +42,7 @@ public class login extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     private int ShowPass;
-    Boolean isFirstRun;
+    //Boolean isFirstRun;
     ProgressDialog pd;
 
     @Override
@@ -50,8 +50,8 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true);
+        /*isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("isFirstRun", true);*/
 
         email = (EditText)findViewById(R.id.email1);
         password = (EditText)findViewById(R.id.pass);
@@ -63,14 +63,22 @@ public class login extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
 
         if(firebaseUser != null){
-            String role = getIntent().getExtras().getString("roless");
-            if(role.equals("teacher")){
-                startActivity(new Intent(login.this,Tpmain.class));
-            }if(role.equals("student")) {
-                startActivity(new Intent(login.this,StudentsPage.class));
-            }if(role.equals("admin")){
-                startActivity(new Intent(login.this, AdminHome.class));
+            Boolean emailflag = firebaseUser.isEmailVerified();
+            if (emailflag){
+                String role = getIntent().getExtras().getString("roless");
+                if(role.equals("teacher")){
+                    startActivity(new Intent(login.this,Tpmain.class));
+                }if(role.equals("student")) {
+                    startActivity(new Intent(login.this,StudentsPage.class));
+                }if(role.equals("admin")){
+                    startActivity(new Intent(login.this, AdminHome.class));
+                }
+            }else{
+                Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
+                finish();
+                startActivity(new Intent(login.this,verification.class));
             }
+
         }else {
             firebaseAuth = FirebaseAuth.getInstance();
             Login.setOnClickListener(new View.OnClickListener() {
@@ -181,7 +189,8 @@ public class login extends AppCompatActivity {
         }else {
             Toast.makeText(login.this, "Verify Your Email", Toast.LENGTH_LONG).show();
             finish();
-            if (isFirstRun) {
+            startActivity(new Intent(login.this,verification.class));
+            /*if (isFirstRun) {
 
                 //show start activity
                 startActivity(new Intent(login.this,verification.class));
@@ -191,7 +200,7 @@ public class login extends AppCompatActivity {
             }
 
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
-                    .putBoolean("isFirstRun", false).apply();
+                    .putBoolean("isFirstRun", false).apply();*/
         }
     }
 }
