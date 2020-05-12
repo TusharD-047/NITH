@@ -24,6 +24,7 @@ import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -55,8 +56,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ArrayList<hme> list1;
     final String STATE_LIST = "state_list";
     final String STATE_MODE = "state_mode";
-    private FirebaseAuth firebaseAuth;
-    private FirebaseStorage firebaseStorage;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference ref;
     ProgressDialog pd;
@@ -69,23 +68,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
-        firebaseStorage = FirebaseStorage.getInstance();
         pd =new ProgressDialog(this);
 
         profile = findViewById(R.id.profilePic987);
-
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        if (user != null){
-            StorageReference storageReference = firebaseStorage.getReference();
-            storageReference.child(firebaseAuth.getUid()).child("image").child("Profile").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                @Override
-                public void onSuccess(Uri uri) {
-                    Picasso.get().load(uri).fit().centerCrop().into(profile);
-                }
-            });
-        }
 
         dir_card=(CardView) findViewById(R.id.dir_card);
         pl_card=(CardView) findViewById(R.id.pl_card);
