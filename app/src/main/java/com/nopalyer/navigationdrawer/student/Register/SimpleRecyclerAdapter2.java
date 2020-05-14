@@ -99,7 +99,7 @@ public class SimpleRecyclerAdapter2 extends RecyclerView.Adapter<SimpleRecyclerA
                 switch (position){
                     case 0:
                         if (semcon.equals("On")){
-                            Intent intent = new Intent(context, AdminBtechReg.class);
+                            Intent intent = new Intent(context, Btech_registration.class);
                             context.startActivity(intent);
                         }if (semcon.equals("Off")){
                             Intent intent = new Intent(context, AdminNoReg.class);
