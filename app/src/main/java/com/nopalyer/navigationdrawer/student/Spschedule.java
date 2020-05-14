@@ -37,7 +37,7 @@ public class Spschedule extends AppCompatActivity {
     ProgressDialog pd;
     private Spinner sp1,sp2;
     public static String dep,year2;
-    private Button show;
+   // private Button show;
     ArrayAdapter<String> adapter_year,adapter_group,adapter_department;
     SharedPreferences sharedprefs;
     SharedPreferences.Editor editor;
@@ -60,7 +60,7 @@ public class Spschedule extends AppCompatActivity {
 
         sp1 = (Spinner) findViewById(R.id.sp1);
         sp2 = (Spinner) findViewById(R.id.sp2);
-        show = (Button) findViewById(R.id.upassign);
+      //  show = (Button) findViewById(R.id.upassign);
 
         final String[] year = {"Choose year","1st","2nd","3rd","4th"};
         final String[] group = {"Choose group","A","B","C","D","E","F","G","H","I","J"};
@@ -86,7 +86,7 @@ public class Spschedule extends AppCompatActivity {
 
                 if(position==0)
                 {
-                    show.setEnabled(false);
+              //      show.setEnabled(false);
                 }
                 if(position==1)
                 {
@@ -103,7 +103,7 @@ public class Spschedule extends AppCompatActivity {
                             dep = group[position];
                           if(position==0)
                           {
-                           show.setEnabled(false);
+                          // show.setEnabled(false);
                           }
                             else
                                 {
@@ -181,56 +181,56 @@ public class Spschedule extends AppCompatActivity {
 
                             if(position==0)
                             {
-                                show.setEnabled(false);
+                              //  show.setEnabled(false);
                             }
                             if(position==1)
                             {
-                                show.setEnabled(true);
+                             //   show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==2)
                             {
-                                show.setEnabled(true);
+                                //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==3)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==4)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==5)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==6)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==7)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==8)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==9)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==10)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                         }
@@ -256,56 +256,56 @@ public class Spschedule extends AppCompatActivity {
                             editor.putInt("lastselected_dep",position).apply();
                             if(position==0)
                             {
-                                show.setEnabled(false);
+                              //  show.setEnabled(false);
                             }
                             if(position==1)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==2)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==3)
                             {
-                                show.setEnabled(true);
+                             //   show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==4)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==5)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==6)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==7)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==8)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==9)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==10)
                             {
-                                show.setEnabled(true);
+                             //   show.setEnabled(true);
                                 dep = department[position];
                             }
                         }
@@ -331,58 +331,58 @@ public class Spschedule extends AppCompatActivity {
                             editor.putInt("lastselected_dep",position).apply();
                             if(position==0)
                             {
-                                show.setEnabled(false);
+                              //  show.setEnabled(false);
                             }
                             if(position==1)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==2)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==3)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
 
                             if(position==4)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==5)
                             {
-                                show.setEnabled(true);
+                               // show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==6)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==7)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
 
                             }
                             if(position==8)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==9)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                             if(position==10)
                             {
-                                show.setEnabled(true);
+                              //  show.setEnabled(true);
                                 dep = department[position];
                             }
                         }

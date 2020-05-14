@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".ViewActivity">
 
-    <ScrollView
+    <LinearLayout
         android:id="@+id/scrollView2"
-        android:layout_width="383dp"
-        android:layout_height="500dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="#000000"/>
 
         <TableLayout
+            android:layout_marginTop="30dp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
@@ -27,9 +29,11 @@
 
                 <TextView
                     android:id="@+id/name"
-                    android:layout_width="108dp"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="#eeeeee"
                     android:layout_height="wrap_content"
-                    android:padding="3dip"
                     android:text="Name" />
 
                 <TextView
@@ -46,7 +50,9 @@
                     android:id="@+id/sem"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="3dip"
+                    android:textSize="18sp"
+                    android:textColor="#eeeeee"
+                    android:paddingLeft="5dp"
                     android:text="Semester  " />
 
                 <TextView
@@ -162,6 +168,6 @@
         </TableLayout>
 
 
-    </ScrollView>
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

@@ -37,6 +37,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.nopalyer.navigationdrawer.AboutNithhp.home1;
+import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.squareup.picasso.Picasso;
 
 
@@ -205,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.aboutdevelopers:
-                myintent = new Intent(MainActivity.this, aboutdevelopers.class);
+                myintent = new Intent(MainActivity.this, aboutdev.class);
                 startActivity(myintent);
                 return false;
         }
