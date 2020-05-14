@@ -171,7 +171,7 @@ public class hostels extends AppCompatActivity {
         Glide.with(this).load(R.drawable.dhauladhar).apply(requestOptions).into(dau);
         Glide.with(this).load(R.drawable.aravali).apply(requestOptions).into(ara);
         Glide.with(this).load(R.drawable.manimahesh).apply(requestOptions).into(mani);
-        Glide.with(this).load(R.drawable.ambika).apply(requestOptions).into(ambika);
+        Glide.with(this).load(R.drawable.ambika).apply(requestOptions).optionalCenterCrop().into(ambika);
         Glide.with(this).load(R.drawable.himgiri).apply(requestOptions).into(himgiri);
         Glide.with(this).load(R.drawable.pgh).apply(requestOptions).into(pgh);
         Glide.with(this).load(R.drawable.kbh).apply(requestOptions).into(kbh);

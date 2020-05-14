@@ -27,7 +27,7 @@
 
     <ImageView
         android:id="@+id/img14"
-        android:layout_width="418dp"
+        android:layout_width="match_parent"
         android:layout_height="297dp"
         android:src="@drawable/ambika"
         android:scaleType="fitXY"/>
