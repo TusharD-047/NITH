@@ -71,8 +71,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         firebaseDatabase = FirebaseDatabase.getInstance();
         pd =new ProgressDialog(this);
 
-        profile = findViewById(R.id.profilePic987);
-
         dir_card=(CardView) findViewById(R.id.dir_card);
         pl_card=(CardView) findViewById(R.id.pl_card);
         map_card=(CardView) findViewById(R.id.map_card);

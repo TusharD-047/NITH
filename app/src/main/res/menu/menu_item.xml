@@ -8,14 +8,17 @@
 
     <item
         android:id="@+id/login"
-        android:title="LOGIN/SIGNUP" />
+        android:title="LOGIN/SIGNUP"
+        android:icon="@drawable/ic_group_add_black_24dp"/>
     <item
         android:id="@+id/events"
-        android:title="EVENTS" />
+        android:title="EVENTS"
+        android:icon="@drawable/ic_event_note_black_24dp"/>
 
     <item
         android:id="@+id/departments"
-        android:title="DEPARTMENTS" />
+        android:title="DEPARTMENTS"
+        android:icon="@drawable/ic_account_balance_black_24dp"/>
 
     <item
         android:id="@+id/hostels"
@@ -26,11 +29,14 @@
         android:id="@+id/separator">
         <item
             android:id="@+id/website"
-            android:title="NITH WEBSITE" />
+            android:title="NITH WEBSITE"
+            android:icon="@drawable/ic_language_black_24dp"/>
 
         <item
             android:id="@+id/aboutdevelopers"
-            android:title="ABOUT US" />
+            android:title="ABOUT US"
+            android:icon="@drawable/ic_info_black_24dp"/>
     </group>
+
 
 </menu>
