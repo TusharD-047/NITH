@@ -20,7 +20,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Admin.AdminNoReg"
-            android:screenOrientation="portrait" ></activity>
+            android:screenOrientation="portrait" >
+        </activity>
         <activity android:name=".Admin.AdminSetting"
             android:screenOrientation="portrait" />
         <activity android:name=".Admin.AdminHome"
@@ -52,8 +53,6 @@
         <activity android:name=".fees"
             android:screenOrientation="portrait" />
         <activity android:name=".AboutNithhp.home1"
-            android:screenOrientation="portrait" />
-        <activity android:name=".AboutNithhp.chljae"
             android:screenOrientation="portrait" />
         <activity android:name=".student.aboutus21.aboutdev"
             android:screenOrientation="portrait" />
