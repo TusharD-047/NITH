@@ -81,6 +81,7 @@ public class AdminRoll extends AppCompatActivity {
 
                         TextView myText = (TextView)view.findViewById(android.R.id.text1);
                         myText.setTextColor(Color.BLACK);
+                        myText.setTextSize(20);
 
                         return view;
                     }
