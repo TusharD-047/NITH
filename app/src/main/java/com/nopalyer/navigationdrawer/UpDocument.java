@@ -154,8 +154,8 @@ public class UpDocument extends AppCompatActivity {
                 Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                 while(!uri.isComplete());
                 Uri url1 = uri.getResult();
-                uploadPDF uploadPDF = new uploadPDF("Info Form",url1.toString());
-                mref.child(yr).child(dep).child(roll).child(mref.push().getKey()).setValue(uploadPDF);
+                //uploadPDF uploadPDF = new uploadPDF("Info Form",url1.toString());
+                mref.child(yr).child(dep).child(roll).child("Info Form").child("url").setValue(url1.toString());
                 progressDialog.dismiss();
                 Toast.makeText(UpDocument.this,"Form Uploaded",Toast.LENGTH_SHORT).show();
             }
@@ -209,8 +209,8 @@ public class UpDocument extends AppCompatActivity {
                         Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                         while(!uri.isComplete());
                         Uri url1 = uri.getResult();
-                        uploadPDF uploadPDF = new uploadPDF(name,url1.toString());
-                        mref.child(yr).child(dep).child(roll).child(mref.push().getKey()).setValue(uploadPDF);
+                        //uploadPDF uploadPDF = new uploadPDF(name,url1.toString());
+                        mref.child(yr).child(dep).child(roll).child(name).child("url").setValue(url1.toString());
                         pd1.dismiss();
                         Toast.makeText(UpDocument.this,"Form Uploaded",Toast.LENGTH_SHORT).show();
                     }

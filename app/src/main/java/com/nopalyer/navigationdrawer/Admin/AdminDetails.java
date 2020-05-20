@@ -1,8 +1,10 @@
 package com.nopalyer.navigationdrawer.Admin;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -15,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,9 +33,11 @@ public class AdminDetails extends AppCompatActivity {
 
     private ListView ListForm;
     private FirebaseAuth firebaseAuth;
-    private DatabaseReference databaseReference;
-    List<uploadPDF> uploadPDFS;
+    private DatabaseReference databaseReference,fref;
+    //List<uploadPDF> uploadPDFS;
+    List<String> listDataHeader;
     String yr,dep,roll;
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,41 +47,59 @@ public class AdminDetails extends AppCompatActivity {
         yr = getIntent().getExtras().getString("yr");
         dep = getIntent().getExtras().getString("dep");
         roll = getIntent().getExtras().getString("roll");
+        pd =new ProgressDialog(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
         ListForm = (ListView)findViewById(R.id.ListDetails);
-        uploadPDFS = new ArrayList<>();
+        //uploadPDFS = new ArrayList<>();
 
         viewAllFiles();
 
         ListForm.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                uploadPDF uploadPDF = uploadPDFS.get(position);
+                pd.setMessage("Uploading Image ! Please Smile");
+                pd.setCancelable(false);
+                pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                pd.show();
+                //uploadPDF uploadPDF = uploadPDFS.get(position);
+                String item = listDataHeader.get(position);
+                fref = FirebaseDatabase.getInstance().getReference("Application Form").child(yr).child(dep).child(roll).child(item);
+                fref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        String url = dataSnapshot.child("url").getValue().toString();
 
-                Intent intent = new Intent();
-                intent.setType(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(uploadPDF.getUrl()));
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                Intent newIntent = Intent.createChooser(intent,"Open File");
-                startActivity(newIntent);
+                        Intent intent = new Intent();
+                        intent.setType(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(url));
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        Intent newIntent = Intent.createChooser(intent,"Open File");
+                        startActivity(newIntent);
+                        pd.dismiss();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
     }
 
     private void viewAllFiles() {
+        listDataHeader = new ArrayList<>();
         databaseReference = FirebaseDatabase.getInstance().getReference("Application Form").child(yr).child(dep).child(roll);
-        databaseReference.addValueEventListener(new ValueEventListener() {
+        databaseReference.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for(DataSnapshot postSnapshot: dataSnapshot.getChildren()){
+            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+                final String headertitile = dataSnapshot.getKey();
+                listDataHeader.add(headertitile);
 
-                    uploadPDF uploadPDF = postSnapshot.getValue(com.nopalyer.navigationdrawer.uploadPDF.class);
-                    uploadPDFS.add(uploadPDF);
-                }
-                String[] uploads = new String[uploadPDFS.size()];
+                String[] uploads = new String[listDataHeader.size()];
                 for(int i=0; i<uploads.length;i++){
-                    uploads[i] = uploadPDFS.get(i).getNaMe();
+                    uploads[i] = listDataHeader.get(i);
                 }
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,uploads){
 
@@ -87,11 +110,27 @@ public class AdminDetails extends AppCompatActivity {
 
                         TextView myText = (TextView)view.findViewById(android.R.id.text1);
                         myText.setTextColor(Color.BLACK);
+                        myText.setTextSize(20);
 
                         return view;
                     }
                 };
                 ListForm.setAdapter(adapter);
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
+
             }
 
             @Override
