@@ -428,7 +428,7 @@ public class tpassign extends AppCompatActivity {
                         Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                         while(!uri.isComplete());
                         final Uri url1 = uri.getResult();
-                        kref = firebaseDatabase.getReference("Assignment").child(year2).child(dep).child(title.getText().toString());
+                        kref = firebaseDatabase.getReference("Assignment").child(year2).child(dep).child(name).child(title.getText().toString());
                         kref.child("Url").setValue(url1.toString());
                         kref.child("DueDate").setValue(duedate.getText().toString());
                         progressDialog.dismiss();
