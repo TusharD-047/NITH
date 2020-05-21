@@ -27,5 +27,12 @@ public class tpassignHome extends AppCompatActivity {
                 startActivity(new Intent(tpassignHome.this, tpassign.class));
             }
         });
+
+        cv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(tpassignHome.this, UploadedAssignment.class));
+            }
+        });
     }
 }

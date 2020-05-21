@@ -19,10 +19,11 @@
         android:roundIcon="@mipmap/ic_launcher_app_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tpassignHome"></activity>
+        <activity android:name=".UploadedAssignment"></activity>
+        <activity android:name=".tpassignHome" />
         <activity
             android:name=".Admin.AdminNoReg"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Admin.AdminSetting"
             android:screenOrientation="portrait" />
