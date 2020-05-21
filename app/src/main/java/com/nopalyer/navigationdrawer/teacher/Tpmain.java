@@ -24,6 +24,7 @@ import com.nopalyer.navigationdrawer.login;
 import com.nopalyer.navigationdrawer.student.StudentsPage;
 import com.nopalyer.navigationdrawer.student.aboutus21.aboutdev;
 import com.nopalyer.navigationdrawer.student.calender.calender1;
+import com.nopalyer.navigationdrawer.tpassignHome;
 
 public class Tpmain extends AppCompatActivity implements View.OnClickListener {
     private CardView sch, not,att, cal, pro,msg,ok, help, website, au,assign;
@@ -110,7 +111,7 @@ public class Tpmain extends AppCompatActivity implements View.OnClickListener {
                 break;
 
             case R.id.assigntp:
-                i = new Intent(this, tpassign.class);
+                i = new Intent(this, tpassignHome.class);
                 startActivity(i);
                 break;
 
