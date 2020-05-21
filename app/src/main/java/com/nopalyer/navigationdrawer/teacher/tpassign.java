@@ -75,7 +75,6 @@ public class tpassign extends AppCompatActivity {
         duedate.setKeyListener(null);
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
-        kref = firebaseDatabase.getReference("Assignment");
         reeef = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
         mref = firebaseStorage.getReference("Assignment");
 
@@ -418,40 +417,41 @@ public class tpassign extends AppCompatActivity {
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading...");
         progressDialog.show();
-        StorageReference reference = mref.child(year2).child(dep).child(title.getText().toString());
-        reference.putFile(data).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        reeef.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
-                while(!uri.isComplete());
-                final Uri url1 = uri.getResult();
-                reeef.addValueEventListener(new ValueEventListener() {
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                final String name = dataSnapshot.child("Name").getValue().toString();
+                StorageReference reference = mref.child(year2).child(dep).child(name).child(title.getText().toString());
+                reference.putFile(data).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String name = dataSnapshot.child("Name").getValue().toString();
-                        kref.child(year2).child(dep).child(name).child(title.getText().toString()).child("Url").setValue(url1);
-                        kref.child(year2).child(dep).child(name).child(title.getText().toString()).child("DueDate").setValue(duedate.getText().toString());
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
+                        while(!uri.isComplete());
+                        final Uri url1 = uri.getResult();
+                        kref = firebaseDatabase.getReference("Assignment").child(year2).child(dep).child(title.getText().toString());
+                        kref.child("Url").setValue(url1.toString());
+                        kref.child("DueDate").setValue(duedate.getText().toString());
                         progressDialog.dismiss();
                         Toast.makeText(tpassign.this,"Successfully Uploaded",Toast.LENGTH_SHORT).show();
                     }
-
+                }).addOnFailureListener(new OnFailureListener() {
                     @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                    public void onFailure(@NonNull Exception e) {
                         Toast.makeText(tpassign.this,"Database Failed",Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
+                        double progress = (100.0*taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
+                        progressDialog.setMessage("Uploaded:  "+(int)progress+"%");
+
                     }
                 });
             }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(tpassign.this,"Database Failed",Toast.LENGTH_SHORT).show();
-            }
-        }).addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                double progress = (100.0*taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
-                progressDialog.setMessage("Uploaded:  "+(int)progress+"%");
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(tpassign.this,"Database Failed",Toast.LENGTH_SHORT).show();
             }
         });
     }
