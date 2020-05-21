@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -19,6 +20,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -27,28 +29,37 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.nopalyer.navigationdrawer.Btech_registration;
 import com.nopalyer.navigationdrawer.R;
 import com.nopalyer.navigationdrawer.uploadPDF;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class tpassign extends AppCompatActivity {
 
     Toolbar toolbar;
     private Spinner sp1,sp2;
     private Button show;
-    private EditText title;
+    private EditText title,duedate;
     ArrayAdapter<String> adapter_year,adapter_group,adapter_department;
     public static String dep,year2;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference kref;
+    private DatabaseReference kref,reeef;
     private FirebaseStorage firebaseStorage;
     private StorageReference mref;
+    final Calendar myCalendar = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,16 +71,21 @@ public class tpassign extends AppCompatActivity {
         getSupportActionBar().setTitle("Assignment");
         toolbar.setTitleTextColor(Color.WHITE);
         firebaseAuth = FirebaseAuth.getInstance();
+        duedate = (EditText) findViewById(R.id.duedate);
+        duedate.setKeyListener(null);
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
         kref = firebaseDatabase.getReference("Assignment");
+        reeef = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
         mref = firebaseStorage.getReference("Assignment");
+
 
 
         sp1 = (Spinner) findViewById(R.id.assignsp1);
         sp2 = (Spinner) findViewById(R.id.assignsp2);
         show = (Button) findViewById(R.id.upassign);
         title = findViewById(R.id.title123);
+
 
         final String[] year = {"Choose year", "1st year", "2nd year", "3rd year", "4th year"};
         final String[] group = {"Choose group", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J"};
@@ -347,6 +363,29 @@ public class tpassign extends AppCompatActivity {
                 UploadPDF();
             }
         });
+
+        final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                // TODO Auto-generated method stub
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateLabel();
+            }
+
+        };
+
+        duedate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new DatePickerDialog(tpassign.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
     }
 
     private void UploadPDF() {
@@ -374,7 +413,7 @@ public class tpassign extends AppCompatActivity {
         }
     }
 
-    private void uploadPDFFile(Uri data) {
+    private void uploadPDFFile(final Uri data) {
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading...");
@@ -385,11 +424,22 @@ public class tpassign extends AppCompatActivity {
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Task<Uri> uri = taskSnapshot.getStorage().getDownloadUrl();
                 while(!uri.isComplete());
-                Uri url1 = uri.getResult();
-                uploadPDF uploadPDF = new uploadPDF(title.getText().toString(),url1.toString());
-                kref.child(year2).child(dep).child(kref.push().getKey()).setValue(uploadPDF);
-                progressDialog.dismiss();
-                Toast.makeText(tpassign.this,"Database Success",Toast.LENGTH_SHORT).show();
+                final Uri url1 = uri.getResult();
+                reeef.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        String name = dataSnapshot.child("Name").getValue().toString();
+                        kref.child(year2).child(dep).child(name).child(title.getText().toString()).child("Url").setValue(url1);
+                        kref.child(year2).child(dep).child(name).child(title.getText().toString()).child("DueDate").setValue(duedate.getText().toString());
+                        progressDialog.dismiss();
+                        Toast.makeText(tpassign.this,"Successfully Uploaded",Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        Toast.makeText(tpassign.this,"Database Failed",Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
@@ -404,5 +454,12 @@ public class tpassign extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void updateLabel() {
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        duedate.setText(sdf.format(myCalendar.getTime()));
     }
 }
