@@ -2,8 +2,10 @@ package com.nopalyer.navigationdrawer;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -34,11 +36,18 @@ public class DeleteAssignment extends AppCompatActivity {
     private StorageReference sref;
     String titlevalue,name,yr,dep;
     String url;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete_assignment);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Uploaded Assignment");
+        toolbar.setTitleTextColor(Color.WHITE);
+
 
         titlevalue = getIntent().getExtras().getString("title");
         name = getIntent().getExtras().getString("name");
