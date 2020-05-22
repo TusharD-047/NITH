@@ -41,11 +41,19 @@ public class SpAssignList extends AppCompatActivity {
     String branch = "";
     String group,teacher;
     List<String> listDataHeader;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sp_assign_list);
+
+
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Assignment");
+        toolbar.setTitleTextColor(Color.WHITE);
+
 
         Bundle bundle = getIntent().getExtras();
         year = bundle.getString("yr");
@@ -110,7 +118,7 @@ public class SpAssignList extends AppCompatActivity {
                                     View view = super.getView(position, convertView, parent);
 
                                     TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                                    myText.setTextColor(Color.BLACK);
+                                    myText.setTextColor(Color.WHITE);
                                     myText.setTextSize(20);
 
                                     return view;
@@ -166,7 +174,7 @@ public class SpAssignList extends AppCompatActivity {
                             View view = super.getView(position, convertView, parent);
 
                             TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                            myText.setTextColor(Color.BLACK);
+                            myText.setTextColor(Color.WHITE);
                             myText.setTextSize(20);
 
                             return view;

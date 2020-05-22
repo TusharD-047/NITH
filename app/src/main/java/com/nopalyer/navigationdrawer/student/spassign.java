@@ -120,7 +120,7 @@ public class spassign extends AppCompatActivity {
                                     View view = super.getView(position, convertView, parent);
 
                                     TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                                    myText.setTextColor(Color.BLACK);
+                                    myText.setTextColor(Color.WHITE);
                                     myText.setTextSize(20);
 
                                     return view;
@@ -176,7 +176,7 @@ public class spassign extends AppCompatActivity {
                             View view = super.getView(position, convertView, parent);
 
                             TextView myText = (TextView)view.findViewById(android.R.id.text1);
-                            myText.setTextColor(Color.BLACK);
+                            myText.setTextColor(Color.WHITE);
                             myText.setTextSize(20);
 
                             return view;

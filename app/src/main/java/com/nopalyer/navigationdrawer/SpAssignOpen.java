@@ -2,8 +2,10 @@ package com.nopalyer.navigationdrawer;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -27,11 +29,17 @@ public class SpAssignOpen extends AppCompatActivity {
     private DatabaseReference ref,bref;
     String titlevalue,name,yr,group;
     String url = "";
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sp_assign_open);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Assignment");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         titlevalue = getIntent().getExtras().getString("title111");
         name = getIntent().getExtras().getString("teacher111");
