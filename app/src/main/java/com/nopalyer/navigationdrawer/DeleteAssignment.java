@@ -9,13 +9,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.nopalyer.navigationdrawer.student.spassign;
 
 public class DeleteAssignment extends AppCompatActivity {
 
@@ -24,6 +31,7 @@ public class DeleteAssignment extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference ref;
+    private StorageReference sref;
     String titlevalue,name,yr,dep;
     String url;
 
@@ -45,6 +53,7 @@ public class DeleteAssignment extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         title.setText(titlevalue);
         ref = firebaseDatabase.getReference("Assignment").child(yr).child(dep).child(name).child(titlevalue);
+        sref = FirebaseStorage.getInstance().getReference("Assignment").child(yr).child(dep).child(name).child(titlevalue);
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -73,7 +82,9 @@ public class DeleteAssignment extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sref.delete();
                 ref.removeValue();
+                startActivity(new Intent(DeleteAssignment.this,tpassignHome.class));
             }
         });
     }

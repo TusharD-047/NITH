@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -23,20 +24,19 @@ public class SpAssignOpen extends AppCompatActivity {
     private TextView title,duedate;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
-    private DatabaseReference ref;
-    String titlevalue,name,yr,dep,group;
-    String url;
+    private DatabaseReference ref,bref;
+    String titlevalue,name,yr,group;
+    String url = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sp_assign_open);
 
-        titlevalue = getIntent().getExtras().getString("title");
-        name = getIntent().getExtras().getString("teacher");
-        yr = getIntent().getExtras().getString("yr");
-        dep = getIntent().getExtras().getString("dep");
-        group = getIntent().getExtras().getString("group");
+        titlevalue = getIntent().getExtras().getString("title111");
+        name = getIntent().getExtras().getString("teacher111");
+        yr = getIntent().getExtras().getString("yr111");
+        group = getIntent().getExtras().getString("group111");
 
         show = findViewById(R.id.spDeleteShow);
         title = findViewById(R.id.spDeleteTitle);
@@ -60,13 +60,25 @@ public class SpAssignOpen extends AppCompatActivity {
                 }
             });
         }else{
-            ref = firebaseDatabase.getReference("Assignment").child(yr).child(dep).child(name).child(titlevalue);
-            ref.addValueEventListener(new ValueEventListener() {
+            bref = firebaseDatabase.getReference(firebaseAuth.getUid()).child("Profile");
+            bref.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    String dd = dataSnapshot.child("DueDate").getValue().toString();
-                    url = dataSnapshot.child("Url").getValue().toString();
-                    duedate.setText(dd);
+                    String branch = dataSnapshot.child("Department").getValue().toString();
+                    ref = firebaseDatabase.getReference("Assignment").child(yr).child(branch).child(name).child(titlevalue);
+                    ref.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            String dd = dataSnapshot.child("DueDate").getValue().toString();
+                            url = dataSnapshot.child("Url").getValue().toString();
+                            duedate.setText(dd);
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
                 }
 
                 @Override

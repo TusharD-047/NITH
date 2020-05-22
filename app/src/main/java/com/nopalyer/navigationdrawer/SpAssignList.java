@@ -53,6 +53,7 @@ public class SpAssignList extends AppCompatActivity {
         group = bundle.getString("group");
         teacher = bundle.getString("teacher");
 
+
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         ListForm = (ListView)findViewById(R.id.ListassignList);
@@ -67,11 +68,10 @@ public class SpAssignList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = listDataHeader.get(position);
                 Intent i = new Intent(SpAssignList.this, SpAssignOpen.class);
-                i.putExtra("title", item);
-                i.putExtra("teacher", teacher);
-                i.putExtra("yr",year);
-                i.putExtra("group", group);
-                i.putExtra("branch", branch);
+                i.putExtra("title111", item);
+                i.putExtra("teacher111", teacher);
+                i.putExtra("yr111",year);
+                i.putExtra("group111", group);
                 startActivity(i);
             }
         });
