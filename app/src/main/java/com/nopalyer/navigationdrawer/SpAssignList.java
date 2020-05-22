@@ -1,4 +1,4 @@
-package com.nopalyer.navigationdrawer.student;
+package com.nopalyer.navigationdrawer;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,7 +8,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,17 +24,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.nopalyer.navigationdrawer.DeleteAssignment;
-import com.nopalyer.navigationdrawer.R;
-import com.nopalyer.navigationdrawer.SpAssignList;
-import com.nopalyer.navigationdrawer.UploadedAssignment;
-import com.nopalyer.navigationdrawer.uploadPDF;
+import com.nopalyer.navigationdrawer.student.spassign;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-public class spassign extends AppCompatActivity {
+public class SpAssignList extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -45,28 +39,23 @@ public class spassign extends AppCompatActivity {
     ProgressDialog pd2;
     String year = "";
     String branch = "";
-    String group= "";
-    Toolbar toolbar;
+    String group,teacher;
     List<String> listDataHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spassign);
-
-
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Assignment");
-        toolbar.setTitleTextColor(Color.WHITE);
+        setContentView(R.layout.activity_sp_assign_list);
 
         Bundle bundle = getIntent().getExtras();
-        year = bundle.getString("year");
-        branch = bundle.getString("dep");
+        year = bundle.getString("yr");
+        branch = bundle.getString("branch");
+        group = bundle.getString("group");
+        teacher = bundle.getString("teacher");
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
-        ListForm = (ListView)findViewById(R.id.Listassign);
+        ListForm = (ListView)findViewById(R.id.ListassignList);
         pd2 =new ProgressDialog(this);
         uploadPDFS = new ArrayList<>();
         ref2 = firebaseDatabase.getReference("Group").child(firebaseAuth.getUid());
@@ -77,8 +66,9 @@ public class spassign extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item = listDataHeader.get(position);
-                Intent i = new Intent(spassign.this, SpAssignList.class);
-                i.putExtra("teacher", item);
+                Intent i = new Intent(SpAssignList.this, SpAssignOpen.class);
+                i.putExtra("title", item);
+                i.putExtra("teacher", teacher);
                 i.putExtra("yr",year);
                 i.putExtra("group", group);
                 i.putExtra("branch", branch);
@@ -101,7 +91,7 @@ public class spassign extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     group = dataSnapshot.child("group").getValue().toString();
                     pd2.dismiss();
-                    databaseReference = firebaseDatabase.getReference("Assignment").child(year).child(group);
+                    databaseReference = FirebaseDatabase.getInstance().getReference("Assignment").child(year).child(group).child(teacher);
                     databaseReference.addChildEventListener(new ChildEventListener() {
                         @Override
                         public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
@@ -146,18 +136,18 @@ public class spassign extends AppCompatActivity {
 
                         @Override
                         public void onCancelled(@NonNull DatabaseError databaseError) {
-                            Toast.makeText(spassign.this,databaseError.getCode(),Toast.LENGTH_SHORT).show();
+
                         }
                     });
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-                    Toast.makeText(spassign.this,databaseError.getCode(),Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SpAssignList.this,databaseError.getCode(),Toast.LENGTH_SHORT).show();
                 }
             });
         }else {
-            databaseReference = FirebaseDatabase.getInstance().getReference("Assignment").child(year).child(branch);
+            databaseReference = FirebaseDatabase.getInstance().getReference("Assignment").child(year).child(branch).child(teacher);
             databaseReference.addChildEventListener(new ChildEventListener() {
                 @Override
                 public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
@@ -207,12 +197,5 @@ public class spassign extends AppCompatActivity {
             });
         }
 
-    }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
-        startActivity(new Intent(spassign.this,StudentsPage.class));
     }
 }

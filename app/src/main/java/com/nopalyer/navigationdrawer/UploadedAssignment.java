@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.nopalyer.navigationdrawer.Admin.AdminDept;
+import com.nopalyer.navigationdrawer.Admin.AdminRoll;
 import com.nopalyer.navigationdrawer.teacher.tpassign;
 
 import java.util.ArrayList;
@@ -39,6 +42,7 @@ public class UploadedAssignment extends AppCompatActivity {
     List<String> listDataHeader;
     ArrayAdapter<String> adapter_year,adapter_group,adapter_department;
     public static String dep,year2;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -333,6 +337,19 @@ public class UploadedAssignment extends AppCompatActivity {
                 viewAllFiles();
             }
         });
+
+        ListForm.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = listDataHeader.get(position);
+                Intent i = new Intent(UploadedAssignment.this, DeleteAssignment.class);
+                i.putExtra("title", item);
+                i.putExtra("yr", year2);
+                i.putExtra("dep", dep);
+                i.putExtra("name", name);
+                startActivity(i);
+            }
+        });
     }
 
     private void viewAllFiles() {
@@ -341,7 +358,7 @@ public class UploadedAssignment extends AppCompatActivity {
         reeef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String name = dataSnapshot.child("Name").getValue().toString();
+                name = dataSnapshot.child("Name").getValue().toString();
                 databaseReference = FirebaseDatabase.getInstance().getReference("Assignment").child(year2).child(dep).child(name);
                 databaseReference.addChildEventListener(new ChildEventListener() {
                     @Override
