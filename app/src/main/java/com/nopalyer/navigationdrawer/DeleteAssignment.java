@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -28,7 +29,7 @@ import com.nopalyer.navigationdrawer.student.spassign;
 
 public class DeleteAssignment extends AppCompatActivity {
 
-    private Button show,delete;
+    private Button show;
     private TextView title,duedate;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
@@ -55,7 +56,6 @@ public class DeleteAssignment extends AppCompatActivity {
         dep = getIntent().getExtras().getString("dep");
 
         show = findViewById(R.id.tpDeleteShow);
-        delete = findViewById(R.id.tpDeleteDelete);
         title = findViewById(R.id.tpDeleteTitle);
         duedate = findViewById(R.id.tpDeleteDueDate);
         firebaseAuth = FirebaseAuth.getInstance();
@@ -85,15 +85,6 @@ public class DeleteAssignment extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 Intent newIntent = Intent.createChooser(intent,"Open File");
                 startActivity(newIntent);
-            }
-        });
-
-        delete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sref.delete();
-                ref.removeValue();
-                startActivity(new Intent(DeleteAssignment.this,tpassignHome.class));
             }
         });
     }
